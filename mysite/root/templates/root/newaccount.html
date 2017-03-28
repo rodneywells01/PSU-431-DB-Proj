@@ -16,17 +16,18 @@
 	<div id="loginform">
 		<form style="text-align: center;" method="post">
 			{% csrf_token %}
-			<h3>Sign In</h3>
+			<h3>Create New Account</h3>
 			<input type="text" name="username">
 			<br>
 			<input type="password" name="password">
 			<br>
-			<input type="submit" value="Sign In"></button>
+			<input type="submit" value="Create Account"></button>
 			<br>
-			<div><b>or</b></div>			
-			<a href="newaccount">Register a New Account</a>
-		</form>
+			<div><b>or</b></div>				
+			<a href="/">Already have an account?</a>
+		</form>	
 	</div>
+	
 
 	<div id="footer">
 		<div>Diagnose.me - A Product by Debonair Database Designers</div>

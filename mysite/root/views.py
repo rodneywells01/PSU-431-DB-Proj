@@ -7,3 +7,8 @@ def index(request):
 	template = loader.get_template('root/index.html')
 	context = { }
 	return HttpResponse(template.render(context, request))
+
+def newaccount(request):
+	template = loader.get_template('root/newaccount.html')
+	context = { }
+	return HttpResponse(template.render(context, request))	
