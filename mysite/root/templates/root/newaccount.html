@@ -5,7 +5,6 @@
 	<title>Diagnose.me</title>
 	<link rel="stylesheet" type="text/css" 
 	href="{% static 'root/main.css' %}"/>
-
 </head>
 <body>
 	<div id="header">		
@@ -14,7 +13,7 @@
 	</div>
 	
 	<div id="loginform">
-		<form style="text-align: center;" method="post">
+		<form style="text-align: center;" method="post" action="{% url 'createnewaccount' %}">
 			{% csrf_token %}
 			<h3>Create New Account</h3>
 			<input type="text" name="username">
