@@ -74,7 +74,8 @@ def createnewaccount(request):
 	print("We hit create new account! Awesome!!")
 	template = loader.get_template('root/index.html')
 	context = { }
-	return HttpResponse(template.render(context, request))
+	return HttpResponseRedirect("/")
+	# return index(request);
 
 def home(request):
 	return render(request, 'root/home.html')
