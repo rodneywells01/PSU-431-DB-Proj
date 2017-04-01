@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'root/style.css' %}" />
+
+<h1>Remedy List</h1>
+
+{% if remedy_list %}
+    <ul>
+    {% for remedy in remedy_list %}
+        <li><a href="{% url 'remedy_detail' remedy.remid %}">{{remedy.name}} - remid:  {{remedy.remid}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No remedies are available.</p>
+{% endif %}

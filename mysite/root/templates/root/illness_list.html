@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'root/style.css' %}" />
+
+<h1>Illness List</h1>
+
+{% if illness_list %}
+    <ul>
+    {% for illness in illness_list %}
+        <li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No illness are available.</p>
+{% endif %}

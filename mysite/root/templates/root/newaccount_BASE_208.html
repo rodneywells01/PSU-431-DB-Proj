@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+
+</head>
+<body>
+	<div id="header">		
+		<h1>Diagnose.me</h1>
+		<h5>Get Ready to Get Diagnosed!</h5>
+	</div>
+	
+	<div id="loginform">
+		<form style="text-align: center;" method="post">
+			{% csrf_token %}
+			<h3>Create New Account</h3>
+			<input type="text" name="username">
+			<br>
+			<input type="password" name="password">
+			<br>
+			<input type="submit" value="Create Account"></button>
+			<br>
+			<div><b>or</b></div>				
+			<a href="/">Already have an account?</a>
+		</form>	
+	</div>
+	
+
+	<div id="footer">
+		<div>Diagnose.me - A Product by Debonair Database Designers</div>
+	</div>
+</body>
+</html>
+
+

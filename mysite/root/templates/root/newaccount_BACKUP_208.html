@@ -5,7 +5,10 @@
 	<title>Diagnose.Me</title>
 	<link rel="stylesheet" type="text/css" 
 	href="{% static 'root/main.css' %}"/>
+<<<<<<< HEAD
 	<link rel="icon" href="{% static 'root/icon.png' %}">
+=======
+>>>>>>> e8c365094186e9f8703ff04aca9245b6c47ced63
 </head>
 
 <body>
@@ -28,6 +31,7 @@
 			<br />
 		</div>
 	</div>
+<<<<<<< HEAD
 	<div class="border"></div>
 
 	<div class="wrap">
@@ -100,7 +104,9 @@
 					<br/>
 					<br/>
 					<a href="/">Already have an account?</a>
-				</div>					
+				</div>				
+=======
+	
 	<div id="loginform">
 		<form style="text-align: center;" method="post" action="{% url 'createnewaccount' %}">
 			{% csrf_token %}
@@ -113,6 +119,7 @@
 			<br>
 			<div><b>or</b></div>				
 			<a href="/">Already have an account?</a>
+>>>>>>> e8c365094186e9f8703ff04aca9245b6c47ced63
 		</form>	
 		</div>
 	</div>
