@@ -18,7 +18,6 @@ def newaccount(request):
 	context = { }
 	return HttpResponse(template.render(context, request))	
 
-<<<<<<< HEAD
 def searchDiseases(request):
 	template = loader.get_template('root/searchDiseases.html')
 	context = { }
@@ -48,7 +47,7 @@ def termsConditions(request):
 	template = loader.get_template('root/termsConditions.html')
 	context = { }
 	return HttpResponse(template.render(context, request))
-=======
+
 def login(request):
 	# Attempt to login the user. 
 	pass
@@ -107,4 +106,3 @@ class IllnessDetailView(generic.DetailView):
     #def get_queryset(self):
     #    """Remedy List."""
     #    return Remedy.objects #Where illid and remid are in TreatedBy
->>>>>>> e8c365094186e9f8703ff04aca9245b6c47ced63
