@@ -74,13 +74,45 @@ body {
 	width: 100%;
 	height: 100px;
 	background-color: #00a2e8;
+	color: #FFF;
 }
 
-.footerContent {
+.footer .wrap {
+	position: relative;
 	width: 940px;
-	color: #FFF;
+	margin: 0 auto;
+	height: 100px;
+	background: #00a2e8;
+}
+
+.copyright {
+	position: absolute;
+	width: 100%;
+	display: block;
+	text-align: center;
+	bottom: 5px;
+}
+
+.footerMenu {
+	display: block;
 	margin: 0 auto;
 	text-align: center;
+	width: auto;
+}
+
+.footerMenu li {
+	display: inline-block;
+	width: 200px;
+}
+
+.footerMenu li a {
+	color: #FFF;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.footerMenu li a:hover {
+	text-decoration: underline;
 }
 
 .homeImage {
@@ -103,6 +135,17 @@ body {
 	padding: 20px;
 	float: right;
 	align-items: center;
+}
+
+.formContent {
+	width: 300px;
+}
+
+.notAnOption {
+	color: #FFF;
+}
+.inputSize {
+	width: 146px;
 }
 
 #loginform > form > *{

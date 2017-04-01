@@ -32,3 +32,13 @@ def contact(request):
 	template = loader.get_template('root/contact.html')
 	context = { }
 	return HttpResponse(template.render(context, request))	
+
+def privacyPolicy(request):
+	template = loader.get_template('root/privacyPolicy.html')
+	context = { }
+	return HttpResponse(template.render(context, request))	
+
+def termsConditions(request):
+	template = loader.get_template('root/termsConditions.html')
+	context = { }
+	return HttpResponse(template.render(context, request))
