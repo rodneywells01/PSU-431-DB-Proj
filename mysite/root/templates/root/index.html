@@ -2,18 +2,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Diagnose.me</title>
+	<title>Diagnose.Me</title>
 	<link rel="stylesheet" type="text/css" 
 	href="{% static 'root/main.css' %}"/>
 	<link rel="icon" href="{% static 'root/icon.png' %}">
 </head>
+
 <body>
-	<div id="header">		
-		<h1>Diagnose.me</h1>
-		<h5>Get Ready to Get Diagnosed!</h5>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="searchDiseases">Search Diseases</a></li>
+				<li><a href="aboutUs">About Us</a></li>
+				<li><a href="contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
 	</div>
-	
-	<div id="loginform">
+	<div class="border"></div>
+
+
+	<div class="wrap">
+		<h1 style="text-align: center;">Health care as it should be.</h1>
+		<div class="content">
+			<div class="homeImage"></div>
+			<div class="login">
+				<form method="post">
+					{% csrf_token %}
+					<h2>Log In</h2>
+					<input type="text" name="username" style="font-size: 20px" size="15px" placeholder="Username">
+					<br />
+					<br />
+					<input type="password" name="password" style="font-size: 20px" size="15px" placeholder="Password">
+					<br />
+					<br />
+					<input type="submit" value="Sign In" style="font-size: 15px"></button>
+					<br />
+					<br />
+					<a href="newaccount">Register a New Account</a>
+				</form>	
+			</div>
+		</div>
+	</div>
+
+	<div class="clr"></div>
+
+	<div class="footer">
+		<div class="footerContent">
+			<br />
+			<h4>Diagnose.me - A Service by Debonair Database Designers</h4>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- <div id="loginform">
 		<form style="text-align: center;" method="post">
 			{% csrf_token %}
 			<h3>Sign In</h3>
@@ -27,11 +79,5 @@
 			<a href="newaccount">Register a New Account</a>
 		</form>
 	</div>
-
-	<div id="footer">
-		<div>Diagnose.me - A Product by Debonair Database Designers</div>
-	</div>
-</body>
-</html>
-
+-->
 

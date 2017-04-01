@@ -5,16 +5,16 @@
 	<title>Diagnose.me</title>
 	<link rel="stylesheet" type="text/css" 
 	href="{% static 'root/main.css' %}"/>
-
+	<link rel="icon" href="{% static 'root/icon.png' %}">
 </head>
-<body>
-	<div id="header">		
+<body style="background-color:powderblue;">
+	<div id="header" style="background-color:white;">		
 		<h1>Diagnose.me</h1>
 		<h5>Get Ready to Get Diagnosed!</h5>
 	</div>
 	
 	<div id="loginform">
-		<form style="text-align: center;" method="post">
+		<form style="text-align: center; background-color:white" method="post">
 			{% csrf_token %}
 			<h3>Create New Account</h3>
 			<input type="text" name="username">
@@ -29,7 +29,7 @@
 	</div>
 	
 
-	<div id="footer">
+	<div id="footer" style="background-color:white;">
 		<div>Diagnose.me - A Product by Debonair Database Designers</div>
 	</div>
 </body>
