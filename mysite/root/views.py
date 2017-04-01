@@ -1,7 +1,9 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
-from django.urls import reverse 
+from django.urls import reverse
+from .models import *
+from django.views import generic
 
 from root.models import UserCredentials
 
@@ -43,3 +45,34 @@ def createnewaccount(request):
 	template = loader.get_template('root/index.html')
 	context = { }
 	return HttpResponse(template.render(context, request))
+
+def home(request):
+	return render(request, 'root/home.html')
+
+class IllnessListView(generic.ListView):
+    template_name = 'root/illness_list.html'
+    context_object_name = 'illness_list'
+
+    def get_queryset(self):
+        """Illness List."""
+        return Illness.objects.order_by('illid')
+
+class RemedyListView(generic.ListView):
+    template_name = 'root/remedy_list.html'
+    context_object_name = 'remedy_list'
+
+    def get_queryset(self):
+        """Remedy List."""
+        return Remedy.objects.order_by('remid')
+
+class RemedyDetailView(generic.DetailView):
+    model = Remedy
+    template_name = 'root/remedy_detail.html'
+
+class IllnessDetailView(generic.DetailView):
+    model = Illness
+    template_name = 'root/illness_detail.html'
+    #Create a query to find remedies which help this illness
+    #def get_queryset(self):
+    #    """Remedy List."""
+    #    return Remedy.objects #Where illid and remid are in TreatedBy
