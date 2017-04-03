@@ -1,0 +1,15 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "f5ee4e62c42f84f0dcf40666a5e3a5a8"
+build_time: [544557853, 749799000]
+inputs:
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/MarketplaceViewController.swift": [543422161, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/AutoCompleteTextField.swift": [9223372036854775807, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/AppDelegate.swift": [541366118, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/AutoCompleteTextFieldProtocols.swift": [9223372036854775807, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/BodyViewController.swift": [543422276, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/LFLoginController.swift": [9223372036854775807, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/HamburgerButton.swift": [533748252, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/SymptomViewController.swift": [543422264, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/AutoCompleteTextFieldConstants.swift": [9223372036854775807, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/BackgroundVideo.swift": [9223372036854775807, 0]
+  "/Users/lukeporupski/Documents/431_Project/iOS Application/Diagnose Me/Diagnose Me/MainViewController.swift": [541726172, 0]
