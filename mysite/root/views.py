@@ -107,3 +107,5 @@ class IllnessDetailView(generic.DetailView):
     #def get_queryset(self):
     #    """Remedy List."""
     #    return Remedy.objects #Where illid and remid are in TreatedBy
+	#
+	#
