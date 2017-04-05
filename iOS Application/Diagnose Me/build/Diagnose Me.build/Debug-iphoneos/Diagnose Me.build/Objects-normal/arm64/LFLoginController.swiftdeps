@@ -14,102 +14,103 @@ provides-member:
 - ["CSo6UIView", ""]
 - ["CSo6UIView", "shake"]
 provides-dynamic-lookup:
-- "txtPassword"
+- "signupTapped"
+- "setupEmailField"
 - "logo"
-- "isLogin"
-- "setupLoginButton"
-- "setupLoginView"
+- "setRightUI"
 - "didReceiveMemoryWarning"
-- "setupPasswordField"
-- "sendTapped"
+- "viewWillAppear"
+- "isLogin"
 - "butLogin"
-- "setWrongUI"
+- "viewWillDisappear"
+- "butSignup"
+- "setupPasswordField"
+- "txtPassword"
+- "wrongInfoShake"
+- "setupOnePassword"
+- "playerItemDidReachEnd"
+- "setupLoginView"
+- "butForgotPassword"
 - "autoCompleteTextFieldDataSource"
 - "txtEmail"
-- "viewWillDisappear"
-- "setupEmailField"
-- "butSignup"
-- "domainNames"
-- "butForgotPassword"
-- "textFieldShouldReturn"
-- "setupForgotPasswordButton"
 - "setupVideoBackgrond"
-- "setupSignupButton"
-- "toggleLoginSignup"
-- "wrongInfoShake"
-- "imgvLogo"
-- "setRightUI"
-- "viewWillLayoutSubviews"
-- "imgvPasswordIcon"
-- "butOnePassword"
-- "playerItemDidReachEnd"
-- "loginView"
-- "bottomTxtEmailView"
-- "appName"
+- "sendTapped"
 - "setupLoginLogo"
-- "shake"
-- "textFieldDidEndEditing"
-- "imgvUserIcon"
-- "setupOnePassword"
-- "appUrl"
-- "forgotPasswordTapped"
-- "bottomTxtPasswordView"
 - "textFieldDidBeginEditing"
 - "viewDidLoad"
-- "viewWillAppear"
-- "videoURL"
-- "signupTapped"
+- "viewWillLayoutSubviews"
+- "imgvUserIcon"
+- "textFieldShouldReturn"
+- "setWrongUI"
+- "butOnePassword"
+- "loginView"
 - "loginButtonColor"
+- "bottomTxtEmailView"
+- "appName"
+- "imgvLogo"
+- "setupLoginButton"
+- "setupForgotPasswordButton"
+- "forgotPasswordTapped"
+- "shake"
+- "toggleLoginSignup"
+- "appUrl"
+- "textFieldDidEndEditing"
+- "domainNames"
+- "setupSignupButton"
+- "bottomTxtPasswordView"
+- "imgvPasswordIcon"
+- "videoURL"
 depends-top-level:
-- "NSNotification"
-- "BooleanLiteralType"
-- "UITextFieldDelegate"
-- !private "URL"
-- "StringLiteralType"
-- "Bool"
-- !private "AVPlayerActionAtItemEnd"
-- !private "+"
-- !private "kCAMediaTimingFunctionLinear"
-- "UIImageView"
-- "UIButton"
-- !private "/"
+- !private "UIFont"
 - !private "-"
-- !private "AVPlayerLayer"
-- !private "print"
-- !private "NSAttributedString"
-- "UITextField"
-- !private "!"
-- "AutoCompleteTextFieldDataSource"
-- "LFLoginController"
+- !private "NotificationCenter"
+- "LFLoginControllerDelegate"
 - !private "CGFloat"
-- "UIView"
+- !private "Dictionary"
+- !private "URL"
+- "NSURL"
+- "UIColor"
+- !private "NSForegroundColorAttributeName"
+- !private "CAKeyframeAnimation"
+- !private "print"
+- !private "CAMediaTimingFunction"
+- !private "+"
+- !private "/"
+- !private "!"
+- "AutoCompleteTextField"
+- "LFLoginController"
+- !private "AVPlayerActionAtItemEnd"
+- !private "kCAMediaTimingFunctionLinear"
+- "Array"
 - "UIImage"
 - !private "Void"
-- !private "AVLayerVideoGravityResizeAspectFill"
-- !private "UIFont"
-- !private "AVPlayerItem"
-- !private "CAKeyframeAnimation"
-- !private "Dictionary"
-- "String"
+- !private "AVPlayer"
+- "UIButton"
 - !private "Bundle"
+- !private "AVPlayerItem"
+- "String"
+- !private "NSAttributedString"
+- !private "NSFontAttributeName"
 - !private "kCMTimeZero"
+- "AutoCompleteTextFieldDataSource"
+- "TernaryPrecedence"
+- "CastingPrecedence"
+- !private "AVLayerVideoGravityResizeAspectFill"
 - "=="
 - "AssignmentPrecedence"
-- !private "AVPlayer"
-- !private "NSFontAttributeName"
-- "CastingPrecedence"
-- "Array"
-- !private "CAMediaTimingFunction"
-- "LFLoginControllerDelegate"
-- !private "NSForegroundColorAttributeName"
-- "AutoCompleteTextField"
-- "UIColor"
+- "UIImageView"
+- "NSNotification"
 - !private "UnicodeScalarType"
-- !private "NotificationCenter"
-- "TernaryPrecedence"
-- "NSURL"
-- !private "CGRect"
+- "StringLiteralType"
+- "Bool"
 - "UIViewController"
+- "UITextFieldDelegate"
+- !private "UIStoryboard"
+- "UIView"
+- "UITextField"
+- !private "AVPlayerLayer"
+- "BooleanLiteralType"
+- !private "CGRect"
 depends-member:
 - !private ["CSo8AVPlayer", "actionAtItemEnd"]
 - !private ["CSo8AVPlayer", "currentItem"]
@@ -151,6 +152,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIImageView"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "UITextField"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "actionAtItemEnd"]
@@ -195,6 +197,7 @@ depends-member:
 - ["Ps9AnyObject", "imgvUserIcon"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertSublayer"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isHidden"]
 - ["Ps9AnyObject", "isLogin"]
 - !private ["Ps9AnyObject", "isSecureTextEntry"]
@@ -209,6 +212,7 @@ depends-member:
 - !private ["Ps9AnyObject", "object"]
 - !private ["Ps9AnyObject", "play"]
 - ["Ps9AnyObject", "playerItemDidReachEnd"]
+- !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "red"]
 - !private ["Ps9AnyObject", "removeFromSuperview"]
@@ -246,6 +250,8 @@ depends-member:
 - ["Ps9AnyObject", "textFieldShouldEndEditing"]
 - ["Ps9AnyObject", "textFieldShouldReturn"]
 - !private ["Ps9AnyObject", "timingFunction"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "titleLabel"]
 - ["Ps9AnyObject", "toggleLoginSignup"]
 - ["Ps9AnyObject", "txtEmail"]
 - ["Ps9AnyObject", "txtPassword"]
@@ -301,6 +307,7 @@ depends-member:
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "UIFont"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "UIImage"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "UIImageView"]
+- !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "UIStoryboard"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "UITextField"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "UIView"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "appName"]
@@ -326,6 +333,7 @@ depends-member:
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "logo"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "navigationController"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "playerItemDidReachEnd"]
+- !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "present"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "print"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "sendTapped"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "setRightUI"]
@@ -346,7 +354,6 @@ depends-member:
 - ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "textFieldShouldClear"]
 - ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "textFieldShouldEndEditing"]
 - ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "textFieldShouldReturn"]
-- !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "toggleLoginSignup"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "txtEmail"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "txtPassword"]
 - !private ["P11Diagnose_Me31AutoCompleteTextFieldDataSource", "videoURL"]
@@ -421,6 +428,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "showAutoCompleteButton"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textColor"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- !private ["PSo15CALayerDelegate", "titleLabel"]
 - !private ["PSo13CAMediaTiming", "add"]
 - !private ["PSo13CAMediaTiming", "borderColor"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
@@ -480,6 +489,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UIImageView"]
+- !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "UITextField"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "Value"]
@@ -527,6 +537,7 @@ depends-member:
 - ["Ps7CVarArg", "imgvUserIcon"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "insertSublayer"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isHidden"]
 - ["Ps7CVarArg", "isLogin"]
 - !private ["Ps7CVarArg", "isSecureTextEntry"]
@@ -541,6 +552,7 @@ depends-member:
 - !private ["Ps7CVarArg", "object"]
 - !private ["Ps7CVarArg", "play"]
 - ["Ps7CVarArg", "playerItemDidReachEnd"]
+- !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "red"]
 - !private ["Ps7CVarArg", "removeFromSuperview"]
@@ -578,6 +590,8 @@ depends-member:
 - ["Ps7CVarArg", "textFieldShouldEndEditing"]
 - ["Ps7CVarArg", "textFieldShouldReturn"]
 - !private ["Ps7CVarArg", "timingFunction"]
+- !private ["Ps7CVarArg", "tintColor"]
+- !private ["Ps7CVarArg", "titleLabel"]
 - ["Ps7CVarArg", "toggleLoginSignup"]
 - ["Ps7CVarArg", "txtEmail"]
 - ["Ps7CVarArg", "txtPassword"]
@@ -629,6 +643,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UITextField"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
@@ -675,6 +690,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "imgvUserIcon"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insertSublayer"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - ["Ps28CustomDebugStringConvertible", "isLogin"]
 - !private ["Ps28CustomDebugStringConvertible", "isSecureTextEntry"]
@@ -693,6 +709,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "origin"]
 - !private ["Ps28CustomDebugStringConvertible", "play"]
 - ["Ps28CustomDebugStringConvertible", "playerItemDidReachEnd"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "red"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
@@ -730,6 +747,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldEndEditing"]
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldReturn"]
 - !private ["Ps28CustomDebugStringConvertible", "timingFunction"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
 - ["Ps28CustomDebugStringConvertible", "toggleLoginSignup"]
 - ["Ps28CustomDebugStringConvertible", "txtEmail"]
 - ["Ps28CustomDebugStringConvertible", "txtPassword"]
@@ -804,6 +823,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIImageView"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UITextField"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "Value"]
@@ -852,6 +872,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "imgvUserIcon"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insertSublayer"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - ["Ps23CustomStringConvertible", "isLogin"]
 - !private ["Ps23CustomStringConvertible", "isSecureTextEntry"]
@@ -866,6 +887,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "object"]
 - !private ["Ps23CustomStringConvertible", "play"]
 - ["Ps23CustomStringConvertible", "playerItemDidReachEnd"]
+- !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "red"]
 - !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
@@ -903,6 +925,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "textFieldShouldEndEditing"]
 - ["Ps23CustomStringConvertible", "textFieldShouldReturn"]
 - !private ["Ps23CustomStringConvertible", "timingFunction"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "titleLabel"]
 - ["Ps23CustomStringConvertible", "toggleLoginSignup"]
 - ["Ps23CustomStringConvertible", "txtEmail"]
 - ["Ps23CustomStringConvertible", "txtPassword"]
@@ -957,6 +981,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIImageView"]
+- !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "UITextField"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
@@ -1008,6 +1033,7 @@ depends-member:
 - ["Ps9Equatable", "imgvUserIcon"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "insertSublayer"]
+- !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isHidden"]
 - ["Ps9Equatable", "isLogin"]
 - !private ["Ps9Equatable", "isSecureTextEntry"]
@@ -1030,6 +1056,7 @@ depends-member:
 - !private ["Ps9Equatable", "origin"]
 - !private ["Ps9Equatable", "play"]
 - ["Ps9Equatable", "playerItemDidReachEnd"]
+- !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "red"]
 - !private ["Ps9Equatable", "removeFromSuperview"]
@@ -1067,6 +1094,8 @@ depends-member:
 - ["Ps9Equatable", "textFieldShouldEndEditing"]
 - ["Ps9Equatable", "textFieldShouldReturn"]
 - !private ["Ps9Equatable", "timingFunction"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "titleLabel"]
 - ["Ps9Equatable", "toggleLoginSignup"]
 - !private ["Ps9Equatable", "touchUpInside"]
 - ["Ps9Equatable", "txtEmail"]
@@ -1137,6 +1166,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIImageView"]
+- !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "UITextField"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
@@ -1187,6 +1217,7 @@ depends-member:
 - ["Ps8Hashable", "imgvUserIcon"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "insertSublayer"]
+- !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isHidden"]
 - ["Ps8Hashable", "isLogin"]
 - !private ["Ps8Hashable", "isSecureTextEntry"]
@@ -1204,6 +1235,7 @@ depends-member:
 - !private ["Ps8Hashable", "object"]
 - !private ["Ps8Hashable", "play"]
 - ["Ps8Hashable", "playerItemDidReachEnd"]
+- !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "red"]
 - !private ["Ps8Hashable", "removeFromSuperview"]
@@ -1241,6 +1273,8 @@ depends-member:
 - ["Ps8Hashable", "textFieldShouldEndEditing"]
 - ["Ps8Hashable", "textFieldShouldReturn"]
 - !private ["Ps8Hashable", "timingFunction"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "titleLabel"]
 - ["Ps8Hashable", "toggleLoginSignup"]
 - ["Ps8Hashable", "txtEmail"]
 - ["Ps8Hashable", "txtPassword"]
@@ -1307,6 +1341,7 @@ depends-member:
 - !private ["C11Diagnose_Me17LFLoginController", "UIFont"]
 - ["C11Diagnose_Me17LFLoginController", "UIImage"]
 - ["C11Diagnose_Me17LFLoginController", "UIImageView"]
+- !private ["C11Diagnose_Me17LFLoginController", "UIStoryboard"]
 - ["C11Diagnose_Me17LFLoginController", "UITextField"]
 - ["C11Diagnose_Me17LFLoginController", "UIView"]
 - !private ["C11Diagnose_Me17LFLoginController", "URL"]
@@ -1336,6 +1371,7 @@ depends-member:
 - ["C11Diagnose_Me17LFLoginController", "logo"]
 - !private ["C11Diagnose_Me17LFLoginController", "navigationController"]
 - ["C11Diagnose_Me17LFLoginController", "playerItemDidReachEnd"]
+- !private ["C11Diagnose_Me17LFLoginController", "present"]
 - !private ["C11Diagnose_Me17LFLoginController", "print"]
 - ["C11Diagnose_Me17LFLoginController", "sendTapped"]
 - ["C11Diagnose_Me17LFLoginController", "setRightUI"]
@@ -1406,6 +1442,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageView"]
+- !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "UITextField"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "add"]
@@ -1459,6 +1496,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "object"]
 - ["PSo8NSCoding", "playerItemDidReachEnd"]
+- !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "red"]
 - !private ["PSo8NSCoding", "removeFromSuperview"]
@@ -1495,6 +1533,8 @@ depends-member:
 - ["PSo8NSCoding", "textFieldShouldEndEditing"]
 - ["PSo8NSCoding", "textFieldShouldReturn"]
 - !private ["PSo8NSCoding", "timingFunction"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "titleLabel"]
 - ["PSo8NSCoding", "toggleLoginSignup"]
 - ["PSo8NSCoding", "txtEmail"]
 - ["PSo8NSCoding", "txtPassword"]
@@ -1543,6 +1583,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "UITextField"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "appName"]
@@ -1569,6 +1610,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "logo"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "playerItemDidReachEnd"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "sendTapped"]
 - !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
@@ -1634,6 +1676,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "UIStoryboard"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "URL"]
@@ -1680,6 +1723,7 @@ depends-member:
 - ["CSo8NSObject", "imgvUserIcon"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "insertSublayer"]
+- !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isHidden"]
 - ["CSo8NSObject", "isLogin"]
 - !private ["CSo8NSObject", "isSecureTextEntry"]
@@ -1694,6 +1738,7 @@ depends-member:
 - !private ["CSo8NSObject", "object"]
 - !private ["CSo8NSObject", "play"]
 - ["CSo8NSObject", "playerItemDidReachEnd"]
+- !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "red"]
 - !private ["CSo8NSObject", "removeFromSuperview"]
@@ -1731,6 +1776,8 @@ depends-member:
 - ["CSo8NSObject", "textFieldShouldEndEditing"]
 - ["CSo8NSObject", "textFieldShouldReturn"]
 - !private ["CSo8NSObject", "timingFunction"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "titleLabel"]
 - ["CSo8NSObject", "toggleLoginSignup"]
 - ["CSo8NSObject", "txtEmail"]
 - ["CSo8NSObject", "txtPassword"]
@@ -1770,6 +1817,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageView"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "UITextField"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "actionAtItemEnd"]
@@ -1814,6 +1862,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "imgvUserIcon"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "insertSublayer"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - ["PSo16NSObjectProtocol", "isLogin"]
 - !private ["PSo16NSObjectProtocol", "isSecureTextEntry"]
@@ -1828,6 +1877,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "object"]
 - !private ["PSo16NSObjectProtocol", "play"]
 - ["PSo16NSObjectProtocol", "playerItemDidReachEnd"]
+- !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "red"]
 - !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
@@ -1865,6 +1915,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textFieldShouldEndEditing"]
 - ["PSo16NSObjectProtocol", "textFieldShouldReturn"]
 - !private ["PSo16NSObjectProtocol", "timingFunction"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "titleLabel"]
 - ["PSo16NSObjectProtocol", "toggleLoginSignup"]
 - ["PSo16NSObjectProtocol", "txtEmail"]
 - ["PSo16NSObjectProtocol", "txtPassword"]
@@ -1973,6 +2025,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "showAutoCompleteButton"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - !private ["PSo12UIAppearance", "CAKeyframeAnimation"]
 - !private ["PSo12UIAppearance", "CAMediaTimingFunction"]
 - !private ["PSo12UIAppearance", "addSubview"]
@@ -2008,6 +2062,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "showAutoCompleteButton"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textColor"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo12UIAppearance", "titleLabel"]
 - !private ["PSo21UIAppearanceContainer", "AVLayerVideoGravityResizeAspectFill"]
 - !private ["PSo21UIAppearanceContainer", "AVPlayer"]
 - !private ["PSo21UIAppearanceContainer", "AVPlayerActionAtItemEnd"]
@@ -2031,6 +2087,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageView"]
+- !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "UITextField"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
@@ -2075,6 +2132,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "logo"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "playerItemDidReachEnd"]
+- !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
@@ -2109,6 +2167,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "textFieldShouldClear"]
 - ["PSo21UIAppearanceContainer", "textFieldShouldEndEditing"]
 - ["PSo21UIAppearanceContainer", "textFieldShouldReturn"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "toggleLoginSignup"]
 - ["PSo21UIAppearanceContainer", "txtEmail"]
 - ["PSo21UIAppearanceContainer", "txtPassword"]
@@ -2132,6 +2192,7 @@ depends-member:
 - !private ["CSo8UIButton", "setAttributedTitle"]
 - !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "setTitle"]
+- !private ["CSo8UIButton", "titleLabel"]
 - !private ["CSo7UIColor", "cgColor"]
 - !private ["CSo7UIColor", "clear"]
 - ["CSo7UIColor", "deinit"]
@@ -2160,6 +2221,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageView"]
+- !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "UITextField"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "appName"]
@@ -2186,6 +2248,7 @@ depends-member:
 - ["PSo18UIContentContainer", "logo"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "playerItemDidReachEnd"]
+- !private ["PSo18UIContentContainer", "present"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "sendTapped"]
 - !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
@@ -2237,6 +2300,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "showAutoCompleteButton"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "tintColor"]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "alpha"]
 - !private ["CSo9UIControl", "attributedPlaceholder"]
@@ -2264,6 +2328,7 @@ depends-member:
 - !private ["CSo9UIControl", "showAutoCompleteButton"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "textColor"]
+- !private ["CSo9UIControl", "titleLabel"]
 - ["VSC15UIControlEvents", "deinit"]
 - !private ["VSC15UIControlEvents", "touchUpInside"]
 - ["VSC14UIControlState", "deinit"]
@@ -2303,6 +2368,8 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "showAutoCompleteButton"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "CAKeyframeAnimation"]
 - !private ["PSo13UIDynamicItem", "CAMediaTimingFunction"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
@@ -2338,6 +2405,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "showAutoCompleteButton"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo18UIFocusEnvironment", "AVLayerVideoGravityResizeAspectFill"]
 - !private ["PSo18UIFocusEnvironment", "AVPlayer"]
 - !private ["PSo18UIFocusEnvironment", "AVPlayerActionAtItemEnd"]
@@ -2361,6 +2430,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageView"]
+- !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "UITextField"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
@@ -2405,6 +2475,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "logo"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "playerItemDidReachEnd"]
+- !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
@@ -2439,6 +2510,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "textFieldShouldClear"]
 - ["PSo18UIFocusEnvironment", "textFieldShouldEndEditing"]
 - ["PSo18UIFocusEnvironment", "textFieldShouldReturn"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "titleLabel"]
 - ["PSo18UIFocusEnvironment", "toggleLoginSignup"]
 - ["PSo18UIFocusEnvironment", "txtEmail"]
 - ["PSo18UIFocusEnvironment", "txtPassword"]
@@ -2485,6 +2558,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "showAutoCompleteButton"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textColor"]
+- !private ["PSo11UIFocusItem", "tintColor"]
+- !private ["PSo11UIFocusItem", "titleLabel"]
 - ["CSo6UIFont", "deinit"]
 - !private ["CSo6UIFont", "init"]
 - ["CSo7UIImage", "deinit"]
@@ -2514,6 +2589,8 @@ depends-member:
 - !private ["PSo10UIKeyInput", "textColor"]
 - ["OSC14UIKeyboardType", "deinit"]
 - !private ["OSC14UIKeyboardType", "emailAddress"]
+- ["CSo7UILabel", "deinit"]
+- !private ["CSo7UILabel", "tintColor"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "setNavigationBarHidden"]
 - !private ["CSo11UIResponder", "AVLayerVideoGravityResizeAspectFill"]
@@ -2543,6 +2620,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo11UIResponder", "UIStoryboard"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "URL"]
@@ -2589,6 +2667,7 @@ depends-member:
 - ["CSo11UIResponder", "logo"]
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "playerItemDidReachEnd"]
+- !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "removeFromSuperview"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
@@ -2623,6 +2702,8 @@ depends-member:
 - ["CSo11UIResponder", "textFieldShouldClear"]
 - ["CSo11UIResponder", "textFieldShouldEndEditing"]
 - ["CSo11UIResponder", "textFieldShouldReturn"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["CSo11UIResponder", "titleLabel"]
 - ["CSo11UIResponder", "toggleLoginSignup"]
 - ["CSo11UIResponder", "txtEmail"]
 - ["CSo11UIResponder", "txtPassword"]
@@ -2656,6 +2737,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImageView"]
+- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "UITextField"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
@@ -2700,6 +2782,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "logo"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "playerItemDidReachEnd"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
@@ -2734,6 +2817,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "textFieldShouldClear"]
 - ["PSo30UIResponderStandardEditActions", "textFieldShouldEndEditing"]
 - ["PSo30UIResponderStandardEditActions", "textFieldShouldReturn"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "titleLabel"]
 - ["PSo30UIResponderStandardEditActions", "toggleLoginSignup"]
 - ["PSo30UIResponderStandardEditActions", "txtEmail"]
 - ["PSo30UIResponderStandardEditActions", "txtPassword"]
@@ -2769,6 +2854,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageView"]
+- !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "UITextField"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "appName"]
@@ -2795,6 +2881,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "logo"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "playerItemDidReachEnd"]
+- !private ["PSo16UIStateRestoring", "present"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "sendTapped"]
 - !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
@@ -2828,6 +2915,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewWillLayoutSubviews"]
 - ["PSo16UIStateRestoring", "wrongInfoShake"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
 - ["OSC28UITextAutocapitalizationType", "deinit"]
 - !private ["OSC28UITextAutocapitalizationType", "none"]
 - ["OSC24UITextAutocorrectionType", "deinit"]
@@ -2872,6 +2962,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIFont"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "UIImageView"]
+- !private ["PSo19UITextFieldDelegate", "UIStoryboard"]
 - !private ["PSo19UITextFieldDelegate", "UITextField"]
 - !private ["PSo19UITextFieldDelegate", "UIView"]
 - !private ["PSo19UITextFieldDelegate", "appName"]
@@ -2903,6 +2994,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "logo"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]
 - !private ["PSo19UITextFieldDelegate", "playerItemDidReachEnd"]
+- !private ["PSo19UITextFieldDelegate", "present"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - !private ["PSo19UITextFieldDelegate", "returnKeyType"]
 - !private ["PSo19UITextFieldDelegate", "sendTapped"]
@@ -2929,7 +3021,6 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "textFieldShouldClear"]
 - ["PSo19UITextFieldDelegate", "textFieldShouldEndEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldShouldReturn"]
-- !private ["PSo19UITextFieldDelegate", "toggleLoginSignup"]
 - !private ["PSo19UITextFieldDelegate", "txtEmail"]
 - !private ["PSo19UITextFieldDelegate", "txtPassword"]
 - !private ["PSo19UITextFieldDelegate", "videoURL"]
@@ -2996,6 +3087,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageView"]
+- !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "UITextField"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
@@ -3040,6 +3132,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "logo"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "playerItemDidReachEnd"]
+- !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
@@ -3074,6 +3167,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "textFieldShouldClear"]
 - ["PSo18UITraitEnvironment", "textFieldShouldEndEditing"]
 - ["PSo18UITraitEnvironment", "textFieldShouldReturn"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["PSo18UITraitEnvironment", "titleLabel"]
 - ["PSo18UITraitEnvironment", "toggleLoginSignup"]
 - ["PSo18UITraitEnvironment", "txtEmail"]
 - ["PSo18UITraitEnvironment", "txtPassword"]
@@ -3121,6 +3216,8 @@ depends-member:
 - !private ["CSo6UIView", "showAutoCompleteButton"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["CSo6UIView", "titleLabel"]
 - !private ["CSo16UIViewController", "AVLayerVideoGravityResizeAspectFill"]
 - !private ["CSo16UIViewController", "AVPlayer"]
 - !private ["CSo16UIViewController", "AVPlayerActionAtItemEnd"]
@@ -3146,6 +3243,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "URL"]
@@ -3175,6 +3273,7 @@ depends-member:
 - ["CSo16UIViewController", "logo"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "playerItemDidReachEnd"]
+- !private ["CSo16UIViewController", "present"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "sendTapped"]
 - !private ["CSo16UIViewController", "setNavigationBarHidden"]
@@ -3224,6 +3323,7 @@ depends-member:
 - !private ["Vs5UInt8", "_DisallowMixedSignArithmetic"]
 - !private ["Vs5UInt8", "deinit"]
 - ["V10Foundation3URL", "deinit"]
+- ["P9Alamofire14URLConvertible", "init"]
 - !private ["Ps15UnsignedInteger", "Stride"]
 - !private ["Ps15UnsignedInteger", "_DisallowMixedSignArithmetic"]
 - ["Ps14_ArrayProtocol", "Element"]
@@ -3267,6 +3367,8 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showAutoCompleteButton"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "_DisallowMixedSignArithmetic"]
@@ -3317,6 +3419,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UIImageView"]
+- !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "UITextField"]
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
@@ -3367,6 +3470,7 @@ depends-member:
 - ["Ps9_Hashable", "imgvUserIcon"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "insertSublayer"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isHidden"]
 - ["Ps9_Hashable", "isLogin"]
 - !private ["Ps9_Hashable", "isSecureTextEntry"]
@@ -3384,6 +3488,7 @@ depends-member:
 - !private ["Ps9_Hashable", "object"]
 - !private ["Ps9_Hashable", "play"]
 - ["Ps9_Hashable", "playerItemDidReachEnd"]
+- !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "red"]
 - !private ["Ps9_Hashable", "removeFromSuperview"]
@@ -3421,6 +3526,8 @@ depends-member:
 - ["Ps9_Hashable", "textFieldShouldEndEditing"]
 - ["Ps9_Hashable", "textFieldShouldReturn"]
 - !private ["Ps9_Hashable", "timingFunction"]
+- !private ["Ps9_Hashable", "tintColor"]
+- !private ["Ps9_Hashable", "titleLabel"]
 - ["Ps9_Hashable", "toggleLoginSignup"]
 - ["Ps9_Hashable", "txtEmail"]
 - ["Ps9_Hashable", "txtPassword"]
@@ -3596,11 +3703,13 @@ depends-nominal:
 - "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
 - "OSC14UIKeyboardType"
+- "CSo7UILabel"
 - "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "OSC15UIReturnKeyType"
 - "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
 - "OSC28UITextAutocapitalizationType"
 - "OSC24UITextAutocorrectionType"
 - "CSo11UITextField"
@@ -3617,6 +3726,7 @@ depends-nominal:
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
 - "V10Foundation3URL"
+- "P9Alamofire14URLConvertible"
 - !private "Ps15UnsignedInteger"
 - "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
@@ -3655,6 +3765,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"

@@ -405,6 +405,8 @@ public class LFLoginController: UIViewController {
 		bottomTxtPasswordView.alpha = 0.5
 		loginView.addSubview(bottomTxtPasswordView)
 	}
+    
+    
 
 	func setupLoginButton() {
 
@@ -420,6 +422,7 @@ public class LFLoginController: UIViewController {
 		butLogin.backgroundColor = buttonColor
 
 		butLogin.setTitle("Login", for: .normal)
+        butLogin.titleLabel?.tintColor = UIColor(red: 152/255, green: 255/255, blue: 152/255, alpha: 1.0)
 		butLogin.addTarget(self, action: #selector(sendTapped), for: .touchUpInside)
 		butLogin.layer.cornerRadius = 5
 		butLogin.layer.borderWidth = 1
@@ -431,10 +434,10 @@ public class LFLoginController: UIViewController {
 
 		butSignup = UIButton(frame: CGRect(x: 0, y: loginView.frame.maxY - 200, width: loginView.frame.width, height: 40))
 
-		let font = UIFont(name: "HelveticaNeue-Medium", size: 12)!
+		let font = UIFont(name: "HelveticaNeue-Medium", size: 15)!
 		let titleString = NSAttributedString(string: "Don't have an account? Sign up", attributes: [NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.white])
 		butSignup.setAttributedTitle(titleString, for: .normal)
-		butSignup.alpha = 0.7
+		butSignup.alpha = 0.85
 
 		butSignup.addTarget(self, action: #selector(signupTapped), for: .touchUpInside)
 		loginView.addSubview(butSignup)
@@ -476,7 +479,11 @@ public class LFLoginController: UIViewController {
 
 	func signupTapped() {
 
-		toggleLoginSignup()
+        //present signup controller
+        let signupController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signupViewController")
+        present(signupController, animated: true, completion: nil)
+        
+		//toggleLoginSignup()
 	}
 
 	func forgotPasswordTapped() {

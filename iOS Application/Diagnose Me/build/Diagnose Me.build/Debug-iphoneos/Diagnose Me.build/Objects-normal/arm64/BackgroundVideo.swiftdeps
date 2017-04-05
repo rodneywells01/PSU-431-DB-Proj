@@ -12,29 +12,29 @@ provides-member:
 provides-dynamic-lookup:
 - "loopVideo"
 depends-top-level:
-- "BackgroundVideo"
 - "ExtendedGraphemeClusterType"
-- "AVPlayer"
-- "String"
+- "BooleanLiteralType"
+- !private "UIView"
+- !private "AVAudioSession"
 - !private "AVPlayerLayer"
+- "AVPlayer"
+- "BackgroundVideo"
+- !private "Bundle"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "NotificationCenter"
+- !private "print"
+- !private "AVAudioSessionCategoryAmbient"
+- !private "kCMTimeZero"
+- "String"
 - "=="
 - "AssignmentPrecedence"
-- !private "AVAudioSession"
-- !private "UIView"
-- !private "UnicodeScalarType"
-- !private "AVLayerVideoGravityResizeAspectFill"
-- !private "Bundle"
-- "BackgroundVideoErrors"
-- "BooleanLiteralType"
-- !private "AVAudioSessionCategoryAmbient"
-- "Error"
 - "URL"
-- !private "kCMTimeZero"
-- !private "print"
-- !private "StringLiteralType"
-- !private "NotificationCenter"
-- "UIViewController"
+- "BackgroundVideoErrors"
+- !private "AVLayerVideoGravityResizeAspectFill"
 - "Bool"
+- "UIViewController"
+- "Error"
 depends-member:
 - ["CSo14AVAudioSession", "deinit"]
 - !private ["CSo14AVAudioSession", "setCategory"]
@@ -680,6 +680,8 @@ depends-member:
 - ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "view"]
 - ["V10Foundation3URL", "deinit"]
+- !private ["P9Alamofire14URLConvertible", "characters"]
+- !private ["P9Alamofire14URLConvertible", "init"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
@@ -883,6 +885,7 @@ depends-nominal:
 - "CSo6UIView"
 - "CSo16UIViewController"
 - "V10Foundation3URL"
+- !private "P9Alamofire14URLConvertible"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
@@ -913,6 +916,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"

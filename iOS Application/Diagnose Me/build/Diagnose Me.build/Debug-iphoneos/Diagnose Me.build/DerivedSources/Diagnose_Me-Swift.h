@@ -327,11 +327,44 @@ SWIFT_CLASS("_TtC11Diagnose_Me17LFLoginController")
 @end
 
 
+SWIFT_CLASS("_TtC11Diagnose_Me25LoginNavigationController")
+@interface LoginNavigationController : UINavigationController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC11Diagnose_Me19LoginViewController")
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified userNameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)didPressCreateAccount;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSUserDefaults;
+
 SWIFT_CLASS("_TtC11Diagnose_Me18MainViewController")
 @interface MainViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified searchButton;
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (BOOL)userIsLoggedIn;
+- (void)forgotPasswordTapped;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -341,6 +374,51 @@ SWIFT_CLASS("_TtC11Diagnose_Me25MarketplaceViewController")
 @interface MarketplaceViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIPanGestureRecognizer;
+
+SWIFT_CLASS("_TtC11Diagnose_Me29SignupContinuedViewController")
+@interface SignupContinuedViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fNameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lNameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified sexField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified weightField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified heightField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified dobField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified smokeField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified formBackgroundView;
+@property (nonatomic, copy) NSString * _Nullable username;
+@property (nonatomic, copy) NSString * _Nullable password;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)dismissKeyboardFromTap;
+- (void)scrollViewFromPanWithGestureRecognizer:(UIPanGestureRecognizer * _Nonnull)gestureRecognizer;
+- (void)setUpDelegates;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (IBAction)didPressBackButton;
+- (IBAction)didPressFinishButton;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11Diagnose_Me20SignupViewController")
+@interface SignupViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordConfirmField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified continueButton;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)didPressCancelButton;
+- (IBAction)didPressContinueButton;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

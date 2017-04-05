@@ -21,9 +21,31 @@
 		CABC35111E8B216300534BAE /* AutoCompleteTextFieldConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC350A1E8B216300534BAE /* AutoCompleteTextFieldConstants.swift */; };
 		CABC35121E8B216300534BAE /* AutoCompleteTextFieldProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC350B1E8B216300534BAE /* AutoCompleteTextFieldProtocols.swift */; };
 		CABC35131E8B216300534BAE /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC350C1E8B216300534BAE /* BackgroundVideo.swift */; };
+		CACFA7D51E92CBBB0008AAD5 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7D41E92CBBB0008AAD5 /* DataHandler.swift */; };
+		CACFA7D81E9407650008AAD5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7D71E9407650008AAD5 /* SignupViewController.swift */; };
+		CACFA7DA1E942A570008AAD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7D91E942A570008AAD5 /* LoginViewController.swift */; };
+		CACFA7DC1E9430090008AAD5 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7DB1E9430090008AAD5 /* LoginNavigationController.swift */; };
+		CACFA7DF1E9430780008AAD5 /* SignupContinuedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7DE1E9430780008AAD5 /* SignupContinuedViewController.swift */; };
+		CACFA8041E94476D0008AAD5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACFA8031E94476D0008AAD5 /* Alamofire.framework */; };
+		CACFA8051E9447A00008AAD5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACFA8031E94476D0008AAD5 /* Alamofire.framework */; };
+		CACFA8061E9447A00008AAD5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CACFA8031E94476D0008AAD5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAF32D2E1E661E1C005960AD /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF32D2D1E661E1C005960AD /* HamburgerButton.swift */; };
 		CAF32D301E6790A7005960AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF32D2F1E6790A7005960AD /* MainViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CACFA8071E9447A10008AAD5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CACFA8061E9447A00008AAD5 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA2E398E1E621266003F2E3B /* Diagnose Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diagnose Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +64,13 @@
 		CABC350A1E8B216300534BAE /* AutoCompleteTextFieldConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextFieldConstants.swift; sourceTree = "<group>"; };
 		CABC350B1E8B216300534BAE /* AutoCompleteTextFieldProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextFieldProtocols.swift; sourceTree = "<group>"; };
 		CABC350C1E8B216300534BAE /* BackgroundVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVideo.swift; sourceTree = "<group>"; };
+		CACFA7D41E92CBBB0008AAD5 /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		CACFA7D71E9407650008AAD5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CACFA7D91E942A570008AAD5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CACFA7DB1E9430090008AAD5 /* LoginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		CACFA7DE1E9430780008AAD5 /* SignupContinuedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupContinuedViewController.swift; sourceTree = "<group>"; };
+		CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		CACFA8031E94476D0008AAD5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Alamofire/build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		CAF32D2D1E661E1C005960AD /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		CAF32D2F1E6790A7005960AD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACFA8041E94476D0008AAD5 /* Alamofire.framework in Frameworks */,
+				CACFA8051E9447A00008AAD5 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +93,8 @@
 			children = (
 				CA2E39901E621266003F2E3B /* Diagnose Me */,
 				CA2E398F1E621266003F2E3B /* Products */,
+				CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */,
+				CACFA8021E94476D0008AAD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +136,10 @@
 		CABC35001E8B1D4700534BAE /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CAF32D2F1E6790A7005960AD /* MainViewController.swift */,
+				CACFA7DD1E94302C0008AAD5 /* login/register */,
 				CA34820C1E817244003069EC /* BodyViewController.swift */,
 				CA3482071E8171D2003069EC /* MarketplaceViewController.swift */,
-				CAF32D2F1E6790A7005960AD /* MainViewController.swift */,
 				CA34820A1E817239003069EC /* SymptomViewController.swift */,
 			);
 			name = controllers;
@@ -115,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CABC35041E8B1DA300534BAE /* app stuff */,
+				CACFA7D41E92CBBB0008AAD5 /* DataHandler.swift */,
 			);
 			name = "supporting files";
 			sourceTree = "<group>";
@@ -122,6 +157,8 @@
 		CABC35021E8B1D5D00534BAE /* external */ = {
 			isa = PBXGroup;
 			children = (
+				CACFA7E01E9445AF0008AAD5 /* alamofire */,
+				CACFA7D61E92DCDF0008AAD5 /* mysql */,
 				CABC35051E8B215400534BAE /* log in */,
 				CABC35031E8B1D7500534BAE /* buttons */,
 			);
@@ -161,6 +198,39 @@
 			name = "log in";
 			sourceTree = "<group>";
 		};
+		CACFA7D61E92DCDF0008AAD5 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = mysql;
+			sourceTree = "<group>";
+		};
+		CACFA7DD1E94302C0008AAD5 /* login/register */ = {
+			isa = PBXGroup;
+			children = (
+				CACFA7DB1E9430090008AAD5 /* LoginNavigationController.swift */,
+				CACFA7D91E942A570008AAD5 /* LoginViewController.swift */,
+				CACFA7D71E9407650008AAD5 /* SignupViewController.swift */,
+				CACFA7DE1E9430780008AAD5 /* SignupContinuedViewController.swift */,
+			);
+			name = login/register;
+			sourceTree = "<group>";
+		};
+		CACFA7E01E9445AF0008AAD5 /* alamofire */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = alamofire;
+			sourceTree = "<group>";
+		};
+		CACFA8021E94476D0008AAD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CACFA8031E94476D0008AAD5 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +241,7 @@
 				CA2E398A1E621265003F2E3B /* Sources */,
 				CA2E398B1E621265003F2E3B /* Frameworks */,
 				CA2E398C1E621265003F2E3B /* Resources */,
+				CACFA8071E9447A10008AAD5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,14 +307,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACFA7DA1E942A570008AAD5 /* LoginViewController.swift in Sources */,
+				CACFA7DC1E9430090008AAD5 /* LoginNavigationController.swift in Sources */,
 				CA3482081E8171D2003069EC /* MarketplaceViewController.swift in Sources */,
 				CABC350E1E8B216300534BAE /* AutoCompleteTextField.swift in Sources */,
 				CA2E39921E621266003F2E3B /* AppDelegate.swift in Sources */,
+				CACFA7D51E92CBBB0008AAD5 /* DataHandler.swift in Sources */,
 				CABC35121E8B216300534BAE /* AutoCompleteTextFieldProtocols.swift in Sources */,
 				CA34820D1E817244003069EC /* BodyViewController.swift in Sources */,
 				CABC350D1E8B216300534BAE /* LFLoginController.swift in Sources */,
 				CAF32D2E1E661E1C005960AD /* HamburgerButton.swift in Sources */,
 				CA34820B1E817239003069EC /* SymptomViewController.swift in Sources */,
+				CACFA7D81E9407650008AAD5 /* SignupViewController.swift in Sources */,
+				CACFA7DF1E9430780008AAD5 /* SignupContinuedViewController.swift in Sources */,
 				CABC35111E8B216300534BAE /* AutoCompleteTextFieldConstants.swift in Sources */,
 				CABC35131E8B216300534BAE /* BackgroundVideo.swift in Sources */,
 				CAF32D301E6790A7005960AD /* MainViewController.swift in Sources */,
@@ -368,6 +444,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BNULBZM8VH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Alamofire/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Diagnose Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "luke.Diagnose-Me";
@@ -381,6 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BNULBZM8VH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Alamofire/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Diagnose Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "luke.Diagnose-Me";
