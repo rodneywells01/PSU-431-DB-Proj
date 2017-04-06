@@ -2,7 +2,6 @@ from django.conf.urls import url
 from . import views 
 
 urlpatterns = [
-	url(r'home', views.home, name='home'),
     url(r'remedy_list', views.RemedyListView.as_view(), name='remedy_list'),
     url(r'illness_list', views.IllnessListView.as_view(), name='illness_list'),
     url(r'remid(?P<pk>[0-9]*)/detail/$', views.RemedyDetailView.as_view(), name='remedy_detail'),

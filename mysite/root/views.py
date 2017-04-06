@@ -6,6 +6,8 @@ from .models import *
 from django.views import generic
 
 from root.models import UserCredentials
+import operator
+from functools import reduce
 
 # Create your views here.
 def index(request):	
@@ -77,16 +79,17 @@ def createnewaccount(request):
 	return HttpResponseRedirect("/")
 	# return index(request);
 
-def home(request):
-	return render(request, 'root/home.html')
-
 class IllnessListView(generic.ListView):
-    template_name = 'root/illness_list.html'
-    context_object_name = 'illness_list'
+	template_name = 'root/illness_list.html'
+	context_object_name = 'illness_list'
 
-    def get_queryset(self):
-        """Illness List."""
-        return Illness.objects.order_by('illid')
+	def get_queryset(self):
+		"""Illness List."""
+		result = Illness.objects.order_by('illid')
+		query = self.request.GET.get('q')
+		if query:
+			result = result.filter(name__icontains=query)
+		return result
 
 class RemedyListView(generic.ListView):
     template_name = 'root/remedy_list.html'
@@ -94,7 +97,14 @@ class RemedyListView(generic.ListView):
 
     def get_queryset(self):
         """Remedy List."""
-        return Remedy.objects.order_by('remid')
+        remedies = Remedy.objects.all()
+        result = TreatedBy.objects.all()
+        query = self.request.GET.get('q')
+        if query:
+            result = result.filter(illness_id=query)
+            if result:
+        	    remedies = remedies.filter(remid__in=result)
+        return remedies
 
 class RemedyDetailView(generic.DetailView):
     model = Remedy
@@ -103,9 +113,4 @@ class RemedyDetailView(generic.DetailView):
 class IllnessDetailView(generic.DetailView):
     model = Illness
     template_name = 'root/illness_detail.html'
-    #Create a query to find remedies which help this illness
-    #def get_queryset(self):
-    #    """Remedy List."""
-    #    return Remedy.objects #Where illid and remid are in TreatedBy
-	#
-	#
+
