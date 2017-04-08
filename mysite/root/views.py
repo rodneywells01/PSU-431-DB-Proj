@@ -98,12 +98,9 @@ class RemedyListView(generic.ListView):
     def get_queryset(self):
         """Remedy List."""
         remedies = Remedy.objects.all()
-        result = TreatedBy.objects.all()
         query = self.request.GET.get('q')
         if query:
-            result = result.filter(illness_id=query)
-            if result:
-        	    remedies = remedies.filter(remid__in=result)
+            remedies = remedies.filter(treatedby__illness__illid=query)
         return remedies
 
 class RemedyDetailView(generic.DetailView):
