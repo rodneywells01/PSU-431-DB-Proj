@@ -91,6 +91,17 @@ class IllnessListView(generic.ListView):
 			result = result.filter(name__icontains=query)
 		return result
 
+class DiagnosisResultsView(generic.ListView):
+	template_name = 'root/diagnosisResults.html'
+	context_object_name = 'symptom_search'
+	def get_queryset(self):
+		"""Symptom Search"""
+		result = Illness.objects.order_by('illid')
+		query = self.request.GET.get('q')
+		if query:
+			result = result.filter(exhibits__symptom__name__icontains=query)
+		return result
+
 class RemedyListView(generic.ListView):
     template_name = 'root/remedy_list.html'
     context_object_name = 'remedy_list'

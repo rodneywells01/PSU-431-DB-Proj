@@ -61,8 +61,9 @@ class SuffersFrom(models.Model):
 #Need to adjust - to fit schema
 
 class Doctors(models.Model):
-    name = models.CharField(max_length = 40)
-	doctor_id = models.AutoField(primary_key=true) #potential change
+	name = models.CharField(max_length = 40)
+    #potential change
+	doctor_id = models.AutoField(primary_key=True)
 	rating = models.DecimalField(max_digits=2, decimal_places=2)
 	address = models.CharField(max_length = 60)
 	def __str__(self):
@@ -124,9 +125,9 @@ class Doctor_Ratings(models.Model):
 
 class Orders(models.Model):
 	order_id = models.IntegerField(max_length=9)
-	order_date = models.DateTimeField(auto_now_add=true)
+	order_date = models.DateTimeField(auto_now_add=True)
 	user_id = models.IntegerField(max_length=9)
-	repurchase_date = models.DateTimeField(auto_now_add=true)
+	repurchase_date = models.DateTimeField(auto_now_add=True)
 	#add keys
 
 class Order_Items(models.Model):
@@ -135,19 +136,19 @@ class Order_Items(models.Model):
 	#add keys
 class Cart_items(models.Model):
 	user_id = models.IntegerField(max_length=9)
-	remedy_id = models.IntegerField(max_legth=9)
+	remedy_id = models.IntegerField(max_length=9)
 	#add keys
 
 class Order_Deliveries(models.Model):
 	user_id = models.IntegerField(max_length=9)
 	order_id = models.IntegerField(max_length=9)
 	address = models.CharField(max_length= 60)
-	status = models.CharField(max_legth=30)
+	status = models.CharField(max_length=30)
 	#add keys
 
 class Auction_deliveries(models.Model):
 	user_id = models.IntegerField(max_length=9)
 	auction_id = models.IntegerField(max_length=9)
-	address = models.CharField(max_legth=60)
+	address = models.CharField(max_length=60)
 	status = models.CharField(max_length=30)
 	#add keys.
