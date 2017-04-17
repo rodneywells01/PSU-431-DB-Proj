@@ -74,7 +74,7 @@ class Bids(models.Model):
 	user_id = models.IntegerField()
 	auction_id = models.IntegerField()
 	#add keys
-	
+
 class Symptoms(models.Model):
 	symptom_id = models.IntegerField()
 	area_of_body = models.CharField(max_length = 40)
@@ -135,6 +135,7 @@ class Order_Items(models.Model):
 	order_id = models.IntegerField()
 	remedy_id = models.IntegerField()
 	#add keys
+	
 class Cart_items(models.Model):
 	user_id = models.IntegerField()
 	remedy_id = models.IntegerField()
