@@ -49,49 +49,49 @@ class Doctor(models.Model):
 	name = models.CharField(max_length = 40)
     #potential change
 	doctor_id = models.AutoField(primary_key = True)
-	rating = models.DecimalField(max_digits = 2, decimal_places=2)
+	rating = models.DecimalField(max_digits = 4, decimal_places=2)
 	address = models.CharField(max_length = 60)
 	def __str__(self):
     		return self.name
 
-class Rating(modes.Model):
-    rating_id = models.AutoField(primary_key = true)
+class Rating(models.Model):
 	review = models.CharField(max_length = 500)
+	rating_id = models.AutoField(primary_key = True)
 	score = models.DecimalField(max_digits = 10, decimal_places = 2)
 	uid = models.IntegerField()
 	def _str_ (self):
     		return self.name
 
 class InsuranceCompany(models.Model):
-    name = models.CharField(max_length = 100)
-	insurance_id = models.AutoField(primary_key = true) #auto incremting number for each insurance company.
+	insurance_id = models.AutoField(primary_key = True) #auto incremting number for each insurance company.
+	name = models.CharField(max_length = 100)
 	def _str_ (self):
     		return self.name
 
 class Order(models.Model):
-    order_id = models.AutoField(primary_key = true)
 	date = models.DateTimeField(auto_now_add = True)
+	order_id = models.AutoField(primary_key = True)
 	user_id = models.IntegerField() #user that purchased the order
 	repurchase_date = models.DateTimeField(auto_now_add = True)
 	def _str_ (self):
 		 	return self.name
 
 class Delivery(models.Model):
-    address = models.CharField(max_length = 100)
-	delivery_id = models.AutoField(primary_key = true)
+	delivery_id = models.AutoField(primary_key = True)
+	address = models.CharField(max_length = 100)
 	priority = models.IntegerField() # 1 - 10, 1 will be the highest priority.
 	def _str_ (self):
     		return self.name
 
 class Payment_Information(models.Model):
-    address = models.CharField(max_length=60)
-	card_number = models.IntegerField(primary_key = true) #each credit card number will be unique
+	card_number = models.IntegerField(primary_key = True) #each credit card number will be unique
+	address = models.CharField(max_length=60)
 	def _str_ (self):
     		return self.name
 
 class Auction(models.Model):
-    auction_id = models.AutoField(primary_key = true)
 	reserve_price = models.DecimalField(max_digits = 5, decimal_places = 2)
+	auction_id = models.AutoField(primary_key = True)
 	end_date = models.DateField(auto_now_add=True)
 	remedy_id = models.IntegerField() #need to know the item that you are purchasing.
 	def _str_ (self):
@@ -100,12 +100,13 @@ class Auction(models.Model):
 #Below are all the relations of the above entities
 
 class Exhibits(models.Model):
+    symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
     illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
-	symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
+	
 
 class TreatedBy(models.Model):
-	illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
 	remedy = models.ForeignKey(Remedy, on_delete=models.CASCADE)
+	illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
 
 class SuffersFrom(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -113,39 +114,38 @@ class SuffersFrom(models.Model):
 	duration = models.DurationField(default=0)
 
 class Remedy_Rating(models.Model):
-    rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
 	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
+	rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
 
 class Doctor_Rating(models.Model):
-    rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
+	rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
 	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
 
 class Specialist(models.Model):
-    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
 	illness = models.ForeignKey(Illness, on_delete = models.CASCADE)
-
-class Coverage(models.Model):
-    insurance = models.ForeignKey(InsuranceCompany, on_delete = models.CASCADE)
 	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
 
+class Coverage(models.Model):
+	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
+	insurance = models.ForeignKey(InsuranceCompany, on_delete = models.CASCADE)
+
 class Cart(models.Model):
-    user = models.ForeignKey(User, on_delete = models.CASCADE)
 	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
+	user = models.ForeignKey(User, on_delete = models.CASCADE)
 
 class Order_Delivery(models.Model):
-    order = models.ForeignKey(Order, on_delete = models.CASCADE)
 	delivery = models.ForeignKey(Delivery, on_delete = models.CASCADE)
+	order = models.ForeignKey(Order, on_delete = models.CASCADE)
 
 class Auction_Delivery(models.Model):
-    auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
 	delivery = models.ForeignKey(Delivery, on_delete = models.CASCADE)
+	auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
 
 class Bid(models.Model):
-    user = models.ForeignKey(User, on_delete = models.CASCADE)
 	auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
+	user = models.ForeignKey(User, on_delete = models.CASCADE)
 	amount = models.DecimalField(max_digits = 10, decimal_places = 2)
 
 class Payment(models.Model):
-    payment_information = models.ForeignKey(Payment_Information, on_delete = models.CASCADE)
 	user = models.ForeignKey(User, on_delete = models.CASCADE)
-	
+	payment_information = models.ForeignKey(Payment_Information, on_delete = models.CASCADE)
