@@ -2,6 +2,7 @@ from django.db import models
 
 
 # Create your models here.
+#Entities listed below -- Relations located at the bottom of the file.
 class UserCredentials(models.Model):
 	# TODO This should be updated to match our schema. 
 	username = models.CharField(max_length = 30)
@@ -44,8 +45,62 @@ class Illness(models.Model):
 	def __str__(self):
 		return self.name
 
+class Doctor(models.Model):
+	name = models.CharField(max_length = 40)
+    #potential change
+	doctor_id = models.AutoField(primary_key = True)
+	rating = models.DecimalField(max_digits = 2, decimal_places=2)
+	address = models.CharField(max_length = 60)
+	def __str__(self):
+    		return self.name
+
+class Rating(modes.Model):
+    rating_id = models.AutoField(primary_key = true)
+	review = models.CharField(max_length = 500)
+	score = models.DecimalField(max_digits = 10, decimal_places = 2)
+	uid = models.IntegerField()
+	def _str_ (self):
+    		return self.name
+
+class InsuranceCompany(models.Model):
+    name = models.CharField(max_length = 100)
+	insurance_id = models.AutoField(primary_key = true) #auto incremting number for each insurance company.
+	def _str_ (self):
+    		return self.name
+
+class Order(models.Model):
+    order_id = models.AutoField(primary_key = true)
+	date = models.DateTimeField(auto_now_add = True)
+	user_id = models.IntegerField() #user that purchased the order
+	repurchase_date = models.DateTimeField(auto_now_add = True)
+	def _str_ (self):
+		 	return self.name
+
+class Delivery(models.Model):
+    address = models.CharField(max_length = 100)
+	delivery_id = models.AutoField(primary_key = true)
+	priority = models.IntegerField() # 1 - 10, 1 will be the highest priority.
+	def _str_ (self):
+    		return self.name
+
+class Payment_Information(models.Model):
+    address = models.CharField(max_length=60)
+	card_number = models.IntegerField(primary_key = true) #each credit card number will be unique
+	def _str_ (self):
+    		return self.name
+
+class Auction(models.Model):
+    auction_id = models.AutoField(primary_key = true)
+	reserve_price = models.DecimalField(max_digits = 5, decimal_places = 2)
+	end_date = models.DateField(auto_now_add=True)
+	remedy_id = models.IntegerField() #need to know the item that you are purchasing.
+	def _str_ (self):
+			return self.name
+
+#Below are all the relations of the above entities
+
 class Exhibits(models.Model):
-	illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
+    illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
 	symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
 
 class TreatedBy(models.Model):
@@ -57,100 +112,40 @@ class SuffersFrom(models.Model):
 	symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
 	duration = models.DurationField(default=0)
 
+class Remedy_Rating(models.Model):
+    rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
+	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
 
-#Need to adjust - to fit schema
+class Doctor_Rating(models.Model):
+    rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
+	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
 
-class Doctors(models.Model):
-	name = models.CharField(max_length = 40)
-    #potential change
-	doctor_id = models.AutoField(primary_key=True)
-	rating = models.DecimalField(max_digits=2, decimal_places=2)
-	address = models.CharField(max_length = 60)
-	def __str__(self):
-    		return self.name
+class Specialist(models.Model):
+    doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
+	illness = models.ForeignKey(Illness, on_delete = models.CASCADE)
 
-class Bids(models.Model):
-	amount = models.DecimalField(max_digits = 5, decimal_places=2)
-	user_id = models.IntegerField()
-	auction_id = models.IntegerField()
-	#add keys
+class Coverage(models.Model):
+    insurance = models.ForeignKey(InsuranceCompany, on_delete = models.CASCADE)
+	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
 
-class Symptoms(models.Model):
-	symptom_id = models.IntegerField()
-	area_of_body = models.CharField(max_length = 40)
-	description = models.CharField(max_length = 200)
-	illness_id = models.IntegerField()
-	#add keys
+class Cart(models.Model):
+    user = models.ForeignKey(User, on_delete = models.CASCADE)
+	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
 
-class Treatments(models.Model):
-	remedy_id = models.DecimalField(max_digits=9, decimal_places=0)
-	illness_id = models.IntegerField()
-	#add keys.
+class Order_Delivery(models.Model):
+    order = models.ForeignKey(Order, on_delete = models.CASCADE)
+	delivery = models.ForeignKey(Delivery, on_delete = models.CASCADE)
 
-class Auctions(models.Model):
-	auction_id = models.IntegerField()
-	reserve_price = models.DecimalField(max_digits=5, decimal_places=2)
-	end_date = models.DateField(auto_now_add=True)
-	remedy_id = models.IntegerField()
-	#add keys
+class Auction_Delivery(models.Model):
+    auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
+	delivery = models.ForeignKey(Delivery, on_delete = models.CASCADE)
 
-class Accepted_Insurance(models.Model):
-	doctor_id = models.IntegerField()
-	insurance_name = models.CharField(max_length = 40)
-	#add key information
+class Bid(models.Model):
+    user = models.ForeignKey(User, on_delete = models.CASCADE)
+	auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
+	amount = models.DecimalField(max_digits = 10, decimal_places = 2)
 
-class Payment_Information(models.Model):
-	address = models.CharField(max_length=60)
-	card_number = models.CharField(max_length=20)
-	user_id = models.IntegerField(max_length= 9)
-	#add keys
-
-class Diagnoses(models.Model):
-	user_id = models.IntegerField()
-	illness_id = models.IntegerField()
-	likelihood = models.PositiveIntegerField()
-	#add keys.
-
-class Remedy_Ratings(models.Model):
-	remedy_id = models.IntegerField()
-	rating = models.DecimalField(max_digits=5, decimal_places=2)
-	comment = models.CharField(max_length=500)
-	user_id = models.IntegerField()
-	#add keys.
-
-class Doctor_Ratings(models.Model):
-	doctor_id = models.IntegerField()
-	rating = models.DecimalField(max_digits=5, decimal_places=2)
-	comment = models.CharField(max_length=500)
-	#add keys.
-
-class Orders(models.Model):
-	order_id = models.IntegerField()
-	order_date = models.DateTimeField(auto_now_add=True)
-	user_id = models.IntegerField()
-	repurchase_date = models.DateTimeField(auto_now_add=True)
-	#add keys
-
-class Order_Items(models.Model):
-	order_id = models.IntegerField()
-	remedy_id = models.IntegerField()
-	#add keys
+class Payment(models.Model):
+    payment_information = models.ForeignKey(Payment_Information, on_delete = models.CASCADE)
+	user = models.ForeignKey(User, on_delete = models.CASCADE)
 	
-class Cart_items(models.Model):
-	user_id = models.IntegerField()
-	remedy_id = models.IntegerField()
-	#add keys
-
-class Order_Deliveries(models.Model):
-	user_id = models.IntegerField()
-	order_id = models.IntegerField()
-	address = models.CharField(max_length= 60)
-	status = models.CharField(max_length=30)
-	#add keys
-
-class Auction_deliveries(models.Model):
-	user_id = models.IntegerField()
-	auction_id = models.IntegerField()
-	address = models.CharField(max_length=60)
-	status = models.CharField(max_length=30)
-	#add keys.
