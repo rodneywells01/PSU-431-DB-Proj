@@ -71,30 +71,31 @@ class Doctors(models.Model):
 
 class Bids(models.Model):
 	amount = models.DecimalField(max_digits = 5, decimal_places=2)
-	user_id = models.IntegerField(max_length=9)
-	auction_id = models.IntegerField(max_length=9)
+	user_id = models.IntegerField()
+	auction_id = models.IntegerField()
 	#add keys
+	
 class Symptoms(models.Model):
-	symptom_id = models.IntegerField(max_length=9)
+	symptom_id = models.IntegerField()
 	area_of_body = models.CharField(max_length = 40)
 	description = models.CharField(max_length = 200)
-	illness_id = models.IntegerField(max_length=9)
+	illness_id = models.IntegerField()
 	#add keys
 
 class Treatments(models.Model):
 	remedy_id = models.DecimalField(max_digits=9, decimal_places=0)
-	illness_id = models.IntegerField(max_length=9)
+	illness_id = models.IntegerField()
 	#add keys.
 
 class Auctions(models.Model):
-	auction_id = models.IntegerField(max_length=9)
+	auction_id = models.IntegerField()
 	reserve_price = models.DecimalField(max_digits=5, decimal_places=2)
 	end_date = models.DateField(auto_now_add=True)
-	remedy_id = models.IntegerField(max_length=9)
+	remedy_id = models.IntegerField()
 	#add keys
 
 class Accepted_Insurance(models.Model):
-	doctor_id = models.IntegerField(max_length=9)
+	doctor_id = models.IntegerField()
 	insurance_name = models.CharField(max_length = 40)
 	#add key information
 
@@ -105,50 +106,50 @@ class Payment_Information(models.Model):
 	#add keys
 
 class Diagnoses(models.Model):
-	user_id = models.IntegerField(max_length=9)
-	illness_id = models.IntegerField(max_length=9)
-	likelihood = models.PositiveIntegerField(max_length=5)
+	user_id = models.IntegerField()
+	illness_id = models.IntegerField()
+	likelihood = models.PositiveIntegerField()
 	#add keys.
 
 class Remedy_Ratings(models.Model):
-	remedy_id = models.IntegerField(max_length=9)
+	remedy_id = models.IntegerField()
 	rating = models.DecimalField(max_digits=5, decimal_places=2)
 	comment = models.CharField(max_length=500)
-	user_id = models.IntegerField(max_length=9)
+	user_id = models.IntegerField()
 	#add keys.
 
 class Doctor_Ratings(models.Model):
-	doctor_id = models.IntegerField(max_length=9)
+	doctor_id = models.IntegerField()
 	rating = models.DecimalField(max_digits=5, decimal_places=2)
 	comment = models.CharField(max_length=500)
 	#add keys.
 
 class Orders(models.Model):
-	order_id = models.IntegerField(max_length=9)
+	order_id = models.IntegerField()
 	order_date = models.DateTimeField(auto_now_add=True)
-	user_id = models.IntegerField(max_length=9)
+	user_id = models.IntegerField()
 	repurchase_date = models.DateTimeField(auto_now_add=True)
 	#add keys
 
 class Order_Items(models.Model):
-	order_id = models.IntegerField(max_length=9)
-	remedy_id = models.IntegerField(max_length=9)
+	order_id = models.IntegerField()
+	remedy_id = models.IntegerField()
 	#add keys
 class Cart_items(models.Model):
-	user_id = models.IntegerField(max_length=9)
-	remedy_id = models.IntegerField(max_length=9)
+	user_id = models.IntegerField()
+	remedy_id = models.IntegerField()
 	#add keys
 
 class Order_Deliveries(models.Model):
-	user_id = models.IntegerField(max_length=9)
-	order_id = models.IntegerField(max_length=9)
+	user_id = models.IntegerField()
+	order_id = models.IntegerField()
 	address = models.CharField(max_length= 60)
 	status = models.CharField(max_length=30)
 	#add keys
 
 class Auction_deliveries(models.Model):
-	user_id = models.IntegerField(max_length=9)
-	auction_id = models.IntegerField(max_length=9)
+	user_id = models.IntegerField()
+	auction_id = models.IntegerField()
 	address = models.CharField(max_length=60)
 	status = models.CharField(max_length=30)
 	#add keys.
