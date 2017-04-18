@@ -182,3 +182,37 @@ button.searchbutton {
     font-size: 16px;
     border-radius: 6px;
 }
+
+.sumblock {
+	width: 200px;
+	height: 100px;
+	background: lightblue;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 1%;
+	text-align: center;
+	display: table-cell;
+}
+
+.sumblock:hover{
+	border-color: black;
+}
+
+.sumblock h3{
+	margin-top: 0px;
+}
+
+.sumblock p{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}

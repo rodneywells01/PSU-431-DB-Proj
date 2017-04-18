@@ -34,12 +34,18 @@
 		<div class="content">
 			<h1>Possible diagnoses</h1>
 			{% if symptom_search %}
-   				<ul>
+   				<!--<ul>-->
    			 	{% for illness in symptom_search %}
    			 		<!--TODO: Show summary blocks for each item, rather than just a hyperlink-->
-       				<li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>
+   			 		<a href="{% url 'illness_detail' illness.illid %}">
+   			 			<div class="sumblock">
+   			 				<h3> {{illness.name}} </h3>
+   			 				<p> {{illness.description}} </p>
+   			 			</div>
+   			 		</a>
+       				<!--<li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>-->
     			{% endfor %}
-    			</ul>
+    			<!--</ul>-->
 			{% else %}
     		<p>Search did not yield any results</p>
 			{% endif %}
