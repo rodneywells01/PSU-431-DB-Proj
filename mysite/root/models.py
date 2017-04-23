@@ -11,12 +11,20 @@ class Symptom(models.Model):
 	def __str__(self):
 		return self.name
 
+class Payment_Information(models.Model):
+	paymentid = models.AutoField(primary_key=True)
+	card_number = models.IntegerField() #each credit card number will be unique
+	address = models.CharField(max_length=60)
+	def _str_ (self):
+    		return self.client.user.username
+
 class Clients(models.Model):
 	#Rather than making our own user model, make a one-to-one relationship with Django's built in user model.
 	# We can extend any desired attributes through the related "client" model.
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	#Django's user model includes first and last name, email address, and username.
 	uid = models.AutoField(primary_key=True)
+	payment = models.OneToOneField(Payment_Information)
 	gender = models.BooleanField(default=False)
 	height = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	weight = models.DecimalField(max_digits=5, decimal_places=2, default=0)
@@ -82,12 +90,6 @@ class Delivery(models.Model):
 	def _str_ (self):
     		return self.name
 
-class Payment_Information(models.Model):
-	card_number = models.IntegerField(primary_key = True) #each credit card number will be unique
-	address = models.CharField(max_length=60)
-	def _str_ (self):
-    		return self.name
-
 class Auction(models.Model):
 	reserve_price = models.DecimalField(max_digits = 5, decimal_places = 2)
 	auction_id = models.AutoField(primary_key = True)
@@ -145,6 +147,6 @@ class Bid(models.Model):
 	user = models.ForeignKey(User, on_delete = models.CASCADE)
 	amount = models.DecimalField(max_digits = 10, decimal_places = 2)
 
-class Payment(models.Model):
-	user = models.ForeignKey(Clients, on_delete = models.CASCADE)
-	payment_information = models.ForeignKey(Payment_Information, on_delete = models.CASCADE)
+#class Payment(models.Model):
+#	user = models.ForeignKey(Clients, on_delete = models.CASCADE)
+#	payment_information = models.ForeignKey(Payment_Information, on_delete = models.CASCADE)

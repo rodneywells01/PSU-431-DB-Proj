@@ -24,5 +24,4 @@ admin.site.register(Cart)
 admin.site.register(Order_Delivery)
 admin.site.register(Auction_Delivery)
 admin.site.register(Bid)
-admin.site.register(Payment)
 

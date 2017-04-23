@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.Me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
+
+	<div class="wrap">
+		<div class="content">
+			{% if user.is_authenticated %}
+				<div class="welcome">
+					<h1>User Profile</h1>
+					<h2>Username: {{user.username}}</h2>
+					<p>First Name: {{user.first_name}}</p>
+					<p>Last Name: {{user.last_name}}</p>
+					<p>Email: {{user.email}}</p>
+					<p>Height: {{user.clients.height}}</p>
+					<p>Payment information: {{user.clients.payment.card_number}}</p>
+					<p>Address: {{user.clients.payment.address}}</p>
+					<form method="post" action="{% url 'changePayment' %}">
+						{% csrf_token %}
+						<fieldset>
+							<legend>Alter Payment Information</legend>
+							<div class="formContent">
+								Credit Card Number <input type="text" name="cardnumber" style="font-size: 15px; float: right" size="15px" placeholder="0000">
+							</div>
+							<br/>
+							<br/>
+							<div class="formContent">
+								Address <input type="text" name="address" style="font-size: 15px; float: right" size="15px" placeholder="default">
+							</div>
+							<br/>
+							<br/>
+							<p>Note that as this is a class project, don't actually add any personal information</p>
+						</fieldset>
+						<br/>
+						<input type="submit" value="Apply" style="font-size: 15px"></button>
+					</form>
+				</div>
+			{%else%}
+				<p>Not logged in</p>
+			{%endif%}
+		</div>
+	</div>
+
+	<div class="clr"></div>
+
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>

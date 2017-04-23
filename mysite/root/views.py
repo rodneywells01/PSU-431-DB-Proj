@@ -7,7 +7,7 @@ from django.views import generic
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 
-import operator
+import operator, traceback
 from functools import reduce
 
 # Create your views here.
@@ -79,17 +79,22 @@ def createnewaccount(request):
 		username = request.POST["username"]
 		password = request.POST["password"] #TODO Needs encryption
 		email = request.POST["email"]
+		first_name = request.POST["firstname"]
+		last_name = request.POST["lastname"]
 		print(username + " " + password)
 		user = User.objects.create_user(username, email, password)
+		user.first_name = first_name
+		user.last_name = last_name
 		user.save()
-		print("User created")
-		user = User.objects.get(username=username)
-		print("Obtained user " + user.username)
-		client = Clients(user=user)
+		height = request.POST["height"]
+		payment = Payment_Information(card_number = 0, address="default")
+		payment.save()
+		client = Clients(user=user, payment = payment)
+		client.height = height
 		client.save()
-		print("Client created")
 	except:
-		print("Error getting post values")
+		tb = traceback.format_exc()
+		return HttpResponse(tb)
 
 	print("We hit create new account! Awesome!!")
 	template = loader.get_template('root/index.html')
@@ -139,4 +144,22 @@ class RemedyDetailView(generic.DetailView):
 class IllnessDetailView(generic.DetailView):
     model = Illness
     template_name = 'root/illness_detail.html'
+
+def profile(request):
+	template = loader.get_template('root/profile.html')
+	context = { }
+	return HttpResponse(template.render(context, request))	
+
+def changePayment(request):
+	try:
+		client = request.user.clients
+		creditcard = request.POST.get("cardnumber")
+		address = request.POST.get("address")
+		client.payment.card_number = creditcard
+		client.payment.address = address
+		client.payment.save()
+	except:
+		tb = traceback.format_exc()
+		return HttpResponse(tb)
+	return HttpResponseRedirect("/profile")
 
