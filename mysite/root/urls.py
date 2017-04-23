@@ -15,5 +15,7 @@ urlpatterns = [
 	url(r'contact/', views.contact, name='contact'),
 	url(r'privacyPolicy/', views.privacyPolicy, name='privacyPolicy'),
 	url(r'termsConditions/', views.termsConditions, name='termsConditions'),
-	url(r'createaccount/', views.createnewaccount, name ='createnewaccount')
+	url(r'createaccount/', views.createnewaccount, name ='createnewaccount'),
+	url(r'login_user/', views.login_user, name ='login_user'),
+	url(r'logout_user', views.logout_user, name='logout_user')
 ]

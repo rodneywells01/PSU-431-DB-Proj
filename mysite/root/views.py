@@ -1,16 +1,17 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, HttpResponseRedirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
 from .models import *
 from django.views import generic
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 
-from root.models import UserCredentials
 import operator
 from functools import reduce
 
 # Create your views here.
-def index(request):	
+def index(request):
 	template = loader.get_template('root/index.html')
 	context = { }
 	return HttpResponse(template.render(context, request))
@@ -50,28 +51,45 @@ def termsConditions(request):
 	context = { }
 	return HttpResponse(template.render(context, request))
 
-def login(request):
-	# Attempt to login the user. 
-	pass
+def login_user(request):
+	# Attempt to login the user.
+    username = request.POST['username']
+    password = request.POST['password']
+    print("Looking to authenticate user: " + username)
+    user = authenticate(username=username, password=password)
+    if user is not None:
+        login(request, user)
+        # Redirect to a success page.
+        # User profile .../profile/uid=?
+        return HttpResponseRedirect('/')
+    else:
+        # Return an 'invalid login' error message.
+        # ...
+        return HttpResponseRedirect('/')
+
+def logout_user(request):
+	# Attempt to logout the user
+    logout(request)
+    print("Logging out")
+    return HttpResponseRedirect('/')
 
 def createnewaccount(request):
 	# Create a new account in our system. 
 	try: 
 		username = request.POST["username"]
 		password = request.POST["password"] #TODO Needs encryption
+		email = request.POST["email"]
 		print(username + " " + password)
-		# Check to see if username is taken. 
-		if len(UserCredentials.objects.filter(username = username)) > 0:
-			print("This user has already been inserted into the database!")
-		else:
-			# Save the user. 
-			user = UserCredentials(username = username, password = password)
-			user.save(); 
-			print("User has been added to the database!")
-
+		user = User.objects.create_user(username, email, password)
+		user.save()
+		print("User created")
+		user = User.objects.get(username=username)
+		print("Obtained user " + user.username)
+		client = Clients(user=user)
+		client.save()
+		print("Client created")
 	except:
 		print("Error getting post values")
-
 
 	print("We hit create new account! Awesome!!")
 	template = loader.get_template('root/index.html')

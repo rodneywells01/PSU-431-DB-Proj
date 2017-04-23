@@ -1,12 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 # Create your models here.
 #Entities listed below -- Relations located at the bottom of the file.
-class UserCredentials(models.Model):
-	# TODO This should be updated to match our schema. 
-	username = models.CharField(max_length = 30)
-	password = models.CharField(max_length = 30)
 
 class Symptom(models.Model):
 	name = models.CharField(max_length=100)
@@ -14,16 +11,18 @@ class Symptom(models.Model):
 	def __str__(self):
 		return self.name
 
-class User(models.Model):
-	name = models.CharField(max_length=100)
+class Clients(models.Model):
+	#Rather than making our own user model, make a one-to-one relationship with Django's built in user model.
+	# We can extend any desired attributes through the related "client" model.
+	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	#Django's user model includes first and last name, email address, and username.
 	uid = models.AutoField(primary_key=True)
 	gender = models.BooleanField(default=False)
-	email = models.EmailField(max_length=254)
-	height = models.DecimalField(max_digits=5, decimal_places=2)
-	weight = models.DecimalField(max_digits=5, decimal_places=2)
+	height = models.DecimalField(max_digits=5, decimal_places=2, default=0)
+	weight = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	symptoms = models.ManyToManyField(Symptom, through='SuffersFrom')
 	def __str__(self):
-		return self.name
+		return self.user.username
 
 class Remedy(models.Model):
 	name = models.CharField(max_length=100)
@@ -109,7 +108,7 @@ class TreatedBy(models.Model):
 	illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
 
 class SuffersFrom(models.Model):
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	user = models.ForeignKey(Clients, on_delete=models.CASCADE)
 	symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
 	duration = models.DurationField(default=0)
 
@@ -131,7 +130,7 @@ class Coverage(models.Model):
 
 class Cart(models.Model):
 	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
-	user = models.ForeignKey(User, on_delete = models.CASCADE)
+	user = models.ForeignKey(Clients, on_delete = models.CASCADE)
 
 class Order_Delivery(models.Model):
 	delivery = models.ForeignKey(Delivery, on_delete = models.CASCADE)
@@ -147,5 +146,5 @@ class Bid(models.Model):
 	amount = models.DecimalField(max_digits = 10, decimal_places = 2)
 
 class Payment(models.Model):
-	user = models.ForeignKey(User, on_delete = models.CASCADE)
+	user = models.ForeignKey(Clients, on_delete = models.CASCADE)
 	payment_information = models.ForeignKey(Payment_Information, on_delete = models.CASCADE)
