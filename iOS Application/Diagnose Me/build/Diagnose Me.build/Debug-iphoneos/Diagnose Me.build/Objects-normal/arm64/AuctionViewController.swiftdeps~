@@ -1,0 +1,715 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AuctionViewController"
+provides-nominal:
+- "C11Diagnose_Me21AuctionViewController"
+provides-member:
+- ["C11Diagnose_Me21AuctionViewController", ""]
+provides-dynamic-lookup:
+- "bidAmountLabel"
+- "didPressBidButton"
+- "didReceiveMemoryWarning"
+- "didRetrieveTopBid"
+- "topBidAmount"
+- "topBidLabel"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- !private ">"
+- "AssignmentPrecedence"
+- "Auction"
+- "AuctionViewController"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "DataHandlerAuctionDelegate"
+- "Double"
+- !private "LoginNavigationController"
+- !private "String"
+- !private "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- "UILabel"
+- "UITextField"
+- "UIViewController"
+- !private "UserDefaults"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UserDefaults"]
+- !private ["Ps9AnyObject", "auction"]
+- !private ["Ps9AnyObject", "auctionDelegate"]
+- !private ["Ps9AnyObject", "bidAmountLabel"]
+- !private ["Ps9AnyObject", "dataHandler"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "didRetrieveTopBid"]
+- !private ["Ps9AnyObject", "endEditing"]
+- !private ["Ps9AnyObject", "executeAuctionBid"]
+- !private ["Ps9AnyObject", "getTopBid"]
+- !private ["Ps9AnyObject", "id"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "keyboardType"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "standard"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "topBidAmount"]
+- !private ["Ps9AnyObject", "topBidLabel"]
+- !private ["Ps9AnyObject", "view"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["C11Diagnose_Me7Auction", "id"]
+- ["C11Diagnose_Me21AuctionViewController", "Auction"]
+- ["C11Diagnose_Me21AuctionViewController", "Bool"]
+- ["C11Diagnose_Me21AuctionViewController", "Double"]
+- !private ["C11Diagnose_Me21AuctionViewController", "LoginNavigationController"]
+- !private ["C11Diagnose_Me21AuctionViewController", "String"]
+- !private ["C11Diagnose_Me21AuctionViewController", "UIAlertAction"]
+- !private ["C11Diagnose_Me21AuctionViewController", "UIAlertController"]
+- ["C11Diagnose_Me21AuctionViewController", "UILabel"]
+- ["C11Diagnose_Me21AuctionViewController", "UITextField"]
+- !private ["C11Diagnose_Me21AuctionViewController", "UserDefaults"]
+- ["C11Diagnose_Me21AuctionViewController", "auction"]
+- ["C11Diagnose_Me21AuctionViewController", "bidAmountLabel"]
+- ["C11Diagnose_Me21AuctionViewController", "deinit"]
+- ["C11Diagnose_Me21AuctionViewController", "didPressBidButton"]
+- ["C11Diagnose_Me21AuctionViewController", "didReceiveMemoryWarning"]
+- ["C11Diagnose_Me21AuctionViewController", "didRetrieveTopBid"]
+- ["C11Diagnose_Me21AuctionViewController", "init"]
+- !private ["C11Diagnose_Me21AuctionViewController", "navigationController"]
+- !private ["C11Diagnose_Me21AuctionViewController", "present"]
+- ["C11Diagnose_Me21AuctionViewController", "topBidAmount"]
+- ["C11Diagnose_Me21AuctionViewController", "topBidLabel"]
+- !private ["C11Diagnose_Me21AuctionViewController", "view"]
+- ["C11Diagnose_Me21AuctionViewController", "viewDidLoad"]
+- ["C11Diagnose_Me21AuctionViewController", "viewWillAppear"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "endEditing"]
+- !private ["PSo15CALayerDelegate", "keyboardType"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "Double"]
+- !private ["Ps7CVarArg", "UIAlertAction"]
+- !private ["Ps7CVarArg", "UIAlertController"]
+- !private ["Ps7CVarArg", "UserDefaults"]
+- !private ["Ps7CVarArg", "auction"]
+- !private ["Ps7CVarArg", "bidAmountLabel"]
+- !private ["Ps7CVarArg", "dataHandler"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "didRetrieveTopBid"]
+- !private ["Ps7CVarArg", "endEditing"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "keyboardType"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "standard"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "topBidAmount"]
+- !private ["Ps7CVarArg", "topBidLabel"]
+- !private ["Ps7CVarArg", "view"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Double"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "auction"]
+- !private ["Ps28CustomDebugStringConvertible", "bidAmountLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "dataHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "didRetrieveTopBid"]
+- !private ["Ps28CustomDebugStringConvertible", "endEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "keyboardType"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "topBidAmount"]
+- !private ["Ps28CustomDebugStringConvertible", "topBidLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Double"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UserDefaults"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "auction"]
+- !private ["Ps23CustomStringConvertible", "bidAmountLabel"]
+- !private ["Ps23CustomStringConvertible", "dataHandler"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "didRetrieveTopBid"]
+- !private ["Ps23CustomStringConvertible", "endEditing"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "keyboardType"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "standard"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "topBidAmount"]
+- !private ["Ps23CustomStringConvertible", "topBidLabel"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C11Diagnose_Me11DataHandler", "auctionDelegate"]
+- !private ["C11Diagnose_Me11DataHandler", "executeAuctionBid"]
+- !private ["C11Diagnose_Me11DataHandler", "getTopBid"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "Double"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "UIAlertAction"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "UIAlertController"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "UserDefaults"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "auction"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "bidAmountLabel"]
+- ["P11Diagnose_Me26DataHandlerAuctionDelegate", "didRetrieveTopBid"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "navigationController"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "present"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "topBidAmount"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "topBidLabel"]
+- !private ["P11Diagnose_Me26DataHandlerAuctionDelegate", "view"]
+- ["P11Diagnose_Me26DataHandlerAuctionDelegate", ""]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "Double"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UserDefaults"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "alert"]
+- !private ["Ps9Equatable", "auction"]
+- !private ["Ps9Equatable", "bidAmountLabel"]
+- !private ["Ps9Equatable", "dataHandler"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "didRetrieveTopBid"]
+- !private ["Ps9Equatable", "endEditing"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "keyboardType"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "numberPad"]
+- !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "standard"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "topBidAmount"]
+- !private ["Ps9Equatable", "topBidLabel"]
+- !private ["Ps9Equatable", "view"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "Double"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UserDefaults"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "alert"]
+- !private ["Ps8Hashable", "auction"]
+- !private ["Ps8Hashable", "bidAmountLabel"]
+- !private ["Ps8Hashable", "dataHandler"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "didRetrieveTopBid"]
+- !private ["Ps8Hashable", "endEditing"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "keyboardType"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "numberPad"]
+- !private ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "standard"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "topBidAmount"]
+- !private ["Ps8Hashable", "topBidLabel"]
+- !private ["Ps8Hashable", "view"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["C11Diagnose_Me25LoginNavigationController", "dataHandler"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "Double"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UserDefaults"]
+- !private ["PSo8NSCoding", "auction"]
+- !private ["PSo8NSCoding", "bidAmountLabel"]
+- !private ["PSo8NSCoding", "dataHandler"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "didRetrieveTopBid"]
+- !private ["PSo8NSCoding", "endEditing"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "keyboardType"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "topBidAmount"]
+- !private ["PSo8NSCoding", "topBidLabel"]
+- !private ["PSo8NSCoding", "view"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Double"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "auction"]
+- !private ["PSo26NSExtensionRequestHandling", "bidAmountLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "dataHandler"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "didRetrieveTopBid"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "topBidAmount"]
+- !private ["PSo26NSExtensionRequestHandling", "topBidLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Auction"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Double"]
+- !private ["CSo8NSObject", "LoginNavigationController"]
+- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "UserDefaults"]
+- ["CSo8NSObject", "auction"]
+- ["CSo8NSObject", "bidAmountLabel"]
+- !private ["CSo8NSObject", "dataHandler"]
+- ["CSo8NSObject", "didPressBidButton"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "didRetrieveTopBid"]
+- !private ["CSo8NSObject", "endEditing"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "keyboardType"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "standard"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "topBidAmount"]
+- ["CSo8NSObject", "topBidLabel"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "Double"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UserDefaults"]
+- !private ["PSo16NSObjectProtocol", "auction"]
+- !private ["PSo16NSObjectProtocol", "bidAmountLabel"]
+- !private ["PSo16NSObjectProtocol", "dataHandler"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "didRetrieveTopBid"]
+- !private ["PSo16NSObjectProtocol", "endEditing"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "keyboardType"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "standard"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "topBidAmount"]
+- !private ["PSo16NSObjectProtocol", "topBidLabel"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16RawRepresentable", "alert"]
+- !private ["Ps16RawRepresentable", "default"]
+- !private ["Ps16RawRepresentable", "numberPad"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "endEditing"]
+- !private ["PSo29UIAccessibilityIdentification", "keyboardType"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "default"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "alert"]
+- !private ["PSo12UIAppearance", "endEditing"]
+- !private ["PSo12UIAppearance", "keyboardType"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Double"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "auction"]
+- !private ["PSo21UIAppearanceContainer", "bidAmountLabel"]
+- !private ["PSo21UIAppearanceContainer", "dataHandler"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "didRetrieveTopBid"]
+- !private ["PSo21UIAppearanceContainer", "endEditing"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "keyboardType"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "topBidAmount"]
+- !private ["PSo21UIAppearanceContainer", "topBidLabel"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Double"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UserDefaults"]
+- !private ["PSo18UIContentContainer", "auction"]
+- !private ["PSo18UIContentContainer", "bidAmountLabel"]
+- !private ["PSo18UIContentContainer", "dataHandler"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "didRetrieveTopBid"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "topBidAmount"]
+- !private ["PSo18UIContentContainer", "topBidLabel"]
+- !private ["PSo18UIContentContainer", "view"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "keyboardType"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "keyboardType"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "endEditing"]
+- !private ["PSo17UICoordinateSpace", "keyboardType"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "endEditing"]
+- !private ["PSo13UIDynamicItem", "keyboardType"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Double"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "auction"]
+- !private ["PSo18UIFocusEnvironment", "bidAmountLabel"]
+- !private ["PSo18UIFocusEnvironment", "dataHandler"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "didRetrieveTopBid"]
+- !private ["PSo18UIFocusEnvironment", "endEditing"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "keyboardType"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "topBidAmount"]
+- !private ["PSo18UIFocusEnvironment", "topBidLabel"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "endEditing"]
+- !private ["PSo11UIFocusItem", "keyboardType"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo10UIKeyInput", "keyboardType"]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["OSC14UIKeyboardType", "numberPad"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo22UINavigationController", "dataHandler"]
+- ["CSo11UIResponder", "Auction"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "Double"]
+- !private ["CSo11UIResponder", "LoginNavigationController"]
+- !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- !private ["CSo11UIResponder", "UserDefaults"]
+- ["CSo11UIResponder", "auction"]
+- ["CSo11UIResponder", "bidAmountLabel"]
+- !private ["CSo11UIResponder", "dataHandler"]
+- ["CSo11UIResponder", "didPressBidButton"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "didRetrieveTopBid"]
+- !private ["CSo11UIResponder", "endEditing"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "keyboardType"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "topBidAmount"]
+- ["CSo11UIResponder", "topBidLabel"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "Double"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
+- !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
+- !private ["PSo30UIResponderStandardEditActions", "auction"]
+- !private ["PSo30UIResponderStandardEditActions", "bidAmountLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "dataHandler"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "didRetrieveTopBid"]
+- !private ["PSo30UIResponderStandardEditActions", "endEditing"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "keyboardType"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "topBidAmount"]
+- !private ["PSo30UIResponderStandardEditActions", "topBidLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "Double"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UserDefaults"]
+- !private ["PSo16UIStateRestoring", "auction"]
+- !private ["PSo16UIStateRestoring", "bidAmountLabel"]
+- !private ["PSo16UIStateRestoring", "dataHandler"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "didRetrieveTopBid"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "topBidAmount"]
+- !private ["PSo16UIStateRestoring", "topBidLabel"]
+- !private ["PSo16UIStateRestoring", "view"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "keyboardType"]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "keyboardType"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "keyboardType"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "Double"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UserDefaults"]
+- !private ["PSo18UITraitEnvironment", "auction"]
+- !private ["PSo18UITraitEnvironment", "bidAmountLabel"]
+- !private ["PSo18UITraitEnvironment", "dataHandler"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "didRetrieveTopBid"]
+- !private ["PSo18UITraitEnvironment", "endEditing"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "keyboardType"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "topBidAmount"]
+- !private ["PSo18UITraitEnvironment", "topBidLabel"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "endEditing"]
+- !private ["CSo6UIView", "keyboardType"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Auction"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "Double"]
+- !private ["CSo16UIViewController", "LoginNavigationController"]
+- !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextField"]
+- !private ["CSo16UIViewController", "UserDefaults"]
+- ["CSo16UIViewController", "auction"]
+- ["CSo16UIViewController", "bidAmountLabel"]
+- !private ["CSo16UIViewController", "dataHandler"]
+- ["CSo16UIViewController", "didPressBidButton"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "didRetrieveTopBid"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "present"]
+- ["CSo16UIViewController", "topBidAmount"]
+- ["CSo16UIViewController", "topBidLabel"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", ""]
+- !private ["P9Alamofire14URLConvertible", "init"]
+- !private ["CSo12UserDefaults", "object"]
+- !private ["CSo12UserDefaults", "standard"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "keyboardType"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Double"]
+- !private ["Ps9_Hashable", "UIAlertAction"]
+- !private ["Ps9_Hashable", "UIAlertController"]
+- !private ["Ps9_Hashable", "UserDefaults"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "alert"]
+- !private ["Ps9_Hashable", "auction"]
+- !private ["Ps9_Hashable", "bidAmountLabel"]
+- !private ["Ps9_Hashable", "dataHandler"]
+- !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "didRetrieveTopBid"]
+- !private ["Ps9_Hashable", "endEditing"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "keyboardType"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "numberPad"]
+- !private ["Ps9_Hashable", "object"]
+- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "standard"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "topBidAmount"]
+- !private ["Ps9_Hashable", "topBidLabel"]
+- !private ["Ps9_Hashable", "view"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "C11Diagnose_Me7Auction"
+- "C11Diagnose_Me21AuctionViewController"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "C11Diagnose_Me11DataHandler"
+- "P11Diagnose_Me26DataHandlerAuctionDelegate"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "C11Diagnose_Me25LoginNavigationController"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo10UIKeyInput"
+- !private "OSC14UIKeyboardType"
+- !private "CSo7UILabel"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "P9Alamofire14URLConvertible"
+- !private "CSo12UserDefaults"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVKit.apinotesc"
+interface-hash: "ed6a83d0512b4dd4c85bce7ced508615"

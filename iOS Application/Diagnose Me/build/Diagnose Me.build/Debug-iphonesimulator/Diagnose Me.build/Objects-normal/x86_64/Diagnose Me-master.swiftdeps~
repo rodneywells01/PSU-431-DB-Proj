@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "d6acf0b0084098138c1ee8431e86604e"
+build_time: [541631261, 7733000]
+inputs:
+  "/Users/lukeporupski/Projects/Diagnose Me/Diagnose Me/ViewController.swift": [541366118, 0]
+  "/Users/lukeporupski/Projects/Diagnose Me/Diagnose Me/AppDelegate.swift": [541366118, 0]
+  "/Users/lukeporupski/Projects/Diagnose Me/Diagnose Me/HamburgerButton.swift": [9223372036854775807, 0]

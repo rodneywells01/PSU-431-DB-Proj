@@ -8,49 +8,49 @@ provides-member:
 - ["CSo7CALayer", ""]
 - ["CSo7CALayer", "ocb_applyAnimation"]
 provides-dynamic-lookup:
-- "showsMenu"
-- "top"
+- "bottom"
+- "hamburgerStrokeEnd"
 - "hamburgerStrokeStart"
 - "menuStrokeEnd"
-- "bottom"
-- "shortStroke"
-- "outline"
-- "middle"
-- "hamburgerStrokeEnd"
-- "ocb_applyAnimation"
 - "menuStrokeStart"
+- "middle"
+- "ocb_applyAnimation"
+- "outline"
+- "shortStroke"
+- "showsMenu"
+- "top"
 depends-top-level:
-- "CGRect"
-- "AssignmentPrecedence"
-- !private "=="
-- "CGPath"
-- "CABasicAnimation"
-- "CGPoint"
-- "CastingPrecedence"
-- "HamburgerButton"
-- !private "NSNull"
-- "NSCoder"
-- "CGFloat"
-- "Bool"
-- !private "kCAFillModeBackwards"
-- !private "CAMediaTimingFunction"
-- !private "NSValue"
-- "CALayer"
-- "CAShapeLayer"
+- !private "+"
 - !private "/"
-- "CGMutablePath"
-- !private "kCALineCapRound"
+- !private "=="
 - !private "Array"
-- !private "CATransform3DRotate"
+- "AssignmentPrecedence"
+- "Bool"
 - "BooleanLiteralType"
-- !private "UIColor"
+- "CABasicAnimation"
 - !private "CACurrentMediaTime"
+- "CALayer"
+- !private "CAMediaTimingFunction"
+- "CAShapeLayer"
+- !private "CATransform3DIdentity"
+- !private "CATransform3DMakeTranslation"
+- !private "CATransform3DRotate"
+- "CGFloat"
+- "CGMutablePath"
+- "CGPath"
+- "CGPoint"
+- "CGRect"
+- "CastingPrecedence"
+- !private "Dictionary"
+- "HamburgerButton"
+- "NSCoder"
+- !private "NSNull"
+- !private "NSValue"
 - !private "StringLiteralType"
 - "UIButton"
-- !private "CATransform3DMakeTranslation"
-- !private "CATransform3DIdentity"
-- !private "Dictionary"
-- !private "+"
+- !private "UIColor"
+- !private "kCAFillModeBackwards"
+- !private "kCALineCapRound"
 depends-member:
 - !private ["Ps9AnyObject", "CABasicAnimation"]
 - !private ["Ps9AnyObject", "CACurrentMediaTime"]
@@ -72,7 +72,7 @@ depends-member:
 - !private ["Ps9AnyObject", "addSublayer"]
 - !private ["Ps9AnyObject", "anchorPoint"]
 - !private ["Ps9AnyObject", "beginTime"]
-- ["Ps9AnyObject", "bottom"]
+- !private ["Ps9AnyObject", "bottom"]
 - !private ["Ps9AnyObject", "boundingBoxOfPath"]
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "cgColor"]
@@ -81,8 +81,8 @@ depends-member:
 - !private ["Ps9AnyObject", "fillColor"]
 - !private ["Ps9AnyObject", "fillMode"]
 - !private ["Ps9AnyObject", "fromValue"]
-- ["Ps9AnyObject", "hamburgerStrokeEnd"]
-- ["Ps9AnyObject", "hamburgerStrokeStart"]
+- !private ["Ps9AnyObject", "hamburgerStrokeEnd"]
+- !private ["Ps9AnyObject", "hamburgerStrokeStart"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "kCAFillModeBackwards"]
 - !private ["Ps9AnyObject", "kCALineCapRound"]
@@ -91,40 +91,29 @@ depends-member:
 - !private ["Ps9AnyObject", "lineCap"]
 - !private ["Ps9AnyObject", "lineWidth"]
 - !private ["Ps9AnyObject", "masksToBounds"]
-- ["Ps9AnyObject", "menuStrokeEnd"]
-- ["Ps9AnyObject", "menuStrokeStart"]
-- ["Ps9AnyObject", "middle"]
+- !private ["Ps9AnyObject", "menuStrokeEnd"]
+- !private ["Ps9AnyObject", "menuStrokeStart"]
+- !private ["Ps9AnyObject", "middle"]
 - !private ["Ps9AnyObject", "miterLimit"]
 - ["Ps9AnyObject", "move"]
-- ["Ps9AnyObject", "ocb_applyAnimation"]
-- ["Ps9AnyObject", "outline"]
+- !private ["Ps9AnyObject", "ocb_applyAnimation"]
+- !private ["Ps9AnyObject", "outline"]
 - !private ["Ps9AnyObject", "path"]
 - !private ["Ps9AnyObject", "position"]
 - !private ["Ps9AnyObject", "presentation"]
 - !private ["Ps9AnyObject", "setValue"]
-- ["Ps9AnyObject", "shortStroke"]
-- ["Ps9AnyObject", "showsMenu"]
+- !private ["Ps9AnyObject", "shortStroke"]
+- !private ["Ps9AnyObject", "showsMenu"]
 - !private ["Ps9AnyObject", "strokeColor"]
 - !private ["Ps9AnyObject", "strokeEnd"]
 - !private ["Ps9AnyObject", "strokeStart"]
 - !private ["Ps9AnyObject", "timingFunction"]
 - !private ["Ps9AnyObject", "toValue"]
-- ["Ps9AnyObject", "top"]
+- !private ["Ps9AnyObject", "top"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
-- ["Sa", "deinit"]
-- !private ["Ps23BidirectionalCollection", "Element"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "Element"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["PSo8CAAction", "beginTime"]
 - !private ["PSo8CAAction", "copy"]
 - !private ["PSo8CAAction", "duration"]
@@ -145,7 +134,6 @@ depends-member:
 - !private ["CSo11CAAnimation", "toValue"]
 - !private ["CSo16CABasicAnimation", "beginTime"]
 - !private ["CSo16CABasicAnimation", "copy"]
-- ["CSo16CABasicAnimation", "deinit"]
 - !private ["CSo16CABasicAnimation", "duration"]
 - !private ["CSo16CABasicAnimation", "fillMode"]
 - !private ["CSo16CABasicAnimation", "fromValue"]
@@ -159,7 +147,6 @@ depends-member:
 - !private ["CSo7CALayer", "addSublayer"]
 - !private ["CSo7CALayer", "anchorPoint"]
 - !private ["CSo7CALayer", "bounds"]
-- ["CSo7CALayer", "deinit"]
 - !private ["CSo7CALayer", "fillColor"]
 - ["CSo7CALayer", "init"]
 - !private ["CSo7CALayer", "lineCap"]
@@ -188,20 +175,20 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "NSNull"]
 - !private ["PSo15CALayerDelegate", "NSValue"]
 - !private ["PSo15CALayerDelegate", "UIColor"]
-- ["PSo15CALayerDelegate", "bottom"]
-- ["PSo15CALayerDelegate", "hamburgerStrokeEnd"]
-- ["PSo15CALayerDelegate", "hamburgerStrokeStart"]
-- ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "bottom"]
+- !private ["PSo15CALayerDelegate", "hamburgerStrokeEnd"]
+- !private ["PSo15CALayerDelegate", "hamburgerStrokeStart"]
+- !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "kCAFillModeBackwards"]
 - !private ["PSo15CALayerDelegate", "kCALineCapRound"]
 - !private ["PSo15CALayerDelegate", "layer"]
-- ["PSo15CALayerDelegate", "menuStrokeEnd"]
-- ["PSo15CALayerDelegate", "menuStrokeStart"]
-- ["PSo15CALayerDelegate", "middle"]
-- ["PSo15CALayerDelegate", "outline"]
-- ["PSo15CALayerDelegate", "shortStroke"]
-- ["PSo15CALayerDelegate", "showsMenu"]
-- ["PSo15CALayerDelegate", "top"]
+- !private ["PSo15CALayerDelegate", "menuStrokeEnd"]
+- !private ["PSo15CALayerDelegate", "menuStrokeStart"]
+- !private ["PSo15CALayerDelegate", "middle"]
+- !private ["PSo15CALayerDelegate", "outline"]
+- !private ["PSo15CALayerDelegate", "shortStroke"]
+- !private ["PSo15CALayerDelegate", "showsMenu"]
+- !private ["PSo15CALayerDelegate", "top"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "actions"]
 - !private ["PSo13CAMediaTiming", "add"]
@@ -231,7 +218,6 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "timingFunction"]
 - !private ["PSo13CAMediaTiming", "toValue"]
 - !private ["PSo13CAMediaTiming", "value"]
-- ["CSo21CAMediaTimingFunction", "deinit"]
 - !private ["CSo21CAMediaTimingFunction", "init"]
 - !private ["CSo19CAPropertyAnimation", "beginTime"]
 - !private ["CSo19CAPropertyAnimation", "copy"]
@@ -245,7 +231,6 @@ depends-member:
 - !private ["CSo12CAShapeLayer", "actions"]
 - !private ["CSo12CAShapeLayer", "anchorPoint"]
 - !private ["CSo12CAShapeLayer", "bounds"]
-- ["CSo12CAShapeLayer", "deinit"]
 - !private ["CSo12CAShapeLayer", "fillColor"]
 - ["CSo12CAShapeLayer", "init"]
 - !private ["CSo12CAShapeLayer", "lineCap"]
@@ -258,27 +243,18 @@ depends-member:
 - !private ["CSo12CAShapeLayer", "strokeColor"]
 - !private ["CSo12CAShapeLayer", "strokeEnd"]
 - !private ["CSo12CAShapeLayer", "strokeStart"]
-- ["VSC13CATransform3D", "deinit"]
-- ["CSo7CGColor", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
-- ["OSC9CGLineCap", "deinit"]
 - !private ["OSC9CGLineCap", "round"]
-- ["OSC10CGLineJoin", "deinit"]
 - !private ["OSC10CGLineJoin", "miter"]
 - ["CSo13CGMutablePath", "addCurve"]
 - ["CSo13CGMutablePath", "addLine"]
-- ["CSo13CGMutablePath", "deinit"]
 - ["CSo13CGMutablePath", "init"]
 - ["CSo13CGMutablePath", "move"]
 - ["CSo6CGPath", "addCurve"]
 - ["CSo6CGPath", "addLine"]
 - !private ["CSo6CGPath", "boundingBoxOfPath"]
-- ["CSo6CGPath", "deinit"]
-- !private ["CSo6CGPath", "init"]
+- ["CSo6CGPath", "init"]
 - ["CSo6CGPath", "move"]
-- ["VSC7CGPoint", "deinit"]
 - ["VSC7CGPoint", "init"]
-- ["VSC6CGRect", "deinit"]
 - !private ["Ps7CVarArg", "CABasicAnimation"]
 - !private ["Ps7CVarArg", "CACurrentMediaTime"]
 - !private ["Ps7CVarArg", "CAMediaTimingFunction"]
@@ -289,20 +265,15 @@ depends-member:
 - ["Ps7CVarArg", "CGMutablePath"]
 - !private ["Ps7CVarArg", "CGPath"]
 - ["Ps7CVarArg", "CGPoint"]
-- !private ["Ps7CVarArg", "Element"]
-- !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSNull"]
 - !private ["Ps7CVarArg", "NSValue"]
 - !private ["Ps7CVarArg", "UIColor"]
-- !private ["Ps7CVarArg", "Value"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "actions"]
 - !private ["Ps7CVarArg", "add"]
 - !private ["Ps7CVarArg", "addSublayer"]
 - !private ["Ps7CVarArg", "anchorPoint"]
 - !private ["Ps7CVarArg", "beginTime"]
-- ["Ps7CVarArg", "bottom"]
+- !private ["Ps7CVarArg", "bottom"]
 - !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "cgColor"]
 - !private ["Ps7CVarArg", "copy"]
@@ -310,8 +281,8 @@ depends-member:
 - !private ["Ps7CVarArg", "fillColor"]
 - !private ["Ps7CVarArg", "fillMode"]
 - !private ["Ps7CVarArg", "fromValue"]
-- ["Ps7CVarArg", "hamburgerStrokeEnd"]
-- ["Ps7CVarArg", "hamburgerStrokeStart"]
+- !private ["Ps7CVarArg", "hamburgerStrokeEnd"]
+- !private ["Ps7CVarArg", "hamburgerStrokeStart"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "kCAFillModeBackwards"]
 - !private ["Ps7CVarArg", "kCALineCapRound"]
@@ -320,32 +291,27 @@ depends-member:
 - !private ["Ps7CVarArg", "lineCap"]
 - !private ["Ps7CVarArg", "lineWidth"]
 - !private ["Ps7CVarArg", "masksToBounds"]
-- ["Ps7CVarArg", "menuStrokeEnd"]
-- ["Ps7CVarArg", "menuStrokeStart"]
-- ["Ps7CVarArg", "middle"]
+- !private ["Ps7CVarArg", "menuStrokeEnd"]
+- !private ["Ps7CVarArg", "menuStrokeStart"]
+- !private ["Ps7CVarArg", "middle"]
 - !private ["Ps7CVarArg", "miterLimit"]
-- ["Ps7CVarArg", "ocb_applyAnimation"]
-- ["Ps7CVarArg", "outline"]
+- !private ["Ps7CVarArg", "ocb_applyAnimation"]
+- !private ["Ps7CVarArg", "outline"]
 - !private ["Ps7CVarArg", "path"]
 - !private ["Ps7CVarArg", "position"]
 - !private ["Ps7CVarArg", "presentation"]
 - !private ["Ps7CVarArg", "setValue"]
-- ["Ps7CVarArg", "shortStroke"]
-- ["Ps7CVarArg", "showsMenu"]
+- !private ["Ps7CVarArg", "shortStroke"]
+- !private ["Ps7CVarArg", "showsMenu"]
 - !private ["Ps7CVarArg", "strokeColor"]
 - !private ["Ps7CVarArg", "strokeEnd"]
 - !private ["Ps7CVarArg", "strokeStart"]
 - !private ["Ps7CVarArg", "timingFunction"]
 - !private ["Ps7CVarArg", "toValue"]
-- ["Ps7CVarArg", "top"]
+- !private ["Ps7CVarArg", "top"]
 - !private ["Ps7CVarArg", "value"]
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Collection", "Element"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "Key"]
-- !private ["Ps10Collection", "Value"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CABasicAnimation"]
 - !private ["Ps28CustomDebugStringConvertible", "CACurrentMediaTime"]
@@ -357,20 +323,15 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "CGMutablePath"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPath"]
 - ["Ps28CustomDebugStringConvertible", "CGPoint"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSNull"]
 - !private ["Ps28CustomDebugStringConvertible", "NSValue"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
-- !private ["Ps28CustomDebugStringConvertible", "Value"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "actions"]
 - !private ["Ps28CustomDebugStringConvertible", "add"]
 - !private ["Ps28CustomDebugStringConvertible", "addSublayer"]
 - !private ["Ps28CustomDebugStringConvertible", "anchorPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "beginTime"]
-- ["Ps28CustomDebugStringConvertible", "bottom"]
+- !private ["Ps28CustomDebugStringConvertible", "bottom"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - !private ["Ps28CustomDebugStringConvertible", "copy"]
@@ -378,8 +339,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "fillColor"]
 - !private ["Ps28CustomDebugStringConvertible", "fillMode"]
 - !private ["Ps28CustomDebugStringConvertible", "fromValue"]
-- ["Ps28CustomDebugStringConvertible", "hamburgerStrokeEnd"]
-- ["Ps28CustomDebugStringConvertible", "hamburgerStrokeStart"]
+- !private ["Ps28CustomDebugStringConvertible", "hamburgerStrokeEnd"]
+- !private ["Ps28CustomDebugStringConvertible", "hamburgerStrokeStart"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "kCAFillModeBackwards"]
 - !private ["Ps28CustomDebugStringConvertible", "kCALineCapRound"]
@@ -388,34 +349,29 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "lineCap"]
 - !private ["Ps28CustomDebugStringConvertible", "lineWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "masksToBounds"]
-- ["Ps28CustomDebugStringConvertible", "menuStrokeEnd"]
-- ["Ps28CustomDebugStringConvertible", "menuStrokeStart"]
-- ["Ps28CustomDebugStringConvertible", "middle"]
+- !private ["Ps28CustomDebugStringConvertible", "menuStrokeEnd"]
+- !private ["Ps28CustomDebugStringConvertible", "menuStrokeStart"]
+- !private ["Ps28CustomDebugStringConvertible", "middle"]
 - !private ["Ps28CustomDebugStringConvertible", "miterLimit"]
-- ["Ps28CustomDebugStringConvertible", "ocb_applyAnimation"]
-- ["Ps28CustomDebugStringConvertible", "outline"]
+- !private ["Ps28CustomDebugStringConvertible", "ocb_applyAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "outline"]
 - !private ["Ps28CustomDebugStringConvertible", "path"]
 - !private ["Ps28CustomDebugStringConvertible", "position"]
 - !private ["Ps28CustomDebugStringConvertible", "presentation"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
-- ["Ps28CustomDebugStringConvertible", "shortStroke"]
-- ["Ps28CustomDebugStringConvertible", "showsMenu"]
+- !private ["Ps28CustomDebugStringConvertible", "shortStroke"]
+- !private ["Ps28CustomDebugStringConvertible", "showsMenu"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeColor"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeEnd"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeStart"]
 - !private ["Ps28CustomDebugStringConvertible", "timingFunction"]
 - !private ["Ps28CustomDebugStringConvertible", "toValue"]
-- ["Ps28CustomDebugStringConvertible", "top"]
+- !private ["Ps28CustomDebugStringConvertible", "top"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Element"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Key"]
-- !private ["Ps17CustomReflectable", "Value"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "CABasicAnimation"]
@@ -428,21 +384,16 @@ depends-member:
 - ["Ps23CustomStringConvertible", "CGMutablePath"]
 - !private ["Ps23CustomStringConvertible", "CGPath"]
 - ["Ps23CustomStringConvertible", "CGPoint"]
-- !private ["Ps23CustomStringConvertible", "Element"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSNull"]
 - !private ["Ps23CustomStringConvertible", "NSValue"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
-- !private ["Ps23CustomStringConvertible", "Value"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "actions"]
 - !private ["Ps23CustomStringConvertible", "add"]
 - !private ["Ps23CustomStringConvertible", "addSublayer"]
 - !private ["Ps23CustomStringConvertible", "anchorPoint"]
 - !private ["Ps23CustomStringConvertible", "beginTime"]
-- ["Ps23CustomStringConvertible", "bottom"]
+- !private ["Ps23CustomStringConvertible", "bottom"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - !private ["Ps23CustomStringConvertible", "copy"]
@@ -450,8 +401,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "fillColor"]
 - !private ["Ps23CustomStringConvertible", "fillMode"]
 - !private ["Ps23CustomStringConvertible", "fromValue"]
-- ["Ps23CustomStringConvertible", "hamburgerStrokeEnd"]
-- ["Ps23CustomStringConvertible", "hamburgerStrokeStart"]
+- !private ["Ps23CustomStringConvertible", "hamburgerStrokeEnd"]
+- !private ["Ps23CustomStringConvertible", "hamburgerStrokeStart"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "kCAFillModeBackwards"]
 - !private ["Ps23CustomStringConvertible", "kCALineCapRound"]
@@ -460,31 +411,27 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "lineCap"]
 - !private ["Ps23CustomStringConvertible", "lineWidth"]
 - !private ["Ps23CustomStringConvertible", "masksToBounds"]
-- ["Ps23CustomStringConvertible", "menuStrokeEnd"]
-- ["Ps23CustomStringConvertible", "menuStrokeStart"]
-- ["Ps23CustomStringConvertible", "middle"]
+- !private ["Ps23CustomStringConvertible", "menuStrokeEnd"]
+- !private ["Ps23CustomStringConvertible", "menuStrokeStart"]
+- !private ["Ps23CustomStringConvertible", "middle"]
 - !private ["Ps23CustomStringConvertible", "miterLimit"]
-- ["Ps23CustomStringConvertible", "ocb_applyAnimation"]
-- ["Ps23CustomStringConvertible", "outline"]
+- !private ["Ps23CustomStringConvertible", "ocb_applyAnimation"]
+- !private ["Ps23CustomStringConvertible", "outline"]
 - !private ["Ps23CustomStringConvertible", "path"]
 - !private ["Ps23CustomStringConvertible", "position"]
 - !private ["Ps23CustomStringConvertible", "presentation"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
-- ["Ps23CustomStringConvertible", "shortStroke"]
-- ["Ps23CustomStringConvertible", "showsMenu"]
+- !private ["Ps23CustomStringConvertible", "shortStroke"]
+- !private ["Ps23CustomStringConvertible", "showsMenu"]
 - !private ["Ps23CustomStringConvertible", "strokeColor"]
 - !private ["Ps23CustomStringConvertible", "strokeEnd"]
 - !private ["Ps23CustomStringConvertible", "strokeStart"]
 - !private ["Ps23CustomStringConvertible", "timingFunction"]
 - !private ["Ps23CustomStringConvertible", "toValue"]
-- ["Ps23CustomStringConvertible", "top"]
+- !private ["Ps23CustomStringConvertible", "top"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Vs10Dictionary", "Key"]
-- !private ["Vs10Dictionary", "Value"]
-- ["Vs10Dictionary", "deinit"]
-- ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CABasicAnimation"]
 - !private ["Ps9Equatable", "CACurrentMediaTime"]
 - !private ["Ps9Equatable", "CAMediaTimingFunction"]
@@ -506,7 +453,7 @@ depends-member:
 - !private ["Ps9Equatable", "addSublayer"]
 - !private ["Ps9Equatable", "anchorPoint"]
 - !private ["Ps9Equatable", "beginTime"]
-- ["Ps9Equatable", "bottom"]
+- !private ["Ps9Equatable", "bottom"]
 - !private ["Ps9Equatable", "boundingBoxOfPath"]
 - !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "cgColor"]
@@ -515,8 +462,8 @@ depends-member:
 - !private ["Ps9Equatable", "fillColor"]
 - !private ["Ps9Equatable", "fillMode"]
 - !private ["Ps9Equatable", "fromValue"]
-- ["Ps9Equatable", "hamburgerStrokeEnd"]
-- ["Ps9Equatable", "hamburgerStrokeStart"]
+- !private ["Ps9Equatable", "hamburgerStrokeEnd"]
+- !private ["Ps9Equatable", "hamburgerStrokeStart"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "kCAFillModeBackwards"]
 - !private ["Ps9Equatable", "kCALineCapRound"]
@@ -525,41 +472,34 @@ depends-member:
 - !private ["Ps9Equatable", "lineCap"]
 - !private ["Ps9Equatable", "lineWidth"]
 - !private ["Ps9Equatable", "masksToBounds"]
-- ["Ps9Equatable", "menuStrokeEnd"]
-- ["Ps9Equatable", "menuStrokeStart"]
-- ["Ps9Equatable", "middle"]
+- !private ["Ps9Equatable", "menuStrokeEnd"]
+- !private ["Ps9Equatable", "menuStrokeStart"]
+- !private ["Ps9Equatable", "middle"]
 - !private ["Ps9Equatable", "miter"]
 - !private ["Ps9Equatable", "miterLimit"]
 - ["Ps9Equatable", "move"]
-- ["Ps9Equatable", "ocb_applyAnimation"]
-- ["Ps9Equatable", "outline"]
+- !private ["Ps9Equatable", "ocb_applyAnimation"]
+- !private ["Ps9Equatable", "outline"]
 - !private ["Ps9Equatable", "path"]
 - !private ["Ps9Equatable", "position"]
 - !private ["Ps9Equatable", "presentation"]
 - !private ["Ps9Equatable", "round"]
 - !private ["Ps9Equatable", "setValue"]
-- ["Ps9Equatable", "shortStroke"]
-- ["Ps9Equatable", "showsMenu"]
+- !private ["Ps9Equatable", "shortStroke"]
+- !private ["Ps9Equatable", "showsMenu"]
 - !private ["Ps9Equatable", "strokeColor"]
 - !private ["Ps9Equatable", "strokeEnd"]
 - !private ["Ps9Equatable", "strokeStart"]
 - !private ["Ps9Equatable", "timingFunction"]
 - !private ["Ps9Equatable", "toValue"]
-- ["Ps9Equatable", "top"]
+- !private ["Ps9Equatable", "top"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "white"]
 - ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["Sf", "deinit"]
 - ["C11Diagnose_Me15HamburgerButton", "Bool"]
 - !private ["C11Diagnose_Me15HamburgerButton", "CABasicAnimation"]
 - !private ["C11Diagnose_Me15HamburgerButton", "CACurrentMediaTime"]
@@ -611,7 +551,7 @@ depends-member:
 - !private ["Ps8Hashable", "addSublayer"]
 - !private ["Ps8Hashable", "anchorPoint"]
 - !private ["Ps8Hashable", "beginTime"]
-- ["Ps8Hashable", "bottom"]
+- !private ["Ps8Hashable", "bottom"]
 - !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "cgColor"]
 - !private ["Ps8Hashable", "copy"]
@@ -619,8 +559,8 @@ depends-member:
 - !private ["Ps8Hashable", "fillColor"]
 - !private ["Ps8Hashable", "fillMode"]
 - !private ["Ps8Hashable", "fromValue"]
-- ["Ps8Hashable", "hamburgerStrokeEnd"]
-- ["Ps8Hashable", "hamburgerStrokeStart"]
+- !private ["Ps8Hashable", "hamburgerStrokeEnd"]
+- !private ["Ps8Hashable", "hamburgerStrokeStart"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "kCAFillModeBackwards"]
 - !private ["Ps8Hashable", "kCALineCapRound"]
@@ -629,53 +569,32 @@ depends-member:
 - !private ["Ps8Hashable", "lineCap"]
 - !private ["Ps8Hashable", "lineWidth"]
 - !private ["Ps8Hashable", "masksToBounds"]
-- ["Ps8Hashable", "menuStrokeEnd"]
-- ["Ps8Hashable", "menuStrokeStart"]
-- ["Ps8Hashable", "middle"]
+- !private ["Ps8Hashable", "menuStrokeEnd"]
+- !private ["Ps8Hashable", "menuStrokeStart"]
+- !private ["Ps8Hashable", "middle"]
 - !private ["Ps8Hashable", "miter"]
 - !private ["Ps8Hashable", "miterLimit"]
-- ["Ps8Hashable", "ocb_applyAnimation"]
-- ["Ps8Hashable", "outline"]
+- !private ["Ps8Hashable", "ocb_applyAnimation"]
+- !private ["Ps8Hashable", "outline"]
 - !private ["Ps8Hashable", "path"]
 - !private ["Ps8Hashable", "position"]
 - !private ["Ps8Hashable", "presentation"]
 - !private ["Ps8Hashable", "round"]
 - !private ["Ps8Hashable", "setValue"]
-- ["Ps8Hashable", "shortStroke"]
-- ["Ps8Hashable", "showsMenu"]
+- !private ["Ps8Hashable", "shortStroke"]
+- !private ["Ps8Hashable", "showsMenu"]
 - !private ["Ps8Hashable", "strokeColor"]
 - !private ["Ps8Hashable", "strokeEnd"]
 - !private ["Ps8Hashable", "strokeStart"]
 - !private ["Ps8Hashable", "timingFunction"]
 - !private ["Ps8Hashable", "toValue"]
-- ["Ps8Hashable", "top"]
+- !private ["Ps8Hashable", "top"]
 - !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", ""]
-- ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Element"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "Key"]
-- !private ["Ps9Indexable", "Value"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps13IndexableBase", "Element"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "Key"]
-- !private ["Ps13IndexableBase", "Value"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Vs16IndexingIterator", "Element"]
-- ["Si", "deinit"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
-- !private ["Ps17MutableCollection", "Element"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
-- !private ["Ps16MutableIndexable", "Element"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CABasicAnimation"]
 - !private ["PSo8NSCoding", "CACurrentMediaTime"]
 - !private ["PSo8NSCoding", "CAMediaTimingFunction"]
@@ -694,7 +613,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addSublayer"]
 - !private ["PSo8NSCoding", "anchorPoint"]
 - !private ["PSo8NSCoding", "beginTime"]
-- ["PSo8NSCoding", "bottom"]
+- !private ["PSo8NSCoding", "bottom"]
 - !private ["PSo8NSCoding", "bounds"]
 - !private ["PSo8NSCoding", "cgColor"]
 - !private ["PSo8NSCoding", "copy"]
@@ -702,8 +621,8 @@ depends-member:
 - !private ["PSo8NSCoding", "fillColor"]
 - !private ["PSo8NSCoding", "fillMode"]
 - !private ["PSo8NSCoding", "fromValue"]
-- ["PSo8NSCoding", "hamburgerStrokeEnd"]
-- ["PSo8NSCoding", "hamburgerStrokeStart"]
+- !private ["PSo8NSCoding", "hamburgerStrokeEnd"]
+- !private ["PSo8NSCoding", "hamburgerStrokeStart"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "kCAFillModeBackwards"]
 - !private ["PSo8NSCoding", "kCALineCapRound"]
@@ -712,24 +631,24 @@ depends-member:
 - !private ["PSo8NSCoding", "lineCap"]
 - !private ["PSo8NSCoding", "lineWidth"]
 - !private ["PSo8NSCoding", "masksToBounds"]
-- ["PSo8NSCoding", "menuStrokeEnd"]
-- ["PSo8NSCoding", "menuStrokeStart"]
-- ["PSo8NSCoding", "middle"]
+- !private ["PSo8NSCoding", "menuStrokeEnd"]
+- !private ["PSo8NSCoding", "menuStrokeStart"]
+- !private ["PSo8NSCoding", "middle"]
 - !private ["PSo8NSCoding", "miterLimit"]
 - !private ["PSo8NSCoding", "ocb_applyAnimation"]
-- ["PSo8NSCoding", "outline"]
+- !private ["PSo8NSCoding", "outline"]
 - !private ["PSo8NSCoding", "path"]
 - !private ["PSo8NSCoding", "position"]
 - !private ["PSo8NSCoding", "presentation"]
 - !private ["PSo8NSCoding", "setValue"]
-- ["PSo8NSCoding", "shortStroke"]
-- ["PSo8NSCoding", "showsMenu"]
+- !private ["PSo8NSCoding", "shortStroke"]
+- !private ["PSo8NSCoding", "showsMenu"]
 - !private ["PSo8NSCoding", "strokeColor"]
 - !private ["PSo8NSCoding", "strokeEnd"]
 - !private ["PSo8NSCoding", "strokeStart"]
 - !private ["PSo8NSCoding", "timingFunction"]
 - !private ["PSo8NSCoding", "toValue"]
-- ["PSo8NSCoding", "top"]
+- !private ["PSo8NSCoding", "top"]
 - !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
@@ -745,7 +664,6 @@ depends-member:
 - !private ["PSo9NSCopying", "toValue"]
 - !private ["PSo9NSCopying", "white"]
 - !private ["PSo16NSMutableCopying", "init"]
-- ["CSo6NSNull", "deinit"]
 - !private ["CSo6NSNull", "init"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CABasicAnimation"]
@@ -825,7 +743,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSublayer"]
 - !private ["PSo16NSObjectProtocol", "anchorPoint"]
 - !private ["PSo16NSObjectProtocol", "beginTime"]
-- ["PSo16NSObjectProtocol", "bottom"]
+- !private ["PSo16NSObjectProtocol", "bottom"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - !private ["PSo16NSObjectProtocol", "copy"]
@@ -833,8 +751,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fillColor"]
 - !private ["PSo16NSObjectProtocol", "fillMode"]
 - !private ["PSo16NSObjectProtocol", "fromValue"]
-- ["PSo16NSObjectProtocol", "hamburgerStrokeEnd"]
-- ["PSo16NSObjectProtocol", "hamburgerStrokeStart"]
+- !private ["PSo16NSObjectProtocol", "hamburgerStrokeEnd"]
+- !private ["PSo16NSObjectProtocol", "hamburgerStrokeStart"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "kCAFillModeBackwards"]
 - !private ["PSo16NSObjectProtocol", "kCALineCapRound"]
@@ -843,24 +761,24 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "lineCap"]
 - !private ["PSo16NSObjectProtocol", "lineWidth"]
 - !private ["PSo16NSObjectProtocol", "masksToBounds"]
-- ["PSo16NSObjectProtocol", "menuStrokeEnd"]
-- ["PSo16NSObjectProtocol", "menuStrokeStart"]
-- ["PSo16NSObjectProtocol", "middle"]
+- !private ["PSo16NSObjectProtocol", "menuStrokeEnd"]
+- !private ["PSo16NSObjectProtocol", "menuStrokeStart"]
+- !private ["PSo16NSObjectProtocol", "middle"]
 - !private ["PSo16NSObjectProtocol", "miterLimit"]
-- ["PSo16NSObjectProtocol", "ocb_applyAnimation"]
-- ["PSo16NSObjectProtocol", "outline"]
+- !private ["PSo16NSObjectProtocol", "ocb_applyAnimation"]
+- !private ["PSo16NSObjectProtocol", "outline"]
 - !private ["PSo16NSObjectProtocol", "path"]
 - !private ["PSo16NSObjectProtocol", "position"]
 - !private ["PSo16NSObjectProtocol", "presentation"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
-- ["PSo16NSObjectProtocol", "shortStroke"]
-- ["PSo16NSObjectProtocol", "showsMenu"]
+- !private ["PSo16NSObjectProtocol", "shortStroke"]
+- !private ["PSo16NSObjectProtocol", "showsMenu"]
 - !private ["PSo16NSObjectProtocol", "strokeColor"]
 - !private ["PSo16NSObjectProtocol", "strokeEnd"]
 - !private ["PSo16NSObjectProtocol", "strokeStart"]
 - !private ["PSo16NSObjectProtocol", "timingFunction"]
 - !private ["PSo16NSObjectProtocol", "toValue"]
-- ["PSo16NSObjectProtocol", "top"]
+- !private ["PSo16NSObjectProtocol", "top"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
@@ -868,29 +786,9 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "white"]
 - !private ["CSo8NSString", "init"]
-- ["CSo7NSValue", "deinit"]
 - !private ["CSo7NSValue", "init"]
-- ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Element"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "Element"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps26RangeReplaceableCollection", "Element"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps16RawRepresentable", "miter"]
 - !private ["Ps16RawRepresentable", "round"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "Key"]
-- !private ["Ps8Sequence", "Value"]
-- !private ["Ps8Sequence", "_Element"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -907,20 +805,20 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "NSNull"]
 - !private ["PSo29UIAccessibilityIdentification", "NSValue"]
 - !private ["PSo29UIAccessibilityIdentification", "UIColor"]
-- ["PSo29UIAccessibilityIdentification", "bottom"]
-- ["PSo29UIAccessibilityIdentification", "hamburgerStrokeEnd"]
-- ["PSo29UIAccessibilityIdentification", "hamburgerStrokeStart"]
-- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "bottom"]
+- !private ["PSo29UIAccessibilityIdentification", "hamburgerStrokeEnd"]
+- !private ["PSo29UIAccessibilityIdentification", "hamburgerStrokeStart"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "kCAFillModeBackwards"]
 - !private ["PSo29UIAccessibilityIdentification", "kCALineCapRound"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
-- ["PSo29UIAccessibilityIdentification", "menuStrokeEnd"]
-- ["PSo29UIAccessibilityIdentification", "menuStrokeStart"]
-- ["PSo29UIAccessibilityIdentification", "middle"]
-- ["PSo29UIAccessibilityIdentification", "outline"]
-- ["PSo29UIAccessibilityIdentification", "shortStroke"]
-- ["PSo29UIAccessibilityIdentification", "showsMenu"]
-- ["PSo29UIAccessibilityIdentification", "top"]
+- !private ["PSo29UIAccessibilityIdentification", "menuStrokeEnd"]
+- !private ["PSo29UIAccessibilityIdentification", "menuStrokeStart"]
+- !private ["PSo29UIAccessibilityIdentification", "middle"]
+- !private ["PSo29UIAccessibilityIdentification", "outline"]
+- !private ["PSo29UIAccessibilityIdentification", "shortStroke"]
+- !private ["PSo29UIAccessibilityIdentification", "showsMenu"]
+- !private ["PSo29UIAccessibilityIdentification", "top"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CABasicAnimation"]
 - !private ["PSo12UIAppearance", "CACurrentMediaTime"]
@@ -935,20 +833,20 @@ depends-member:
 - !private ["PSo12UIAppearance", "NSNull"]
 - !private ["PSo12UIAppearance", "NSValue"]
 - !private ["PSo12UIAppearance", "UIColor"]
-- ["PSo12UIAppearance", "bottom"]
-- ["PSo12UIAppearance", "hamburgerStrokeEnd"]
-- ["PSo12UIAppearance", "hamburgerStrokeStart"]
-- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "bottom"]
+- !private ["PSo12UIAppearance", "hamburgerStrokeEnd"]
+- !private ["PSo12UIAppearance", "hamburgerStrokeStart"]
+- !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "kCAFillModeBackwards"]
 - !private ["PSo12UIAppearance", "kCALineCapRound"]
 - !private ["PSo12UIAppearance", "layer"]
-- ["PSo12UIAppearance", "menuStrokeEnd"]
-- ["PSo12UIAppearance", "menuStrokeStart"]
-- ["PSo12UIAppearance", "middle"]
-- ["PSo12UIAppearance", "outline"]
-- ["PSo12UIAppearance", "shortStroke"]
-- ["PSo12UIAppearance", "showsMenu"]
-- ["PSo12UIAppearance", "top"]
+- !private ["PSo12UIAppearance", "menuStrokeEnd"]
+- !private ["PSo12UIAppearance", "menuStrokeStart"]
+- !private ["PSo12UIAppearance", "middle"]
+- !private ["PSo12UIAppearance", "outline"]
+- !private ["PSo12UIAppearance", "shortStroke"]
+- !private ["PSo12UIAppearance", "showsMenu"]
+- !private ["PSo12UIAppearance", "top"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CABasicAnimation"]
 - !private ["PSo21UIAppearanceContainer", "CACurrentMediaTime"]
@@ -963,20 +861,20 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSNull"]
 - !private ["PSo21UIAppearanceContainer", "NSValue"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
-- ["PSo21UIAppearanceContainer", "bottom"]
-- ["PSo21UIAppearanceContainer", "hamburgerStrokeEnd"]
-- ["PSo21UIAppearanceContainer", "hamburgerStrokeStart"]
-- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "bottom"]
+- !private ["PSo21UIAppearanceContainer", "hamburgerStrokeEnd"]
+- !private ["PSo21UIAppearanceContainer", "hamburgerStrokeStart"]
+- !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kCAFillModeBackwards"]
 - !private ["PSo21UIAppearanceContainer", "kCALineCapRound"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
-- ["PSo21UIAppearanceContainer", "menuStrokeEnd"]
-- ["PSo21UIAppearanceContainer", "menuStrokeStart"]
-- ["PSo21UIAppearanceContainer", "middle"]
-- ["PSo21UIAppearanceContainer", "outline"]
-- ["PSo21UIAppearanceContainer", "shortStroke"]
-- ["PSo21UIAppearanceContainer", "showsMenu"]
-- ["PSo21UIAppearanceContainer", "top"]
+- !private ["PSo21UIAppearanceContainer", "menuStrokeEnd"]
+- !private ["PSo21UIAppearanceContainer", "menuStrokeStart"]
+- !private ["PSo21UIAppearanceContainer", "middle"]
+- !private ["PSo21UIAppearanceContainer", "outline"]
+- !private ["PSo21UIAppearanceContainer", "shortStroke"]
+- !private ["PSo21UIAppearanceContainer", "showsMenu"]
+- !private ["PSo21UIAppearanceContainer", "top"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo8UIButton", "Bool"]
 - !private ["CSo8UIButton", "CABasicAnimation"]
@@ -996,7 +894,6 @@ depends-member:
 - !private ["CSo8UIButton", "NSValue"]
 - !private ["CSo8UIButton", "UIColor"]
 - ["CSo8UIButton", "bottom"]
-- ["CSo8UIButton", "deinit"]
 - ["CSo8UIButton", "hamburgerStrokeEnd"]
 - ["CSo8UIButton", "hamburgerStrokeStart"]
 - ["CSo8UIButton", "init"]
@@ -1012,7 +909,6 @@ depends-member:
 - ["CSo8UIButton", "top"]
 - ["CSo8UIButton", ""]
 - !private ["CSo7UIColor", "cgColor"]
-- ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "white"]
 - ["CSo9UIControl", "Bool"]
 - !private ["CSo9UIControl", "CABasicAnimation"]
@@ -1058,20 +954,20 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "NSNull"]
 - !private ["PSo17UICoordinateSpace", "NSValue"]
 - !private ["PSo17UICoordinateSpace", "UIColor"]
-- ["PSo17UICoordinateSpace", "bottom"]
-- ["PSo17UICoordinateSpace", "hamburgerStrokeEnd"]
-- ["PSo17UICoordinateSpace", "hamburgerStrokeStart"]
-- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "bottom"]
+- !private ["PSo17UICoordinateSpace", "hamburgerStrokeEnd"]
+- !private ["PSo17UICoordinateSpace", "hamburgerStrokeStart"]
+- !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "kCAFillModeBackwards"]
 - !private ["PSo17UICoordinateSpace", "kCALineCapRound"]
 - !private ["PSo17UICoordinateSpace", "layer"]
-- ["PSo17UICoordinateSpace", "menuStrokeEnd"]
-- ["PSo17UICoordinateSpace", "menuStrokeStart"]
-- ["PSo17UICoordinateSpace", "middle"]
-- ["PSo17UICoordinateSpace", "outline"]
-- ["PSo17UICoordinateSpace", "shortStroke"]
-- ["PSo17UICoordinateSpace", "showsMenu"]
-- ["PSo17UICoordinateSpace", "top"]
+- !private ["PSo17UICoordinateSpace", "menuStrokeEnd"]
+- !private ["PSo17UICoordinateSpace", "menuStrokeStart"]
+- !private ["PSo17UICoordinateSpace", "middle"]
+- !private ["PSo17UICoordinateSpace", "outline"]
+- !private ["PSo17UICoordinateSpace", "shortStroke"]
+- !private ["PSo17UICoordinateSpace", "showsMenu"]
+- !private ["PSo17UICoordinateSpace", "top"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CABasicAnimation"]
 - !private ["PSo13UIDynamicItem", "CACurrentMediaTime"]
@@ -1086,20 +982,20 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "NSNull"]
 - !private ["PSo13UIDynamicItem", "NSValue"]
 - !private ["PSo13UIDynamicItem", "UIColor"]
-- ["PSo13UIDynamicItem", "bottom"]
-- ["PSo13UIDynamicItem", "hamburgerStrokeEnd"]
-- ["PSo13UIDynamicItem", "hamburgerStrokeStart"]
-- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "bottom"]
+- !private ["PSo13UIDynamicItem", "hamburgerStrokeEnd"]
+- !private ["PSo13UIDynamicItem", "hamburgerStrokeStart"]
+- !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "kCAFillModeBackwards"]
 - !private ["PSo13UIDynamicItem", "kCALineCapRound"]
 - !private ["PSo13UIDynamicItem", "layer"]
-- ["PSo13UIDynamicItem", "menuStrokeEnd"]
-- ["PSo13UIDynamicItem", "menuStrokeStart"]
-- ["PSo13UIDynamicItem", "middle"]
-- ["PSo13UIDynamicItem", "outline"]
-- ["PSo13UIDynamicItem", "shortStroke"]
-- ["PSo13UIDynamicItem", "showsMenu"]
-- ["PSo13UIDynamicItem", "top"]
+- !private ["PSo13UIDynamicItem", "menuStrokeEnd"]
+- !private ["PSo13UIDynamicItem", "menuStrokeStart"]
+- !private ["PSo13UIDynamicItem", "middle"]
+- !private ["PSo13UIDynamicItem", "outline"]
+- !private ["PSo13UIDynamicItem", "shortStroke"]
+- !private ["PSo13UIDynamicItem", "showsMenu"]
+- !private ["PSo13UIDynamicItem", "top"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "CABasicAnimation"]
 - !private ["PSo18UIFocusEnvironment", "CACurrentMediaTime"]
@@ -1114,20 +1010,20 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSNull"]
 - !private ["PSo18UIFocusEnvironment", "NSValue"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
-- ["PSo18UIFocusEnvironment", "bottom"]
-- ["PSo18UIFocusEnvironment", "hamburgerStrokeEnd"]
-- ["PSo18UIFocusEnvironment", "hamburgerStrokeStart"]
-- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "bottom"]
+- !private ["PSo18UIFocusEnvironment", "hamburgerStrokeEnd"]
+- !private ["PSo18UIFocusEnvironment", "hamburgerStrokeStart"]
+- !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kCAFillModeBackwards"]
 - !private ["PSo18UIFocusEnvironment", "kCALineCapRound"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
-- ["PSo18UIFocusEnvironment", "menuStrokeEnd"]
-- ["PSo18UIFocusEnvironment", "menuStrokeStart"]
-- ["PSo18UIFocusEnvironment", "middle"]
-- ["PSo18UIFocusEnvironment", "outline"]
-- ["PSo18UIFocusEnvironment", "shortStroke"]
-- ["PSo18UIFocusEnvironment", "showsMenu"]
-- ["PSo18UIFocusEnvironment", "top"]
+- !private ["PSo18UIFocusEnvironment", "menuStrokeEnd"]
+- !private ["PSo18UIFocusEnvironment", "menuStrokeStart"]
+- !private ["PSo18UIFocusEnvironment", "middle"]
+- !private ["PSo18UIFocusEnvironment", "outline"]
+- !private ["PSo18UIFocusEnvironment", "shortStroke"]
+- !private ["PSo18UIFocusEnvironment", "showsMenu"]
+- !private ["PSo18UIFocusEnvironment", "top"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "CABasicAnimation"]
 - !private ["PSo11UIFocusItem", "CACurrentMediaTime"]
@@ -1142,20 +1038,20 @@ depends-member:
 - !private ["PSo11UIFocusItem", "NSNull"]
 - !private ["PSo11UIFocusItem", "NSValue"]
 - !private ["PSo11UIFocusItem", "UIColor"]
-- ["PSo11UIFocusItem", "bottom"]
-- ["PSo11UIFocusItem", "hamburgerStrokeEnd"]
-- ["PSo11UIFocusItem", "hamburgerStrokeStart"]
-- ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "bottom"]
+- !private ["PSo11UIFocusItem", "hamburgerStrokeEnd"]
+- !private ["PSo11UIFocusItem", "hamburgerStrokeStart"]
+- !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "kCAFillModeBackwards"]
 - !private ["PSo11UIFocusItem", "kCALineCapRound"]
 - !private ["PSo11UIFocusItem", "layer"]
-- ["PSo11UIFocusItem", "menuStrokeEnd"]
-- ["PSo11UIFocusItem", "menuStrokeStart"]
-- ["PSo11UIFocusItem", "middle"]
-- ["PSo11UIFocusItem", "outline"]
-- ["PSo11UIFocusItem", "shortStroke"]
-- ["PSo11UIFocusItem", "showsMenu"]
-- ["PSo11UIFocusItem", "top"]
+- !private ["PSo11UIFocusItem", "menuStrokeEnd"]
+- !private ["PSo11UIFocusItem", "menuStrokeStart"]
+- !private ["PSo11UIFocusItem", "middle"]
+- !private ["PSo11UIFocusItem", "outline"]
+- !private ["PSo11UIFocusItem", "shortStroke"]
+- !private ["PSo11UIFocusItem", "showsMenu"]
+- !private ["PSo11UIFocusItem", "top"]
 - ["PSo11UIFocusItem", ""]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CABasicAnimation"]
@@ -1201,20 +1097,20 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSNull"]
 - !private ["PSo30UIResponderStandardEditActions", "NSValue"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
-- ["PSo30UIResponderStandardEditActions", "bottom"]
-- ["PSo30UIResponderStandardEditActions", "hamburgerStrokeEnd"]
-- ["PSo30UIResponderStandardEditActions", "hamburgerStrokeStart"]
-- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "bottom"]
+- !private ["PSo30UIResponderStandardEditActions", "hamburgerStrokeEnd"]
+- !private ["PSo30UIResponderStandardEditActions", "hamburgerStrokeStart"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "kCAFillModeBackwards"]
 - !private ["PSo30UIResponderStandardEditActions", "kCALineCapRound"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
-- ["PSo30UIResponderStandardEditActions", "menuStrokeEnd"]
-- ["PSo30UIResponderStandardEditActions", "menuStrokeStart"]
-- ["PSo30UIResponderStandardEditActions", "middle"]
-- ["PSo30UIResponderStandardEditActions", "outline"]
-- ["PSo30UIResponderStandardEditActions", "shortStroke"]
-- ["PSo30UIResponderStandardEditActions", "showsMenu"]
-- ["PSo30UIResponderStandardEditActions", "top"]
+- !private ["PSo30UIResponderStandardEditActions", "menuStrokeEnd"]
+- !private ["PSo30UIResponderStandardEditActions", "menuStrokeStart"]
+- !private ["PSo30UIResponderStandardEditActions", "middle"]
+- !private ["PSo30UIResponderStandardEditActions", "outline"]
+- !private ["PSo30UIResponderStandardEditActions", "shortStroke"]
+- !private ["PSo30UIResponderStandardEditActions", "showsMenu"]
+- !private ["PSo30UIResponderStandardEditActions", "top"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo18UITraitEnvironment", "CABasicAnimation"]
 - !private ["PSo18UITraitEnvironment", "CACurrentMediaTime"]
@@ -1229,20 +1125,20 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSNull"]
 - !private ["PSo18UITraitEnvironment", "NSValue"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
-- ["PSo18UITraitEnvironment", "bottom"]
-- ["PSo18UITraitEnvironment", "hamburgerStrokeEnd"]
-- ["PSo18UITraitEnvironment", "hamburgerStrokeStart"]
-- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "bottom"]
+- !private ["PSo18UITraitEnvironment", "hamburgerStrokeEnd"]
+- !private ["PSo18UITraitEnvironment", "hamburgerStrokeStart"]
+- !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kCAFillModeBackwards"]
 - !private ["PSo18UITraitEnvironment", "kCALineCapRound"]
 - !private ["PSo18UITraitEnvironment", "layer"]
-- ["PSo18UITraitEnvironment", "menuStrokeEnd"]
-- ["PSo18UITraitEnvironment", "menuStrokeStart"]
-- ["PSo18UITraitEnvironment", "middle"]
-- ["PSo18UITraitEnvironment", "outline"]
-- ["PSo18UITraitEnvironment", "shortStroke"]
-- ["PSo18UITraitEnvironment", "showsMenu"]
-- ["PSo18UITraitEnvironment", "top"]
+- !private ["PSo18UITraitEnvironment", "menuStrokeEnd"]
+- !private ["PSo18UITraitEnvironment", "menuStrokeStart"]
+- !private ["PSo18UITraitEnvironment", "middle"]
+- !private ["PSo18UITraitEnvironment", "outline"]
+- !private ["PSo18UITraitEnvironment", "shortStroke"]
+- !private ["PSo18UITraitEnvironment", "showsMenu"]
+- !private ["PSo18UITraitEnvironment", "top"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
 - !private ["CSo6UIView", "CABasicAnimation"]
@@ -1275,9 +1171,6 @@ depends-member:
 - ["CSo6UIView", "shortStroke"]
 - ["CSo6UIView", "showsMenu"]
 - ["CSo6UIView", "top"]
-- !private ["Ps14_ArrayProtocol", "Element"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CABasicAnimation"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CACurrentMediaTime"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CAMediaTimingFunction"]
@@ -1291,24 +1184,21 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSNull"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSValue"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottom"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "hamburgerStrokeEnd"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "hamburgerStrokeStart"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottom"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hamburgerStrokeEnd"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hamburgerStrokeStart"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kCAFillModeBackwards"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "kCALineCapRound"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "menuStrokeEnd"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "menuStrokeStart"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "middle"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "outline"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "shortStroke"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsMenu"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "top"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "menuStrokeEnd"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "menuStrokeStart"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "middle"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "outline"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "shortStroke"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsMenu"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "top"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -1316,6 +1206,7 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
 - !private ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CABasicAnimation"]
 - !private ["Ps9_Hashable", "CACurrentMediaTime"]
@@ -1336,7 +1227,7 @@ depends-member:
 - !private ["Ps9_Hashable", "addSublayer"]
 - !private ["Ps9_Hashable", "anchorPoint"]
 - !private ["Ps9_Hashable", "beginTime"]
-- ["Ps9_Hashable", "bottom"]
+- !private ["Ps9_Hashable", "bottom"]
 - !private ["Ps9_Hashable", "bounds"]
 - !private ["Ps9_Hashable", "cgColor"]
 - !private ["Ps9_Hashable", "copy"]
@@ -1344,8 +1235,8 @@ depends-member:
 - !private ["Ps9_Hashable", "fillColor"]
 - !private ["Ps9_Hashable", "fillMode"]
 - !private ["Ps9_Hashable", "fromValue"]
-- ["Ps9_Hashable", "hamburgerStrokeEnd"]
-- ["Ps9_Hashable", "hamburgerStrokeStart"]
+- !private ["Ps9_Hashable", "hamburgerStrokeEnd"]
+- !private ["Ps9_Hashable", "hamburgerStrokeStart"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "kCAFillModeBackwards"]
 - !private ["Ps9_Hashable", "kCALineCapRound"]
@@ -1354,116 +1245,81 @@ depends-member:
 - !private ["Ps9_Hashable", "lineCap"]
 - !private ["Ps9_Hashable", "lineWidth"]
 - !private ["Ps9_Hashable", "masksToBounds"]
-- ["Ps9_Hashable", "menuStrokeEnd"]
-- ["Ps9_Hashable", "menuStrokeStart"]
-- ["Ps9_Hashable", "middle"]
+- !private ["Ps9_Hashable", "menuStrokeEnd"]
+- !private ["Ps9_Hashable", "menuStrokeStart"]
+- !private ["Ps9_Hashable", "middle"]
 - !private ["Ps9_Hashable", "miter"]
 - !private ["Ps9_Hashable", "miterLimit"]
-- ["Ps9_Hashable", "ocb_applyAnimation"]
-- ["Ps9_Hashable", "outline"]
+- !private ["Ps9_Hashable", "ocb_applyAnimation"]
+- !private ["Ps9_Hashable", "outline"]
 - !private ["Ps9_Hashable", "path"]
 - !private ["Ps9_Hashable", "position"]
 - !private ["Ps9_Hashable", "presentation"]
 - !private ["Ps9_Hashable", "round"]
 - !private ["Ps9_Hashable", "setValue"]
-- ["Ps9_Hashable", "shortStroke"]
-- ["Ps9_Hashable", "showsMenu"]
+- !private ["Ps9_Hashable", "shortStroke"]
+- !private ["Ps9_Hashable", "showsMenu"]
 - !private ["Ps9_Hashable", "strokeColor"]
 - !private ["Ps9_Hashable", "strokeEnd"]
 - !private ["Ps9_Hashable", "strokeStart"]
 - !private ["Ps9_Hashable", "timingFunction"]
 - !private ["Ps9_Hashable", "toValue"]
-- ["Ps9_Hashable", "top"]
+- !private ["Ps9_Hashable", "top"]
 - !private ["Ps9_Hashable", "value"]
 - !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Key"]
-- !private ["Ps21_ObjectiveCBridgeable", "Value"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sa"
-- !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
-- "Sb"
+- !private "Sb"
 - !private "PSo8CAAction"
 - !private "CSo11CAAnimation"
-- "CSo16CABasicAnimation"
+- !private "CSo16CABasicAnimation"
 - "CSo7CALayer"
 - "PSo15CALayerDelegate"
 - "PSo13CAMediaTiming"
-- "CSo21CAMediaTimingFunction"
+- !private "CSo21CAMediaTimingFunction"
 - !private "CSo19CAPropertyAnimation"
 - "CSo12CAShapeLayer"
-- "VSC13CATransform3D"
-- "CSo7CGColor"
-- "V12CoreGraphics7CGFloat"
-- "OSC9CGLineCap"
-- "OSC10CGLineJoin"
+- !private "OSC9CGLineCap"
+- !private "OSC10CGLineJoin"
 - "CSo13CGMutablePath"
 - "CSo6CGPath"
 - "VSC7CGPoint"
-- "VSC6CGRect"
 - "Ps7CVarArg"
-- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Vs10Dictionary"
-- "Sd"
 - "Ps9Equatable"
-- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- "Sf"
 - "C11Diagnose_Me15HamburgerButton"
 - "Ps8Hashable"
-- "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- "Si"
-- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
-- !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "PSo16NSMutableCopying"
-- "CSo6NSNull"
+- !private "CSo6NSNull"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "CSo7NSValue"
-- "Sq"
-- !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
-- !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
+- !private "CSo7NSValue"
 - !private "Ps16RawRepresentable"
-- !private "Ps8Sequence"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo8UIButton"
-- "CSo7UIColor"
+- !private "CSo7UIColor"
 - "CSo9UIControl"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
@@ -1473,29 +1329,46 @@ depends-nominal:
 - "PSo30UIResponderStandardEditActions"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "Ps14_ArrayProtocol"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
-- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVKit.apinotesc"
 interface-hash: "9004aba15e5f77a541011d626444b4f5"

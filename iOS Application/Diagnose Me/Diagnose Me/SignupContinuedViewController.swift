@@ -34,21 +34,12 @@ class SignupContinuedViewController: UIViewController, UITextFieldDelegate {
         //end editing when tapping anywhere
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboardFromTap")
         view.addGestureRecognizer(tap)
-        
-        //let pan = UIPanGestureRecognizer(target: self, action: "scrollViewFromPan:")
-        //formBackgroundView.addGestureRecognizer(pan)
     }
     
     
     //GESTURE RECOGNIZER METHODS
     func dismissKeyboardFromTap(){
         view.endEditing(true)
-    }
-    
-    func scrollViewFromPan(gestureRecognizer: UIPanGestureRecognizer){
-        if gestureRecognizer.state == .changed {
-            formBackgroundView.frame.origin.y += gestureRecognizer.translation(in: self.view).y
-        }
     }
     
     
@@ -81,35 +72,38 @@ class SignupContinuedViewController: UIViewController, UITextFieldDelegate {
             break
         case heightField:
             UIView.animate(withDuration: 0.2, animations: {
-                
-                self.formBackgroundView.frame.origin.y -= 30
+                self.view.frame.origin.y -= 30
             })
             //formBackgroundView.frame.origin.y -= 20
             break
         case dobField:
             UIView.animate(withDuration: 0.2, animations: {
-                
-                self.formBackgroundView.frame.origin.y -= 30
+                self.view.frame.origin.y -= 30
+                //self.formBackgroundView.frame.origin.y -= 30
             })
             //formBackgroundView.frame.origin.y -= 20
             break
         case emailField:
             UIView.animate(withDuration: 0.2, animations: {
-                
-                self.formBackgroundView.frame.origin.y -= 30
+                self.view.frame.origin.y -= 30
+                //self.formBackgroundView.frame.origin.y -= 30
             })
             //formBackgroundView.frame.origin.y -= 20
             break
         case smokeField:
             UIView.animate(withDuration: 0.2, animations: {
-                
-                self.formBackgroundView.frame.origin.y -= 30
+                self.view.frame.origin.y -= 30
+                //self.formBackgroundView.frame.origin.y -= 30
             })
             //formBackgroundView.frame.origin.y -= 20
             break
         default:
             break
         }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

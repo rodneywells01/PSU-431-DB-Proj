@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1FC3A01EAD120600FABC16 /* BodyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FC39F1EAD120600FABC16 /* BodyTableViewController.swift */; };
+		CA1FC3AB1EAD1EC400FABC16 /* AffectedAreaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FC3AA1EAD1EC400FABC16 /* AffectedAreaTableViewController.swift */; };
+		CA1FC3AD1EADA99200FABC16 /* AuctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FC3AC1EADA99200FABC16 /* AuctionViewController.swift */; };
+		CA1FC3AF1EAE629B00FABC16 /* DiagnosisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FC3AE1EAE629B00FABC16 /* DiagnosisTableViewController.swift */; };
 		CA2E39921E621266003F2E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E39911E621266003F2E3B /* AppDelegate.swift */; };
 		CA2E39971E621266003F2E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2E39951E621266003F2E3B /* Main.storyboard */; };
 		CA2E39991E621266003F2E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2E39981E621266003F2E3B /* Assets.xcassets */; };
 		CA2E399C1E621266003F2E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2E399A1E621266003F2E3B /* LaunchScreen.storyboard */; };
 		CA3482081E8171D2003069EC /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3482071E8171D2003069EC /* MarketplaceViewController.swift */; };
 		CA34820B1E817239003069EC /* SymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34820A1E817239003069EC /* SymptomViewController.swift */; };
-		CA34820D1E817244003069EC /* BodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34820C1E817244003069EC /* BodyViewController.swift */; };
+		CA48749A1E96BAA200543761 /* Remedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4874991E96BAA200543761 /* Remedy.swift */; };
+		CA48749E1E96E39E00543761 /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48749D1E96E39E00543761 /* Symptom.swift */; };
+		CA4874A71E96E3A900543761 /* Illness.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4874A61E96E3A900543761 /* Illness.swift */; };
+		CA4874AD1E96F7FC00543761 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4874AC1E96F7FC00543761 /* CartTableViewController.swift */; };
+		CA5A5CE11EA569430066D5D1 /* SymptomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A5CE01EA569430066D5D1 /* SymptomTableViewController.swift */; };
+		CA5A5CEA1EA5694C0066D5D1 /* IllnessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A5CE91EA5694C0066D5D1 /* IllnessTableViewController.swift */; };
+		CA6E47921E9555F0004AAABE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6E47851E9555BE004AAABE /* Alamofire.framework */; };
+		CA6E47931E9555F0004AAABE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA6E47851E9555BE004AAABE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA6E47991E955841004AAABE /* RemedyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E47971E955841004AAABE /* RemedyCell.swift */; };
+		CA6E479A1E955841004AAABE /* RemedyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6E47981E955841004AAABE /* RemedyCell.xib */; };
+		CA6E479C1E9567CF004AAABE /* RemedyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E479B1E9567CF004AAABE /* RemedyTableViewController.swift */; };
+		CA6E479E1E95C1D9004AAABE /* RemedyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E479D1E95C1D9004AAABE /* RemedyDetailViewController.swift */; };
+		CA7123191EA96BB600CBFA19 /* IllnessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7123181EA96BB600CBFA19 /* IllnessDetailViewController.swift */; };
+		CA7123241EAC0F8700CBFA19 /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7123231EAC0F8700CBFA19 /* Auction.swift */; };
+		CA7EECD61E9D687B0054F990 /* PurchaseSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECD51E9D687B0054F990 /* PurchaseSetupViewController.swift */; };
+		CA7EECD81E9D688B0054F990 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECD71E9D688B0054F990 /* PurchaseViewController.swift */; };
+		CA7EECDC1E9D797B0054F990 /* PaymentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECDB1E9D797B0054F990 /* PaymentInformationViewController.swift */; };
+		CA7EECE01E9D79F10054F990 /* PaymentSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECDF1E9D79F10054F990 /* PaymentSelectionViewController.swift */; };
+		CA7EECE21E9D7A870054F990 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECE11E9D7A870054F990 /* Payment.swift */; };
+		CA7EECE41E9D80B10054F990 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECE31E9D80B10054F990 /* ProfileViewController.swift */; };
+		CA7EECE61E9D834C0054F990 /* Diagnosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECE51E9D834C0054F990 /* Diagnosis.swift */; };
+		CA7EECE81E9D864B0054F990 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EECE71E9D864B0054F990 /* Order.swift */; };
 		CABC350D1E8B216300534BAE /* LFLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC35061E8B216300534BAE /* LFLoginController.swift */; };
 		CABC350E1E8B216300534BAE /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC35071E8B216300534BAE /* AutoCompleteTextField.swift */; };
 		CABC350F1E8B216300534BAE /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = CABC35081E8B216300534BAE /* password.png */; };
@@ -26,21 +51,78 @@
 		CACFA7DA1E942A570008AAD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7D91E942A570008AAD5 /* LoginViewController.swift */; };
 		CACFA7DC1E9430090008AAD5 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7DB1E9430090008AAD5 /* LoginNavigationController.swift */; };
 		CACFA7DF1E9430780008AAD5 /* SignupContinuedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA7DE1E9430780008AAD5 /* SignupContinuedViewController.swift */; };
-		CACFA8041E94476D0008AAD5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACFA8031E94476D0008AAD5 /* Alamofire.framework */; };
-		CACFA8051E9447A00008AAD5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACFA8031E94476D0008AAD5 /* Alamofire.framework */; };
-		CACFA8061E9447A00008AAD5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CACFA8031E94476D0008AAD5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAD93D851E9D258A00EA5089 /* CartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD93D841E9D258A00EA5089 /* CartNavigationController.swift */; };
 		CAF32D2E1E661E1C005960AD /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF32D2D1E661E1C005960AD /* HamburgerButton.swift */; };
 		CAF32D301E6790A7005960AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF32D2F1E6790A7005960AD /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA6E47841E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		CA6E47861E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		CA6E47881E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		CA6E478A1E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		CA6E478C1E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		CA6E478E1E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		CA6E47901E9555BE004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		CA6E47941E9555F0004AAABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		CACFA8071E9447A10008AAD5 /* Embed Frameworks */ = {
+		CA6E47961E9555F0004AAABE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CACFA8061E9447A00008AAD5 /* Alamofire.framework in Embed Frameworks */,
+				CA6E47931E9555F0004AAABE /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +130,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA1FC39F1EAD120600FABC16 /* BodyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyTableViewController.swift; sourceTree = "<group>"; };
+		CA1FC3AA1EAD1EC400FABC16 /* AffectedAreaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffectedAreaTableViewController.swift; sourceTree = "<group>"; };
+		CA1FC3AC1EADA99200FABC16 /* AuctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionViewController.swift; sourceTree = "<group>"; };
+		CA1FC3AE1EAE629B00FABC16 /* DiagnosisTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisTableViewController.swift; sourceTree = "<group>"; };
 		CA2E398E1E621266003F2E3B /* Diagnose Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diagnose Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2E39911E621266003F2E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2E39961E621266003F2E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +142,26 @@
 		CA2E399D1E621266003F2E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3482071E8171D2003069EC /* MarketplaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
 		CA34820A1E817239003069EC /* SymptomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomViewController.swift; sourceTree = "<group>"; };
-		CA34820C1E817244003069EC /* BodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyViewController.swift; sourceTree = "<group>"; };
+		CA4874991E96BAA200543761 /* Remedy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Remedy.swift; sourceTree = "<group>"; };
+		CA48749D1E96E39E00543761 /* Symptom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
+		CA4874A61E96E3A900543761 /* Illness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Illness.swift; sourceTree = "<group>"; };
+		CA4874AC1E96F7FC00543761 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		CA5A5CE01EA569430066D5D1 /* SymptomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomTableViewController.swift; sourceTree = "<group>"; };
+		CA5A5CE91EA5694C0066D5D1 /* IllnessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IllnessTableViewController.swift; sourceTree = "<group>"; };
+		CA6E47971E955841004AAABE /* RemedyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyCell.swift; sourceTree = "<group>"; };
+		CA6E47981E955841004AAABE /* RemedyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemedyCell.xib; sourceTree = "<group>"; };
+		CA6E479B1E9567CF004AAABE /* RemedyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyTableViewController.swift; sourceTree = "<group>"; };
+		CA6E479D1E95C1D9004AAABE /* RemedyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyDetailViewController.swift; sourceTree = "<group>"; };
+		CA7123181EA96BB600CBFA19 /* IllnessDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IllnessDetailViewController.swift; sourceTree = "<group>"; };
+		CA7123231EAC0F8700CBFA19 /* Auction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
+		CA7EECD51E9D687B0054F990 /* PurchaseSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseSetupViewController.swift; sourceTree = "<group>"; };
+		CA7EECD71E9D688B0054F990 /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		CA7EECDB1E9D797B0054F990 /* PaymentInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInformationViewController.swift; sourceTree = "<group>"; };
+		CA7EECDF1E9D79F10054F990 /* PaymentSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentSelectionViewController.swift; sourceTree = "<group>"; };
+		CA7EECE11E9D7A870054F990 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		CA7EECE31E9D80B10054F990 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CA7EECE51E9D834C0054F990 /* Diagnosis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagnosis.swift; sourceTree = "<group>"; };
+		CA7EECE71E9D864B0054F990 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		CABC35061E8B216300534BAE /* LFLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFLoginController.swift; sourceTree = "<group>"; };
 		CABC35071E8B216300534BAE /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
 		CABC35081E8B216300534BAE /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
@@ -71,6 +176,7 @@
 		CACFA7DE1E9430780008AAD5 /* SignupContinuedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupContinuedViewController.swift; sourceTree = "<group>"; };
 		CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		CACFA8031E94476D0008AAD5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Alamofire/build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		CAD93D841E9D258A00EA5089 /* CartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartNavigationController.swift; sourceTree = "<group>"; };
 		CAF32D2D1E661E1C005960AD /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		CAF32D2F1E6790A7005960AD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CACFA8041E94476D0008AAD5 /* Alamofire.framework in Frameworks */,
-				CACFA8051E9447A00008AAD5 /* Alamofire.framework in Frameworks */,
+				CA6E47921E9555F0004AAABE /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,13 +219,93 @@
 			path = "Diagnose Me";
 			sourceTree = "<group>";
 		};
+		CA4874911E96BA9500543761 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CA4874991E96BAA200543761 /* Remedy.swift */,
+				CA7EECE71E9D864B0054F990 /* Order.swift */,
+				CA48749D1E96E39E00543761 /* Symptom.swift */,
+				CA7EECE51E9D834C0054F990 /* Diagnosis.swift */,
+				CA4874A61E96E3A900543761 /* Illness.swift */,
+				CA7EECE11E9D7A870054F990 /* Payment.swift */,
+				CA7123231EAC0F8700CBFA19 /* Auction.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		CA4874A81E96F66F00543761 /* body */ = {
+			isa = PBXGroup;
+			children = (
+				CA1FC39F1EAD120600FABC16 /* BodyTableViewController.swift */,
+				CA1FC3AA1EAD1EC400FABC16 /* AffectedAreaTableViewController.swift */,
+			);
+			name = body;
+			sourceTree = "<group>";
+		};
+		CA4874A91E96F67800543761 /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				CA4874AC1E96F7FC00543761 /* CartTableViewController.swift */,
+			);
+			name = cart;
+			sourceTree = "<group>";
+		};
+		CA6E477A1E9555BE004AAABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E47851E9555BE004AAABE /* Alamofire.framework */,
+				CA6E47871E9555BE004AAABE /* Alamofire iOS Tests.xctest */,
+				CA6E47891E9555BE004AAABE /* Alamofire.framework */,
+				CA6E478B1E9555BE004AAABE /* Alamofire macOS Tests.xctest */,
+				CA6E478D1E9555BE004AAABE /* Alamofire.framework */,
+				CA6E478F1E9555BE004AAABE /* Alamofire tvOS Tests.xctest */,
+				CA6E47911E9555BE004AAABE /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6E479F1E95C2C3004AAABE /* remedy controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA3482071E8171D2003069EC /* MarketplaceViewController.swift */,
+				CA6E479B1E9567CF004AAABE /* RemedyTableViewController.swift */,
+				CA6E47971E955841004AAABE /* RemedyCell.swift */,
+				CA6E47981E955841004AAABE /* RemedyCell.xib */,
+				CA6E479D1E95C1D9004AAABE /* RemedyDetailViewController.swift */,
+			);
+			name = "remedy controllers";
+			sourceTree = "<group>";
+		};
+		CA7EECD31E9D681A0054F990 /* symptom/disease search */ = {
+			isa = PBXGroup;
+			children = (
+				CA34820A1E817239003069EC /* SymptomViewController.swift */,
+				CA5A5CE01EA569430066D5D1 /* SymptomTableViewController.swift */,
+				CA1FC3AE1EAE629B00FABC16 /* DiagnosisTableViewController.swift */,
+				CA5A5CE91EA5694C0066D5D1 /* IllnessTableViewController.swift */,
+				CA7123181EA96BB600CBFA19 /* IllnessDetailViewController.swift */,
+			);
+			name = "symptom/disease search";
+			sourceTree = "<group>";
+		};
+		CA7EECD41E9D68350054F990 /* cart/purchase */ = {
+			isa = PBXGroup;
+			children = (
+				CA7EECD51E9D687B0054F990 /* PurchaseSetupViewController.swift */,
+				CA7EECDB1E9D797B0054F990 /* PaymentInformationViewController.swift */,
+				CA7EECDF1E9D79F10054F990 /* PaymentSelectionViewController.swift */,
+				CA7EECD71E9D688B0054F990 /* PurchaseViewController.swift */,
+			);
+			name = cart/purchase;
+			sourceTree = "<group>";
+		};
 		CABC34FE1E8B1D3400534BAE /* app */ = {
 			isa = PBXGroup;
 			children = (
 				CA2E39951E621266003F2E3B /* Main.storyboard */,
 				CABC35001E8B1D4700534BAE /* controllers */,
-				CABC34FF1E8B1D3D00534BAE /* views */,
 				CABC35011E8B1D5700534BAE /* supporting files */,
+				CABC34FF1E8B1D3D00534BAE /* views */,
 				CABC35021E8B1D5D00534BAE /* external */,
 			);
 			name = app;
@@ -137,10 +322,15 @@
 			isa = PBXGroup;
 			children = (
 				CAF32D2F1E6790A7005960AD /* MainViewController.swift */,
+				CA7EECD41E9D68350054F990 /* cart/purchase */,
+				CA7EECD31E9D681A0054F990 /* symptom/disease search */,
+				CAD93D831E9D254A00EA5089 /* navigation */,
 				CACFA7DD1E94302C0008AAD5 /* login/register */,
-				CA34820C1E817244003069EC /* BodyViewController.swift */,
-				CA3482071E8171D2003069EC /* MarketplaceViewController.swift */,
-				CA34820A1E817239003069EC /* SymptomViewController.swift */,
+				CA4874A91E96F67800543761 /* cart */,
+				CA4874A81E96F66F00543761 /* body */,
+				CA6E479F1E95C2C3004AAABE /* remedy controllers */,
+				CA7EECE31E9D80B10054F990 /* ProfileViewController.swift */,
+				CA1FC3AC1EADA99200FABC16 /* AuctionViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -148,8 +338,9 @@
 		CABC35011E8B1D5700534BAE /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				CABC35041E8B1DA300534BAE /* app stuff */,
 				CACFA7D41E92CBBB0008AAD5 /* DataHandler.swift */,
+				CA4874911E96BA9500543761 /* models */,
+				CABC35041E8B1DA300534BAE /* app stuff */,
 			);
 			name = "supporting files";
 			sourceTree = "<group>";
@@ -231,6 +422,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CAD93D831E9D254A00EA5089 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CAD93D841E9D258A00EA5089 /* CartNavigationController.swift */,
+			);
+			name = navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,11 +440,12 @@
 				CA2E398A1E621265003F2E3B /* Sources */,
 				CA2E398B1E621265003F2E3B /* Frameworks */,
 				CA2E398C1E621265003F2E3B /* Resources */,
-				CACFA8071E9447A10008AAD5 /* Embed Frameworks */,
+				CA6E47961E9555F0004AAABE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA6E47951E9555F0004AAABE /* PBXTargetDependency */,
 			);
 			name = "Diagnose Me";
 			productName = "Diagnose Me";
@@ -280,6 +480,12 @@
 			mainGroup = CA2E39851E621265003F2E3B;
 			productRefGroup = CA2E398F1E621266003F2E3B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CA6E477A1E9555BE004AAABE /* Products */;
+					ProjectRef = CACFA7E11E9445BF0008AAD5 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CA2E398D1E621265003F2E3B /* Diagnose Me */,
@@ -287,12 +493,65 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CA6E47851E9555BE004AAABE /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CA6E47841E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6E47871E9555BE004AAABE /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = CA6E47861E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6E47891E9555BE004AAABE /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CA6E47881E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6E478B1E9555BE004AAABE /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = CA6E478A1E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6E478D1E9555BE004AAABE /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CA6E478C1E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6E478F1E9555BE004AAABE /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = CA6E478E1E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6E47911E9555BE004AAABE /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CA6E47901E9555BE004AAABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CA2E398C1E621265003F2E3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CA2E399C1E621266003F2E3B /* LaunchScreen.storyboard in Resources */,
+				CA6E479A1E955841004AAABE /* RemedyCell.xib in Resources */,
 				CABC35101E8B216300534BAE /* user.png in Resources */,
 				CA2E39991E621266003F2E3B /* Assets.xcassets in Resources */,
 				CABC350F1E8B216300534BAE /* password.png in Resources */,
@@ -311,22 +570,53 @@
 				CACFA7DC1E9430090008AAD5 /* LoginNavigationController.swift in Sources */,
 				CA3482081E8171D2003069EC /* MarketplaceViewController.swift in Sources */,
 				CABC350E1E8B216300534BAE /* AutoCompleteTextField.swift in Sources */,
+				CA7EECE21E9D7A870054F990 /* Payment.swift in Sources */,
 				CA2E39921E621266003F2E3B /* AppDelegate.swift in Sources */,
+				CA48749A1E96BAA200543761 /* Remedy.swift in Sources */,
+				CA7123241EAC0F8700CBFA19 /* Auction.swift in Sources */,
+				CA1FC3A01EAD120600FABC16 /* BodyTableViewController.swift in Sources */,
+				CA7EECE61E9D834C0054F990 /* Diagnosis.swift in Sources */,
 				CACFA7D51E92CBBB0008AAD5 /* DataHandler.swift in Sources */,
+				CA7EECE01E9D79F10054F990 /* PaymentSelectionViewController.swift in Sources */,
 				CABC35121E8B216300534BAE /* AutoCompleteTextFieldProtocols.swift in Sources */,
-				CA34820D1E817244003069EC /* BodyViewController.swift in Sources */,
+				CA6E479C1E9567CF004AAABE /* RemedyTableViewController.swift in Sources */,
+				CA1FC3AF1EAE629B00FABC16 /* DiagnosisTableViewController.swift in Sources */,
+				CA7EECD81E9D688B0054F990 /* PurchaseViewController.swift in Sources */,
+				CA7EECE41E9D80B10054F990 /* ProfileViewController.swift in Sources */,
+				CA7EECE81E9D864B0054F990 /* Order.swift in Sources */,
+				CA6E47991E955841004AAABE /* RemedyCell.swift in Sources */,
+				CA6E479E1E95C1D9004AAABE /* RemedyDetailViewController.swift in Sources */,
+				CA7EECD61E9D687B0054F990 /* PurchaseSetupViewController.swift in Sources */,
+				CA4874A71E96E3A900543761 /* Illness.swift in Sources */,
 				CABC350D1E8B216300534BAE /* LFLoginController.swift in Sources */,
+				CA7EECDC1E9D797B0054F990 /* PaymentInformationViewController.swift in Sources */,
+				CA1FC3AB1EAD1EC400FABC16 /* AffectedAreaTableViewController.swift in Sources */,
 				CAF32D2E1E661E1C005960AD /* HamburgerButton.swift in Sources */,
 				CA34820B1E817239003069EC /* SymptomViewController.swift in Sources */,
 				CACFA7D81E9407650008AAD5 /* SignupViewController.swift in Sources */,
 				CACFA7DF1E9430780008AAD5 /* SignupContinuedViewController.swift in Sources */,
+				CA1FC3AD1EADA99200FABC16 /* AuctionViewController.swift in Sources */,
 				CABC35111E8B216300534BAE /* AutoCompleteTextFieldConstants.swift in Sources */,
 				CABC35131E8B216300534BAE /* BackgroundVideo.swift in Sources */,
+				CA5A5CEA1EA5694C0066D5D1 /* IllnessTableViewController.swift in Sources */,
+				CA4874AD1E96F7FC00543761 /* CartTableViewController.swift in Sources */,
+				CA48749E1E96E39E00543761 /* Symptom.swift in Sources */,
 				CAF32D301E6790A7005960AD /* MainViewController.swift in Sources */,
+				CAD93D851E9D258A00EA5089 /* CartNavigationController.swift in Sources */,
+				CA5A5CE11EA569430066D5D1 /* SymptomTableViewController.swift in Sources */,
+				CA7123191EA96BB600CBFA19 /* IllnessDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA6E47951E9555F0004AAABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = CA6E47941E9555F0004AAABE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA2E39951E621266003F2E3B /* Main.storyboard */ = {
@@ -442,6 +732,7 @@
 		CA2E39A11E621266003F2E3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BNULBZM8VH;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -459,6 +750,7 @@
 		CA2E39A21E621266003F2E3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BNULBZM8VH;
 				FRAMEWORK_SEARCH_PATHS = (
