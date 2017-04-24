@@ -44,13 +44,12 @@
 				<li>this</li>
 				<li>illness</li>
 			</ul>
-			<!--TODO: Eliminate requirement for search box-->
       		<form id="searchform" action="{% url 'remedy_list' %}" method="get" accept-charset="utf-8">
       				<button class="searchbutton" type="submit">
-      					Search for remedies by illid:
+      					Search for remedies
         			<i class="fa fa-search"></i>
       				</button>
-      			<input class="searchfield" id="searchbox" name="q" type="text" placeholder="{{ illness.illid }}">
+      			<input type="hidden" name="q" value="{{ illness.illid }}">
     		</form>
 		</div>
 	</div>

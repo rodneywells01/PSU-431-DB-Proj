@@ -42,6 +42,13 @@
 				<li>this</li>
 				<li>remedy</li>
 			</ul>
+			<form id="searchform" action="{% url 'addRemedyToCart' %}" method="get" accept-charset="utf-8">
+      			<button class="searchbutton" type="submit">
+      				Add to Cart
+        		<i class="fa fa-search"></i>
+      			</button>
+      			<input type="hidden" name="q" value="{{ remedy.remid }}">
+    		</form>
 		</div>
 	</div>
 	<div class="footer">

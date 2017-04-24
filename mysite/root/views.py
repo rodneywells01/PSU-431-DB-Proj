@@ -167,8 +167,14 @@ def changePayment(request):
 	return HttpResponseRedirect("/profile")
 
 def addRemedyToCart(request):
+	query = request.GET.get('q')
+	remedy=Remedy.objects.all()
+	remedy=remedy.get(remid=query)
 	try:
-		cart = request.user.clients.shopping_cart
+		client = request.user.clients
+		shopping_cart=Cart(user=client, remedy=remedy)
+		print("Cart retrieved")
+		shopping_cart.save()
 		#TODO: Add desired remedy to this relation
 	except:
 		tb = traceback.format_exc()
