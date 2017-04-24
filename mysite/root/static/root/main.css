@@ -137,6 +137,15 @@ body {
 	align-items: center;
 }
 
+.message {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	float: right;
+	align-items: center;
+}
+
 .formContent {
 	width: 300px;
 }
