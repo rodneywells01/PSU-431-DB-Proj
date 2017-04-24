@@ -1,14 +1,60 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'root/style.css' %}" />
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.Me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
 
-<h1>Illness List</h1>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
 
-{% if illness_list %}
-    <ul>
-    {% for illness in illness_list %}
-        <li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No illness are available.</p>
-{% endif %}
+	<div class="wrap">
+		<div class="content">
+			<h1>Search Results</h1>
+			{% if illness_list %}
+   				<ul>
+   			 	{% for illness in illness_list %}
+   			 		<!--TODO: Show summary blocks for each item, rather than just a hyperlink-->
+       				<li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>
+    			{% endfor %}
+    			</ul>
+			{% else %}
+    		<p>Search did not yield any results</p>
+			{% endif %}
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>
+

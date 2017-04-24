@@ -4,7 +4,7 @@
 <head>
 	<title>Diagnose.Me</title>
 	<link rel="stylesheet" type="text/css" 
-	href="{% static 'root/main.css' %}"/>
+		href="{% static 'root/main.css' %}"/>
 	<link rel="icon" href="{% static 'root/icon.png' %}">
 </head>
 
@@ -33,6 +33,13 @@
 	<div class="wrap">
 		<div class="content">
 			<h1>Search Diseases</h1>
+			<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">
+      			<input class="searchfield" id="searchbox" name="q" type="text" placeholder="Enter Disease" required>
+      			<button class="searchbutton" type="submit">
+      				Search 
+        			<i class="fa fa-search"></i>
+      			</button>
+    		</form>
 		</div>
 	</div>
 	

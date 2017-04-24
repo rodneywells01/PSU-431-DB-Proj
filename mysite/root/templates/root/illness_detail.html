@@ -1,13 +1,68 @@
-<h1>{{ illness.name }}</h1>
-<h2>Description</h2>
-<p>{{illness.description}}</p>
-<ul>
-	<li>Summarizing</li>
-	<li>key</li>
-	<li>facts</li>
-	<li>about</li>
-	<li>this</li>
-	<li>illness</li>
-</ul>
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.Me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
 
-<a href="/home/">Find Remedies</a>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
+
+	<div class="wrap">
+		<div class="content">
+			<h1>{{ illness.name }}</h1>
+			<h1>Illness ID: {{illness.illid}}</h1>
+			<h2>Description</h2>
+			<p>{{illness.description}}</p>
+			<ul>
+				<li>Summarizing</li>
+				<li>key</li>
+				<li>facts</li>
+				<li>about</li>
+				<li>this</li>
+				<li>illness</li>
+			</ul>
+			<!--TODO: Eliminate requirement for search box-->
+      		<form id="searchform" action="{% url 'remedy_list' %}" method="get" accept-charset="utf-8">
+      				<button class="searchbutton" type="submit">
+      					Search for remedies by illid:
+        			<i class="fa fa-search"></i>
+      				</button>
+      			<input class="searchfield" id="searchbox" name="q" type="text" placeholder="{{ illness.illid }}">
+    		</form>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>

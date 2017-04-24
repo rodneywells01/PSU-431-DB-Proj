@@ -122,6 +122,7 @@ body {
 	background: url("./medical.jpg");
 }
 
+
 .content {
 	min-height: 500px;
 	color: #000;
@@ -136,6 +137,61 @@ body {
 	float: right;
 	align-items: center;
 }
+
+.message {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	float: right;
+	align-items: center;
+}
+
+.member {
+	width: 188px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	float: right;
+	align-items: center;
+	text-align: center;
+}
+
+.member .shane {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./shane.png");
+}
+
+.member .rodney {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./rodney.png");
+}
+
+.member .brae {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./brae.png");
+}
+
+.member .luke {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./luke.png");
+}
+
+.member .andreas {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./andreas.png");
+}
+
 
 .formContent {
 	width: 300px;
@@ -169,4 +225,50 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+button.searchbutton {
+    background-color: #00a2e8; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.sumblock {
+	width: 200px;
+	height: 100px;
+	background: lightblue;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 1%;
+	text-align: center;
+	display: table-cell;
+}
+
+.sumblock:hover{
+	border-color: black;
+}
+
+.sumblock h3{
+	margin-top: 0px;
+}
+
+.sumblock p{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
 }

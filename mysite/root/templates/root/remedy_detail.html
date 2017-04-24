@@ -1,12 +1,58 @@
-<h1>{{ remedy.name }}</h1>
-<p>This is where body text would go describing this remedy</p>
-<ul>
-	<li>Summarizing</li>
-	<li>key</li>
-	<li>facts</li>
-	<li>about</li>
-	<li>this</li>
-	<li>remedy</li>
-</ul>
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.Me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
 
-<a href="/home/">Purchasing link</a>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
+
+	<div class="wrap">
+		<div class="content">
+			<h1>{{ remedy.name }}</h1>
+			<p>This is where body text would go describing this remedy</p>
+			<ul>
+				<li>Summarizing</li>
+				<li>key</li>
+				<li>facts</li>
+				<li>about</li>
+				<li>this</li>
+				<li>remedy</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>
