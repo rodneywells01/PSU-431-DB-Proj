@@ -65,6 +65,16 @@
 			{%else%}
 				<p>Not logged in</p>
 			{%endif%}
+			<h2>Shopping Cart</h2>
+			{% if shopping_cart %}
+   				<ul>
+   			 	{% for remedy in shopping_cart %}
+       				<li>{{remedy.name}}</li>
+    			{% endfor %}
+    			</ul>
+			{% else %}
+    			<p>No items in your cart.</p>
+			{% endif %}
 		</div>
 	</div>
 

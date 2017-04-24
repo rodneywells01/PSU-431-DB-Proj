@@ -18,10 +18,20 @@ class Payment_Information(models.Model):
 	def _str_ (self):
     		return self.client.user.username
 
+class Remedy(models.Model):
+	name = models.CharField(max_length=100)
+	remid = models.AutoField(primary_key=True)
+	purchasable = models.BooleanField(default = False)
+	supplier = models.CharField(max_length=100)
+	directcost = models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
+	def __str__(self):
+		return self.name
+
 class Clients(models.Model):
 	#Rather than making our own user model, make a one-to-one relationship with Django's built in user model.
 	# We can extend any desired attributes through the related "client" model.
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	shopping_cart = models.ManyToManyField(Remedy, through='Cart')
 	#Django's user model includes first and last name, email address, and username.
 	uid = models.AutoField(primary_key=True)
 	payment = models.OneToOneField(Payment_Information)
@@ -31,15 +41,6 @@ class Clients(models.Model):
 	symptoms = models.ManyToManyField(Symptom, through='SuffersFrom')
 	def __str__(self):
 		return self.user.username
-
-class Remedy(models.Model):
-	name = models.CharField(max_length=100)
-	remid = models.AutoField(primary_key=True)
-	purchasable = models.BooleanField(default = False)
-	supplier = models.CharField(max_length=100)
-	directcost = models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
-	def __str__(self):
-		return self.name
 
 class Illness(models.Model):
 	name = models.CharField(max_length=200)
@@ -103,7 +104,6 @@ class Auction(models.Model):
 class Exhibits(models.Model):
     symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
     illness = models.ForeignKey(Illness, on_delete=models.CASCADE)
-	
 
 class TreatedBy(models.Model):
 	remedy = models.ForeignKey(Remedy, on_delete=models.CASCADE)

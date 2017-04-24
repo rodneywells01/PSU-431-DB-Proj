@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, render, HttpResponseRedirect
 from django.http import HttpResponse, HttpResponseRedirect
-from django.template import loader
+from django.template import loader, Context
 from django.urls import reverse
 from .models import *
 from django.views import generic
@@ -147,7 +147,10 @@ class IllnessDetailView(generic.DetailView):
 
 def profile(request):
 	template = loader.get_template('root/profile.html')
-	context = { }
+	remedies = Remedy.objects.all()
+	username = request.user.username
+	remedies = remedies.filter(cart__user__user__username=username)
+	context = Context({"shopping_cart": remedies})
 	return HttpResponse(template.render(context, request))	
 
 def changePayment(request):
@@ -158,6 +161,15 @@ def changePayment(request):
 		client.payment.card_number = creditcard
 		client.payment.address = address
 		client.payment.save()
+	except:
+		tb = traceback.format_exc()
+		return HttpResponse(tb)
+	return HttpResponseRedirect("/profile")
+
+def addRemedyToCart(request):
+	try:
+		cart = request.user.clients.shopping_cart
+		#TODO: Add desired remedy to this relation
 	except:
 		tb = traceback.format_exc()
 		return HttpResponse(tb)
