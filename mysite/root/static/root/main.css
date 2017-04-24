@@ -122,6 +122,7 @@ body {
 	background: url("./medical.jpg");
 }
 
+
 .content {
 	min-height: 500px;
 	color: #000;
@@ -145,6 +146,52 @@ body {
 	float: right;
 	align-items: center;
 }
+
+.member {
+	width: 188px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	float: right;
+	align-items: center;
+	text-align: center;
+}
+
+.member .shane {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./shane.png");
+}
+
+.member .rodney {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./rodney.png");
+}
+
+.member .brae {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./brae.png");
+}
+
+.member .luke {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./luke.png");
+}
+
+.member .andreas {
+	display: block;
+	width: 160px;
+	height: 160px;
+	background: url("./andreas.png");
+}
+
 
 .formContent {
 	width: 300px;
