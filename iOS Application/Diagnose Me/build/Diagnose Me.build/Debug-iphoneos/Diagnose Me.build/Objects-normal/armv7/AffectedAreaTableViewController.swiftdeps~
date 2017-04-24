@@ -1,0 +1,425 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AffectedAreaTableViewController"
+provides-nominal:
+- "C11Diagnose_Me31AffectedAreaTableViewController"
+provides-member:
+- ["C11Diagnose_Me31AffectedAreaTableViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "numberOfSections"
+- "selectedArea"
+- "tableView"
+- "viewDidAppear"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- "AffectedAreaTableViewController"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "Dictionary"
+- "Int"
+- !private "NSForegroundColorAttributeName"
+- "String"
+- !private "UIColor"
+- "UITableView"
+- "UITableViewController"
+depends-member:
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "Bool"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "Int"]
+- !private ["C11Diagnose_Me31AffectedAreaTableViewController", "NSForegroundColorAttributeName"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "String"]
+- !private ["C11Diagnose_Me31AffectedAreaTableViewController", "UIColor"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "UITableView"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "deinit"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "didReceiveMemoryWarning"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "init"]
+- !private ["C11Diagnose_Me31AffectedAreaTableViewController", "navigationController"]
+- !private ["C11Diagnose_Me31AffectedAreaTableViewController", "navigationItem"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "numberOfSections"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "selectedArea"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "tableView"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "viewDidAppear"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "viewDidLoad"]
+- ["C11Diagnose_Me31AffectedAreaTableViewController", "viewWillAppear"]
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "navigationBar"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "navigationItem"]
+- !private ["Ps9AnyObject", "selectedArea"]
+- !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "titleTextAttributes"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "titleTextAttributes"]
+- !private ["Ps7CVarArg", "NSForegroundColorAttributeName"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "navigationBar"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "navigationItem"]
+- !private ["Ps7CVarArg", "selectedArea"]
+- !private ["Ps7CVarArg", "title"]
+- !private ["Ps7CVarArg", "titleTextAttributes"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
+- !private ["Ps28CustomDebugStringConvertible", "selectedArea"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "white"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "navigationBar"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
+- !private ["Ps23CustomStringConvertible", "selectedArea"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "navigationBar"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "navigationItem"]
+- !private ["Ps9Equatable", "selectedArea"]
+- !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "titleTextAttributes"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "white"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "navigationBar"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "navigationItem"]
+- !private ["Ps8Hashable", "selectedArea"]
+- !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "titleTextAttributes"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "white"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "selectedArea"]
+- !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "white"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "white"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
+- !private ["PSo26NSExtensionRequestHandling", "selectedArea"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "navigationItem"]
+- ["CSo8NSObject", "numberOfSections"]
+- ["CSo8NSObject", "selectedArea"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
+- ["CSo8NSObject", "viewDidAppear"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["CSo8NSObject", "white"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "selectedArea"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "white"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- !private ["PSo21UIAppearanceContainer", "selectedArea"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
+- !private ["CSo7UIColor", "white"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
+- !private ["PSo18UIContentContainer", "selectedArea"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "selectedArea"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "titleTextAttributes"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
+- !private ["CSo22UINavigationController", "navigationBar"]
+- !private ["CSo16UINavigationItem", "title"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "navigationItem"]
+- ["CSo11UIResponder", "numberOfSections"]
+- ["CSo11UIResponder", "selectedArea"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "viewDidAppear"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "NSForegroundColorAttributeName"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationBar"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationItem"]
+- !private ["PSo30UIResponderStandardEditActions", "selectedArea"]
+- !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
+- !private ["PSo20UIScrollViewDelegate", "navigationItem"]
+- !private ["PSo20UIScrollViewDelegate", "selectedArea"]
+- !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
+- !private ["PSo16UIStateRestoring", "selectedArea"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["CSo21UITableViewController", "Bool"]
+- ["CSo21UITableViewController", "Int"]
+- !private ["CSo21UITableViewController", "NSForegroundColorAttributeName"]
+- ["CSo21UITableViewController", "String"]
+- !private ["CSo21UITableViewController", "UIColor"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- ["CSo21UITableViewController", "init"]
+- !private ["CSo21UITableViewController", "navigationController"]
+- !private ["CSo21UITableViewController", "navigationItem"]
+- ["CSo21UITableViewController", "numberOfSections"]
+- ["CSo21UITableViewController", "selectedArea"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "viewDidAppear"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", "viewWillAppear"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
+- !private ["PSo21UITableViewDataSource", "navigationItem"]
+- !private ["PSo21UITableViewDataSource", "selectedArea"]
+- !private ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
+- !private ["PSo19UITableViewDelegate", "navigationItem"]
+- !private ["PSo19UITableViewDelegate", "selectedArea"]
+- !private ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
+- !private ["PSo18UITraitEnvironment", "selectedArea"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "titleTextAttributes"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "navigationItem"]
+- ["CSo16UIViewController", "numberOfSections"]
+- ["CSo16UIViewController", "selectedArea"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidAppear"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleTextAttributes"]
+- !private ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps9_Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "navigationBar"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "navigationItem"]
+- !private ["Ps9_Hashable", "selectedArea"]
+- !private ["Ps9_Hashable", "title"]
+- !private ["Ps9_Hashable", "titleTextAttributes"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "C11Diagnose_Me31AffectedAreaTableViewController"
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
+- !private "CSo16UINavigationItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVKit.apinotesc"
+interface-hash: "f81e4b232541623e883cbda52c82f7d5"
