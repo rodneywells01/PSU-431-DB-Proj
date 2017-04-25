@@ -12,7 +12,7 @@ class Symptom(models.Model):
 		return self.name
 
 class Payment_Information(models.Model):
-	paymentid = models.AutoField(primary_key=True)
+	paymentid = models.AutoField(primary_key=True, default = '1')
 	card_number = models.IntegerField() #each credit card number will be unique
 	address = models.CharField(max_length=60)
 	def _str_ (self):
