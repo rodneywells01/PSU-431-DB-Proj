@@ -23,5 +23,6 @@ urlpatterns = [
 	url(r'addToCart/', views.addRemedyToCart, name='addRemedyToCart'),
 	url(r'addDiagnosis/', views.addDiagnosis, name='addDiagnosis'),
 	url(r'addReview/', views.addReview, name='addReview'),
-	url(r'/ReviewPage/', views.ReviewPage, name='ReviewPage')
+	url(r'ReviewPage/', views.ReviewPage, name='ReviewPage'),
+	url(r'doctor_list/', views.DoctorListView.as_view(), name='doctor_list')
 ]

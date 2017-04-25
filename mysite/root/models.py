@@ -42,7 +42,9 @@ class Illness(models.Model):
 	prefgender = models.BooleanField(default=False)
 	symptoms = models.ManyToManyField(Symptom, through='Exhibits')
 	remedies = models.ManyToManyField(Remedy, through='TreatedBy')
-	#Still need Severity, Prevalence, and Type
+	prevalence = models.IntegerField(default=0)
+	severity = models.IntegerField(default=0)
+	category = models.CharField(max_length=20, default='Common')
 	def __str__(self):
 		return self.name
 

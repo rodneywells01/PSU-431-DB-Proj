@@ -36,17 +36,23 @@
 			<h1>Illness ID: {{illness.illid}}</h1>
 			<h2>Description</h2>
 			<p>{{illness.description}}</p>
-			<ul>
-				<li>Summarizing</li>
-				<li>key</li>
-				<li>facts</li>
-				<li>about</li>
-				<li>this</li>
-				<li>illness</li>
-			</ul>
+			<h2>Prevalence</h2>
+			<p>{{illness.prevalence}} per 1,000 peoples.</p>
+			<h2>Severity</h2>
+			<p>{{illness.severity}}% mortality rate.</p>
+			<h2>Category</h2>
+			<p>This illness is considered '{{illness.category}}'</p>
       		<form id="searchform" action="{% url 'remedy_list' %}" method="get" accept-charset="utf-8">
       				<button class="searchbutton" type="submit">
       					Search for remedies
+        			<i class="fa fa-search"></i>
+      				</button>
+      			<input type="hidden" name="q" value="{{ illness.illid }}">
+    		</form>
+    		<br/>
+    		<form id="searchform" action="{% url 'doctor_list' %}" method="get" accept-charset="utf-8">
+      				<button class="searchbutton" type="submit">
+      					Find a professional
         			<i class="fa fa-search"></i>
       				</button>
       			<input type="hidden" name="q" value="{{ illness.illid }}">
@@ -60,6 +66,7 @@
       				</button>
       			<input type="hidden" name="q" value="{{ illness.illid }}">
     		</form>
+    		<br/>
     		{% endif %}
 		</div>
 	</div>

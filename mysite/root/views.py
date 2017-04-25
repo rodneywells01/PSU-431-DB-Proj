@@ -220,5 +220,17 @@ def ReviewPage(request):
 	remedy_ratings = remedy_ratings.filter(remedy_id=remedy_id)
 	context=Context({"review_list": remedy_ratings})
 	template = loader.get_template('root/ratings.html')
-	return HttpResponse(template.render(context, request))	
+	return HttpResponse(template.render(context, request))
+
+class DoctorListView(generic.ListView):
+    template_name = 'root/remedy_list.html'
+    context_object_name = 'remedy_list'
+
+    def get_queryset(self):
+        """Doctor List."""
+        remedies = Doctor.objects.all()
+        query = self.request.GET.get('q')
+        if query:
+            remedies = remedies.filter(specialist__illness__illid=query)
+        return remedies
 
