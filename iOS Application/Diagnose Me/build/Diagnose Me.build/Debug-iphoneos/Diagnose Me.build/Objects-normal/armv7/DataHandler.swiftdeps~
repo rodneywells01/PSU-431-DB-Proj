@@ -1,0 +1,483 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataHandlerRemedyDelegate"
+- "DataHandlerRemedyDetailDelegate"
+- "DataHandlerCartDelegate"
+- "DataHandlerProfileDelegate"
+- "DataHandlerPurchaseDelegate"
+- "DataHandlerDiagnoseDelegate"
+- "DataHandlerIllnessDelegate"
+- "DataHandlerAuctionDelegate"
+- "DataHandlerDiagnosisViewDelegate"
+- "DataHandler"
+provides-nominal:
+- "P11Diagnose_Me25DataHandlerRemedyDelegate"
+- "P11Diagnose_Me31DataHandlerRemedyDetailDelegate"
+- "P11Diagnose_Me23DataHandlerCartDelegate"
+- "P11Diagnose_Me26DataHandlerProfileDelegate"
+- "P11Diagnose_Me27DataHandlerPurchaseDelegate"
+- "P11Diagnose_Me27DataHandlerDiagnoseDelegate"
+- "P11Diagnose_Me26DataHandlerIllnessDelegate"
+- "P11Diagnose_Me26DataHandlerAuctionDelegate"
+- "P11Diagnose_Me32DataHandlerDiagnosisViewDelegate"
+- "C11Diagnose_Me11DataHandler"
+provides-member:
+- ["P11Diagnose_Me25DataHandlerRemedyDelegate", ""]
+- ["P11Diagnose_Me31DataHandlerRemedyDetailDelegate", ""]
+- ["P11Diagnose_Me23DataHandlerCartDelegate", ""]
+- ["P11Diagnose_Me26DataHandlerProfileDelegate", ""]
+- ["P11Diagnose_Me27DataHandlerPurchaseDelegate", ""]
+- ["P11Diagnose_Me27DataHandlerDiagnoseDelegate", ""]
+- ["P11Diagnose_Me26DataHandlerIllnessDelegate", ""]
+- ["P11Diagnose_Me26DataHandlerAuctionDelegate", ""]
+- ["P11Diagnose_Me32DataHandlerDiagnosisViewDelegate", ""]
+- ["C11Diagnose_Me11DataHandler", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+="
+- !private "..<"
+- !private "=="
+- !private ">"
+- !private "Alamofire"
+- !private "AssignmentPrecedence"
+- "Auction"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CLLocationCoordinate2D"
+- !private "CastingPrecedence"
+- "DataHandler"
+- "DataHandlerAuctionDelegate"
+- "DataHandlerCartDelegate"
+- "DataHandlerDiagnoseDelegate"
+- "DataHandlerDiagnosisViewDelegate"
+- "DataHandlerIllnessDelegate"
+- "DataHandlerProfileDelegate"
+- "DataHandlerPurchaseDelegate"
+- "DataHandlerRemedyDelegate"
+- "DataHandlerRemedyDetailDelegate"
+- "Double"
+- "Illness"
+- !private "NSDictionary"
+- "Order"
+- "Payment"
+- "Remedy"
+- "String"
+- !private "StringLiteralType"
+- "Symptom"
+- !private "UserDefaults"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "Alamofire"]
+- !private ["Ps9AnyObject", "Auction"]
+- ["Ps9AnyObject", "Illness"]
+- !private ["Ps9AnyObject", "Order"]
+- !private ["Ps9AnyObject", "Payment"]
+- ["Ps9AnyObject", "Remedy"]
+- ["Ps9AnyObject", "Symptom"]
+- !private ["Ps9AnyObject", "UserDefaults"]
+- !private ["Ps9AnyObject", "allIllnesses"]
+- !private ["Ps9AnyObject", "allRemedies"]
+- !private ["Ps9AnyObject", "allSymptoms"]
+- !private ["Ps9AnyObject", "auctionDelegate"]
+- !private ["Ps9AnyObject", "cartDelegate"]
+- !private ["Ps9AnyObject", "diagnoseDelegate"]
+- !private ["Ps9AnyObject", "diagnosisViewDelegate"]
+- !private ["Ps9AnyObject", "id"]
+- !private ["Ps9AnyObject", "illnessDelegate"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "marketplaceDelegate"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "profileDelegate"]
+- !private ["Ps9AnyObject", "purchaseDelegate"]
+- !private ["Ps9AnyObject", "remedyDetailDelegate"]
+- !private ["Ps9AnyObject", "responseJSON"]
+- !private ["Ps9AnyObject", "set"]
+- !private ["Ps9AnyObject", "standard"]
+- !private ["Ps9AnyObject", "subscript"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["C11Diagnose_Me7Auction", "init"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "count"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "set"]
+- !private ["Ps7CVarArg", "standard"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "failure"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "set"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "success"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "failure"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "responseJSON"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "set"]
+- !private ["Ps23CustomStringConvertible", "standard"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "success"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["C11Diagnose_Me11DataHandler", "Alamofire"]
+- !private ["C11Diagnose_Me11DataHandler", "Auction"]
+- ["C11Diagnose_Me11DataHandler", "Bool"]
+- ["C11Diagnose_Me11DataHandler", "CLLocationCoordinate2D"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerAuctionDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerCartDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerDiagnoseDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerDiagnosisViewDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerIllnessDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerProfileDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerPurchaseDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerRemedyDelegate"]
+- ["C11Diagnose_Me11DataHandler", "DataHandlerRemedyDetailDelegate"]
+- !private ["C11Diagnose_Me11DataHandler", "Double"]
+- ["C11Diagnose_Me11DataHandler", "Illness"]
+- !private ["C11Diagnose_Me11DataHandler", "NSDictionary"]
+- !private ["C11Diagnose_Me11DataHandler", "Order"]
+- !private ["C11Diagnose_Me11DataHandler", "Payment"]
+- ["C11Diagnose_Me11DataHandler", "Remedy"]
+- ["C11Diagnose_Me11DataHandler", "String"]
+- ["C11Diagnose_Me11DataHandler", "Symptom"]
+- !private ["C11Diagnose_Me11DataHandler", "UserDefaults"]
+- ["C11Diagnose_Me11DataHandler", "addCartItem"]
+- ["C11Diagnose_Me11DataHandler", "addPaymentMethod"]
+- ["C11Diagnose_Me11DataHandler", "allIllnesses"]
+- ["C11Diagnose_Me11DataHandler", "allRemedies"]
+- ["C11Diagnose_Me11DataHandler", "allSymptoms"]
+- ["C11Diagnose_Me11DataHandler", "auctionDelegate"]
+- ["C11Diagnose_Me11DataHandler", "cartDelegate"]
+- ["C11Diagnose_Me11DataHandler", "createUser"]
+- ["C11Diagnose_Me11DataHandler", "deinit"]
+- ["C11Diagnose_Me11DataHandler", "diagnoseDelegate"]
+- ["C11Diagnose_Me11DataHandler", "diagnoseForSymptoms"]
+- ["C11Diagnose_Me11DataHandler", "diagnosisViewDelegate"]
+- ["C11Diagnose_Me11DataHandler", "executeAuctionBid"]
+- ["C11Diagnose_Me11DataHandler", "executeAuctionPurchase"]
+- ["C11Diagnose_Me11DataHandler", "executeBuyItNow"]
+- ["C11Diagnose_Me11DataHandler", "executeCartPurchase"]
+- ["C11Diagnose_Me11DataHandler", "getAllIllnesses"]
+- ["C11Diagnose_Me11DataHandler", "getAllRemedies"]
+- ["C11Diagnose_Me11DataHandler", "getAllSymptoms"]
+- ["C11Diagnose_Me11DataHandler", "getAuctions"]
+- ["C11Diagnose_Me11DataHandler", "getCartItems"]
+- ["C11Diagnose_Me11DataHandler", "getDiagnoses"]
+- ["C11Diagnose_Me11DataHandler", "getIllnessesForRemedy"]
+- ["C11Diagnose_Me11DataHandler", "getOrders"]
+- ["C11Diagnose_Me11DataHandler", "getPaymentMethods"]
+- ["C11Diagnose_Me11DataHandler", "getRemedies"]
+- ["C11Diagnose_Me11DataHandler", "getSpecialists"]
+- ["C11Diagnose_Me11DataHandler", "getSymptoms"]
+- ["C11Diagnose_Me11DataHandler", "getTopBid"]
+- ["C11Diagnose_Me11DataHandler", "illnessDelegate"]
+- ["C11Diagnose_Me11DataHandler", "init"]
+- ["C11Diagnose_Me11DataHandler", "logInUser"]
+- ["C11Diagnose_Me11DataHandler", "marketplaceDelegate"]
+- !private ["C11Diagnose_Me11DataHandler", "print"]
+- ["C11Diagnose_Me11DataHandler", "profileDelegate"]
+- ["C11Diagnose_Me11DataHandler", "purchaseDelegate"]
+- ["C11Diagnose_Me11DataHandler", "remedyDetailDelegate"]
+- ["C11Diagnose_Me11DataHandler", "removeCartItem"]
+- ["P11Diagnose_Me26DataHandlerAuctionDelegate", "Double"]
+- ["P11Diagnose_Me26DataHandlerAuctionDelegate", "didRetrieveTopBid"]
+- ["P11Diagnose_Me23DataHandlerCartDelegate", "Remedy"]
+- ["P11Diagnose_Me23DataHandlerCartDelegate", "didFinishItemRemoval"]
+- ["P11Diagnose_Me23DataHandlerCartDelegate", "didFinishRetrieval"]
+- ["P11Diagnose_Me27DataHandlerDiagnoseDelegate", "Illness"]
+- ["P11Diagnose_Me27DataHandlerDiagnoseDelegate", "Symptom"]
+- ["P11Diagnose_Me27DataHandlerDiagnoseDelegate", "didFinishIllnessRetrieval"]
+- ["P11Diagnose_Me27DataHandlerDiagnoseDelegate", "didFinishSymptomRetrieval"]
+- ["P11Diagnose_Me32DataHandlerDiagnosisViewDelegate", "Illness"]
+- ["P11Diagnose_Me32DataHandlerDiagnosisViewDelegate", "didFinishDiagnosis"]
+- ["P11Diagnose_Me26DataHandlerIllnessDelegate", "Remedy"]
+- ["P11Diagnose_Me26DataHandlerIllnessDelegate", "Symptom"]
+- ["P11Diagnose_Me26DataHandlerIllnessDelegate", "didFinishRemedyRetrieval"]
+- ["P11Diagnose_Me26DataHandlerIllnessDelegate", "didFinishSymptomRetrieval"]
+- ["P11Diagnose_Me26DataHandlerProfileDelegate", "Illness"]
+- ["P11Diagnose_Me26DataHandlerProfileDelegate", "Order"]
+- ["P11Diagnose_Me26DataHandlerProfileDelegate", "didFinishDiagnosesRetrieval"]
+- ["P11Diagnose_Me26DataHandlerProfileDelegate", "didFinishOrdersRetrieval"]
+- ["P11Diagnose_Me27DataHandlerPurchaseDelegate", "Payment"]
+- ["P11Diagnose_Me27DataHandlerPurchaseDelegate", "didFinishPaymentMethodsRetrieval"]
+- ["P11Diagnose_Me25DataHandlerRemedyDelegate", "didFinishRetrieval"]
+- ["P11Diagnose_Me31DataHandlerRemedyDetailDelegate", "Auction"]
+- ["P11Diagnose_Me31DataHandlerRemedyDetailDelegate", "Illness"]
+- ["P11Diagnose_Me31DataHandlerRemedyDetailDelegate", "didFinishAuctionRetrieval"]
+- ["P11Diagnose_Me31DataHandlerRemedyDetailDelegate", "didFinishIllnessRetrieval"]
+- !private ["C9Alamofire11DataRequest", "responseJSON"]
+- !private ["V9Alamofire12DataResponse", "result"]
+- !private ["V9Alamofire12DataResponse", "value"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "get"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "post"]
+- !private ["Ps9Equatable", "set"]
+- !private ["Ps9Equatable", "standard"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["O9Alamofire10HTTPMethod", "get"]
+- !private ["O9Alamofire10HTTPMethod", "post"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "get"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "post"]
+- !private ["Ps8Hashable", "set"]
+- !private ["Ps8Hashable", "standard"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["C11Diagnose_Me7Illness", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "subscript"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["CSo12NSDictionary", "subscript"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "subscript"]
+- !private ["CSo8NSObject", "set"]
+- !private ["CSo8NSObject", "standard"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "set"]
+- !private ["PSo16NSObjectProtocol", "standard"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["CSo8NSString", "init"]
+- !private ["C11Diagnose_Me5Order", "init"]
+- !private ["C11Diagnose_Me7Payment", "init"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps16RawRepresentable", "get"]
+- !private ["Ps16RawRepresentable", "post"]
+- !private ["C11Diagnose_Me6Remedy", "init"]
+- !private ["C9Alamofire7Request", "responseJSON"]
+- !private ["P9Alamofire8Response", "result"]
+- !private ["P9Alamofire8Response", "value"]
+- !private ["O9Alamofire6Result", "failure"]
+- !private ["O9Alamofire6Result", "success"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["SS", "init"]
+- !private ["C11Diagnose_Me7Symptom", "id"]
+- !private ["C11Diagnose_Me7Symptom", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["P9Alamofire14URLConvertible", "init"]
+- !private ["CSo12UserDefaults", "set"]
+- !private ["CSo12UserDefaults", "standard"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "get"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "post"]
+- !private ["Ps9_Hashable", "set"]
+- !private ["Ps9_Hashable", "standard"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- !private "C11Diagnose_Me7Auction"
+- "Ps23BidirectionalCollection"
+- !private "Sb"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C11Diagnose_Me11DataHandler"
+- "P11Diagnose_Me26DataHandlerAuctionDelegate"
+- "P11Diagnose_Me23DataHandlerCartDelegate"
+- "P11Diagnose_Me27DataHandlerDiagnoseDelegate"
+- "P11Diagnose_Me32DataHandlerDiagnosisViewDelegate"
+- "P11Diagnose_Me26DataHandlerIllnessDelegate"
+- "P11Diagnose_Me26DataHandlerProfileDelegate"
+- "P11Diagnose_Me27DataHandlerPurchaseDelegate"
+- "P11Diagnose_Me25DataHandlerRemedyDelegate"
+- "P11Diagnose_Me31DataHandlerRemedyDetailDelegate"
+- !private "C9Alamofire11DataRequest"
+- !private "V9Alamofire12DataResponse"
+- !private "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "O9Alamofire10HTTPMethod"
+- !private "Ps8Hashable"
+- !private "C11Diagnose_Me7Illness"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "C11Diagnose_Me5Order"
+- !private "C11Diagnose_Me7Payment"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "C11Diagnose_Me6Remedy"
+- !private "C9Alamofire7Request"
+- !private "P9Alamofire8Response"
+- !private "O9Alamofire6Result"
+- "Ps8Sequence"
+- !private "SS"
+- !private "C11Diagnose_Me7Symptom"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "P9Alamofire14URLConvertible"
+- !private "CSo12UserDefaults"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/lukeporupski/Documents/PSU-431-DB-Proj/iOS Application/Diagnose Me/Alamofire/build/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVKit.apinotesc"
+interface-hash: "7b33bf84e715c421786e74eb73b25fc7"
