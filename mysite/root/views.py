@@ -197,3 +197,28 @@ def addDiagnosis(request):
 		return HttpResponse(tb)
 	return HttpResponseRedirect("/profile")
 
+def addReview(request):
+	review = request.GET.get('review')
+	score = request.GET.get('score')
+	remedy_id = request.GET.get('remedy')
+	remedy = Remedy.objects.all()
+	remedy = remedy.get(remid=remedy_id)
+	try:
+		client = request.user.clients
+		rating = Rating(review = review, score = score)
+		rating.save()
+		review = Remedy_Rating(remedy=remedy, rating=rating, client=client)
+		review.save()
+	except:
+		tb = traceback.format_exc()
+		return HttpResponse(tb)
+	return HttpResponseRedirect("remid"+remedy_id+"/detail/")
+
+def ReviewPage(request):
+	remedy_id = request.GET.get('remid')
+	remedy_ratings = Remedy_Rating.objects.all()
+	remedy_ratings = remedy_ratings.filter(remedy_id=remedy_id)
+	context=Context({"review_list": remedy_ratings})
+	template = loader.get_template('root/ratings.html')
+	return HttpResponse(template.render(context, request))	
+

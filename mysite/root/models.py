@@ -18,12 +18,20 @@ class Payment_Information(models.Model):
 	def _str_ (self):
     		return self.client.user.username
 
+class Rating(models.Model):
+	review = models.CharField(max_length = 500)
+	rating_id = models.AutoField(primary_key = True)
+	score = models.DecimalField(max_digits = 10, decimal_places = 2)
+	def _str_ (self):
+    		return self.name
+
 class Remedy(models.Model):
 	name = models.CharField(max_length=100)
 	remid = models.AutoField(primary_key=True)
 	purchasable = models.BooleanField(default = False)
 	supplier = models.CharField(max_length=100)
 	directcost = models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
+	review_list = models.ManyToManyField(Rating, through='Remedy_Rating')
 	def __str__(self):
 		return self.name
 
@@ -61,14 +69,6 @@ class Doctor(models.Model):
 	rating = models.DecimalField(max_digits = 4, decimal_places=2)
 	address = models.CharField(max_length = 60)
 	def __str__(self):
-    		return self.name
-
-class Rating(models.Model):
-	review = models.CharField(max_length = 500)
-	rating_id = models.AutoField(primary_key = True)
-	score = models.DecimalField(max_digits = 10, decimal_places = 2)
-	uid = models.IntegerField()
-	def _str_ (self):
     		return self.name
 
 class InsuranceCompany(models.Model):
@@ -118,6 +118,7 @@ class SuffersFrom(models.Model):
 class Remedy_Rating(models.Model):
 	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
 	rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
+	client = models.ForeignKey(Clients, on_delete = models.CASCADE)
 
 class Doctor_Rating(models.Model):
 	rating = models.ForeignKey(Rating, on_delete = models.CASCADE)

@@ -42,6 +42,7 @@
 				<li>this</li>
 				<li>remedy</li>
 			</ul>
+			{% if user.is_authenticated %}
 			<form id="searchform" action="{% url 'addRemedyToCart' %}" method="get" accept-charset="utf-8">
       			<button class="searchbutton" type="submit">
       				Add to Cart
@@ -49,6 +50,27 @@
       			</button>
       			<input type="hidden" name="q" value="{{ remedy.remid }}">
     		</form>
+    		<form method="get" action="{% url 'addReview' %}">
+				<fieldset>
+					<legend>Leave a Review</legend>
+					<div class="formContent">
+						Review <input type="text" name="review" style="font-size: 15px; float: right" size="15px" placeholder="Enter Review">
+						<br/>
+						<br/>
+						Score <input type="text" name="score" style="font-size: 15px; float: right" size="15px" placeholder="10">
+						<br/>
+						<br/>
+					</div>
+					<input type="hidden" name="remedy" value="{{ remedy.remid }}">
+					<input type="submit" value="Save" style="font-size: 15px"></button>
+				</fieldset>
+				<br/>
+			</form>
+			<form method="get" action="{% url 'ReviewPage' %}">
+				<input type="hidden" name="remid" value="{{ remedy.remid }}">
+				<input type="submit" value="View Reviews" style="font-size: 15px"></button>
+			</form>
+			{% endif %}
 		</div>
 	</div>
 	<div class="footer">

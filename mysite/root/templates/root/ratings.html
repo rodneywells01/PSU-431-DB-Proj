@@ -30,39 +30,20 @@
 	</div>
 	<div class="border"></div>
 
-	<div class="wrap">
-		<div class="content">
-			<h1>{{ illness.name }}</h1>
-			<h1>Illness ID: {{illness.illid}}</h1>
-			<h2>Description</h2>
-			<p>{{illness.description}}</p>
-			<ul>
-				<li>Summarizing</li>
-				<li>key</li>
-				<li>facts</li>
-				<li>about</li>
-				<li>this</li>
-				<li>illness</li>
-			</ul>
-      		<form id="searchform" action="{% url 'remedy_list' %}" method="get" accept-charset="utf-8">
-      				<button class="searchbutton" type="submit">
-      					Search for remedies
-        			<i class="fa fa-search"></i>
-      				</button>
-      			<input type="hidden" name="q" value="{{ illness.illid }}">
-    		</form>
-    		<br/>
-    		{% if user.is_authenticated %}
-    		<form id="searchform" action="{% url 'addDiagnosis' %}" method="get" accept-charset="utf-8">
-      				<button class="searchbutton" type="submit">
-      					Confirm Diagnosis
-        			<i class="fa fa-search"></i>
-      				</button>
-      			<input type="hidden" name="q" value="{{ illness.illid }}">
-    		</form>
-    		{% endif %}
-		</div>
-	</div>
+	{% if review_list %}
+   				<ul>
+   			 	{% for remedy_rating in review_list %}
+       				<div class="reviewContent">
+       					<h3>User: {{ remedy_rating.client.user.username }} </h3>
+       					<p>Rating: {{ remedy_rating.rating.score }}</p>
+       					<p>Review: {{ remedy_rating.rating.review }}</p>
+       				</div>
+    			{% endfor %}
+    			</ul>
+			{% else %}
+    		<p>No reviews to display.</p>
+	{% endif %}
+
 	<div class="footer">
 		<div class="wrap">
 			<ul class="footerMenu">

@@ -21,5 +21,7 @@ urlpatterns = [
 	url(r'profile/', views.profile, name='profile'),
 	url(r'changePayment/', views.changePayment, name='changePayment'),
 	url(r'addToCart/', views.addRemedyToCart, name='addRemedyToCart'),
-	url(r'addDiagnosis/', views.addDiagnosis, name='addDiagnosis')
+	url(r'addDiagnosis/', views.addDiagnosis, name='addDiagnosis'),
+	url(r'addReview/', views.addReview, name='addReview'),
+	url(r'/ReviewPage/', views.ReviewPage, name='ReviewPage')
 ]
