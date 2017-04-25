@@ -27,6 +27,17 @@ class Remedy(models.Model):
 	def __str__(self):
 		return self.name
 
+class Illness(models.Model):
+	name = models.CharField(max_length=200)
+	illid = models.AutoField(primary_key=True)
+	description = models.CharField(max_length=500, default="Description")
+	prefgender = models.BooleanField(default=False)
+	symptoms = models.ManyToManyField(Symptom, through='Exhibits')
+	remedies = models.ManyToManyField(Remedy, through='TreatedBy')
+	#Still need Severity, Prevalence, and Type
+	def __str__(self):
+		return self.name
+
 class Clients(models.Model):
 	#Rather than making our own user model, make a one-to-one relationship with Django's built in user model.
 	# We can extend any desired attributes through the related "client" model.
@@ -39,19 +50,9 @@ class Clients(models.Model):
 	height = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	weight = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	symptoms = models.ManyToManyField(Symptom, through='SuffersFrom')
+	diagnoses = models.ManyToManyField(Illness, through='Diagnosis')
 	def __str__(self):
 		return self.user.username
-
-class Illness(models.Model):
-	name = models.CharField(max_length=200)
-	illid = models.AutoField(primary_key=True)
-	description = models.CharField(max_length=500, default="Description")
-	prefgender = models.BooleanField(default=False)
-	symptoms = models.ManyToManyField(Symptom, through='Exhibits')
-	remedies = models.ManyToManyField(Remedy, through='TreatedBy')
-	#Still need Severity, Prevalence, and Type
-	def __str__(self):
-		return self.name
 
 class Doctor(models.Model):
 	name = models.CharField(max_length = 40)
@@ -146,6 +147,10 @@ class Bid(models.Model):
 	auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
 	user = models.ForeignKey(User, on_delete = models.CASCADE)
 	amount = models.DecimalField(max_digits = 10, decimal_places = 2)
+
+class Diagnosis(models.Model):
+	client = models.ForeignKey(Clients, on_delete = models.CASCADE)
+	illness = models.ForeignKey(Illness, on_delete = models.CASCADE)
 
 #class Payment(models.Model):
 #	user = models.ForeignKey(Clients, on_delete = models.CASCADE)

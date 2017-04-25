@@ -150,7 +150,9 @@ def profile(request):
 	remedies = Remedy.objects.all()
 	username = request.user.username
 	remedies = remedies.filter(cart__user__user__username=username)
-	context = Context({"shopping_cart": remedies})
+	illnesses = Illness.objects.all()
+	illnesses = illnesses.filter(diagnosis__client__user__username=username)
+	context = Context({"shopping_cart": remedies, "diagnoses": illnesses})
 	return HttpResponse(template.render(context, request))	
 
 def changePayment(request):
@@ -176,6 +178,20 @@ def addRemedyToCart(request):
 		print("Cart retrieved")
 		shopping_cart.save()
 		#TODO: Add desired remedy to this relation
+	except:
+		tb = traceback.format_exc()
+		return HttpResponse(tb)
+	return HttpResponseRedirect("/profile")
+
+def addDiagnosis(request):
+	query = request.GET.get('q')
+	illness=Illness.objects.all()
+	illness=illness.get(illid=query)
+	try:
+		client = request.user.clients
+		diagnosis=Diagnosis(client=client, illness=illness)
+		print("Diagnosis saved")
+		diagnosis.save()
 	except:
 		tb = traceback.format_exc()
 		return HttpResponse(tb)

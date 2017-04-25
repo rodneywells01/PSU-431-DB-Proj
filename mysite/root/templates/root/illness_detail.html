@@ -51,6 +51,14 @@
       				</button>
       			<input type="hidden" name="q" value="{{ illness.illid }}">
     		</form>
+    		<br/>
+    		<form id="searchform" action="{% url 'addDiagnosis' %}" method="get" accept-charset="utf-8">
+      				<button class="searchbutton" type="submit">
+      					Confirm Diagnosis
+        			<i class="fa fa-search"></i>
+      				</button>
+      			<input type="hidden" name="q" value="{{ illness.illid }}">
+    		</form>
 		</div>
 	</div>
 	<div class="footer">

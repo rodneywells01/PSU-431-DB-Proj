@@ -75,6 +75,26 @@
 			{% else %}
     			<p>No items in your cart.</p>
 			{% endif %}
+			<h2>Diagnoses</h2>
+			{% if diagnoses %}
+   				<ul>
+   			 	{% for illness in diagnoses %}
+       				<li>{{illness.name}}</li>
+    			{% endfor %}
+    			</ul>
+			{% else %}
+    			<p>No diagnoses.</p>
+			{% endif %}
+			<h2>Orders</h2>
+			{% if orders %}
+   				<ul>
+   			 	{% for remedy in shopping_cart %}
+       				<li>{{remedy.name}}</li>
+    			{% endfor %}
+    			</ul>
+			{% else %}
+    			<p>No orders on record.</p>
+			{% endif %}
 		</div>
 	</div>
 

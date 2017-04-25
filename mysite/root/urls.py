@@ -20,5 +20,6 @@ urlpatterns = [
 	url(r'logout_user/', views.logout_user, name='logout_user'),
 	url(r'profile/', views.profile, name='profile'),
 	url(r'changePayment/', views.changePayment, name='changePayment'),
-	url(r'addToCart/', views.addRemedyToCart, name='addRemedyToCart')
+	url(r'addToCart/', views.addRemedyToCart, name='addRemedyToCart'),
+	url(r'addDiagnosis/', views.addDiagnosis, name='addDiagnosis')
 ]
