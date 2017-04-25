@@ -108,7 +108,8 @@ class IllnessListView(generic.ListView):
 
 	def get_queryset(self):
 		"""Illness List."""
-		result = Illness.objects.order_by('illid')
+		# Put 'more likely' illnesses at the top.
+		result = Illness.objects.order_by('-prevalence')
 		query = self.request.GET.get('q')
 		if query:
 			result = result.filter(name__icontains=query)
@@ -119,7 +120,7 @@ class DiagnosisResultsView(generic.ListView):
 	context_object_name = 'symptom_search'
 	def get_queryset(self):
 		"""Symptom Search"""
-		result = Illness.objects.order_by('illid')
+		result = Illness.objects.order_by('-prevalence')
 		query = self.request.GET.get('q')
 		if query:
 			result = result.filter(exhibits__symptom__name__icontains=query)
