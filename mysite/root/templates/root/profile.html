@@ -72,6 +72,13 @@
        				<li>{{remedy.name}}</li>
     			{% endfor %}
     			</ul>
+    			<form id="searchform" action="{% url '' %}" method="get" accept-charset="utf-8">
+      			<button class="checkoutbutton" type="submit">
+      				Checkout
+        		<i class="fa fa-search"></i>
+      			</button>
+      			<input type="hidden" name="q" value="{{  }}">
+    		</form>
 			{% else %}
     			<p>No items in your cart.</p>
 			{% endif %}

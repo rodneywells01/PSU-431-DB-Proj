@@ -111,8 +111,18 @@ class IllnessListView(generic.ListView):
 		# Put 'more likely' illnesses at the top.
 		result = Illness.objects.order_by('illid')
 		query = self.request.GET.get('q')
+		prevalence_upper_bound = self.request.GET.get('prevalence_upper_bound')
+		prevalence_lower_bound = self.request.GET.get('prevalence_lower_bound')
+		severity_upper_bound = self.request.GET.get('severity_upper_bound')
+		severity_lower_bound = self.request.GET.get('severity_lower_bound')
 		if query:
 			result = result.filter(name__icontains=query)
+		if prevalence_upper_bound:
+			result = result.filter(prevalence__lte=prevalence_upper_bound)
+			result = result.filter(prevalence__gte=prevalence_lower_bound)
+		if severity_upper_bound:
+			result = result.filter(severity__lte=severity_upper_bound)
+			result = result.filter(severity__gte=severity_lower_bound)
 		return result
 
 class DiagnosisResultsView(generic.ListView):
