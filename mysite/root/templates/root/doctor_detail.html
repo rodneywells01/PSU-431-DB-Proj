@@ -35,8 +35,9 @@
 			<h1>{{ doctor.name }}</h1>
 			<p>This is where body text would go describing this doctor</p>
 			<h1>Doctor ID: {{doctor.doctor_id}}</h1>
-			<h2>Address</h2>
+			<h3>Address</h3>
 			<p>{{doctor.address}}</p>
+			<p>Covered by {{doctor.coverage.name}}</p>
 			{% if user.is_authenticated %}
     		<form method="get" action="{% url 'addReview' %}">
 				<fieldset>

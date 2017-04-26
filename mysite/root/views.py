@@ -163,7 +163,9 @@ def profile(request):
 	remedies = remedies.filter(cart__user__user__username=username)
 	illnesses = Illness.objects.all()
 	illnesses = illnesses.filter(diagnosis__client__user__username=username)
-	context = Context({"shopping_cart": remedies, "diagnoses": illnesses})
+	orders = Order.objects.all()
+	orders = orders.filter(client__user__username=username)
+	context = Context({"shopping_cart": remedies, "diagnoses": illnesses, "orders": orders})
 	return HttpResponse(template.render(context, request))	
 
 def changePayment(request):

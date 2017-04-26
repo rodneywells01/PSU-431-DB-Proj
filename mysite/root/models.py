@@ -64,19 +64,20 @@ class Clients(models.Model):
 	def __str__(self):
 		return self.user.username
 
+class InsuranceCompany(models.Model):
+	insurance_id = models.AutoField(primary_key = True) #auto incremting number for each insurance company.
+	name = models.CharField(max_length = 100)
+	def __str__ (self):
+		return self.name
+
 class Doctor(models.Model):
 	name = models.CharField(max_length = 40)
     #potential change
 	doctor_id = models.AutoField(primary_key = True)
 	rating = models.DecimalField(max_digits = 4, decimal_places=2)
 	address = models.CharField(max_length = 60)
+	coverage = models.ForeignKey(InsuranceCompany)
 	def __str__(self):
-    		return self.name
-
-class InsuranceCompany(models.Model):
-	insurance_id = models.AutoField(primary_key = True) #auto incremting number for each insurance company.
-	name = models.CharField(max_length = 100)
-	def _str_ (self):
     		return self.name
 
 class Order(models.Model):
@@ -84,6 +85,7 @@ class Order(models.Model):
 	order_id = models.AutoField(primary_key = True)
 	user_id = models.IntegerField() #user that purchased the order
 	repurchase_date = models.DateTimeField(auto_now_add = True)
+	client = models.ForeignKey(Clients, on_delete=models.CASCADE)
 	def _str_ (self):
 		 	return self.name
 
@@ -131,9 +133,9 @@ class Specialist(models.Model):
 	illness = models.ForeignKey(Illness, on_delete = models.CASCADE)
 	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
 
-class Coverage(models.Model):
-	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
-	insurance = models.ForeignKey(InsuranceCompany, on_delete = models.CASCADE)
+#class Coverage(models.Model):
+#	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
+#	insurance = models.ForeignKey(InsuranceCompany, on_delete = models.CASCADE)
 
 class Cart(models.Model):
 	remedy = models.ForeignKey(Remedy, on_delete = models.CASCADE)
@@ -149,7 +151,7 @@ class Auction_Delivery(models.Model):
 
 class Bid(models.Model):
 	auction = models.ForeignKey(Auction, on_delete = models.CASCADE)
-	user = models.ForeignKey(User, on_delete = models.CASCADE)
+	client = models.ForeignKey(Clients, on_delete = models.CASCADE)
 	amount = models.DecimalField(max_digits = 10, decimal_places = 2)
 
 class Diagnosis(models.Model):
