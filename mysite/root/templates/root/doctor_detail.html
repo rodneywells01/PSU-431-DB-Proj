@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.Me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
+
+	<div class="wrap">
+		<div class="content">
+			<h1>{{ doctor.name }}</h1>
+			<p>This is where body text would go describing this doctor</p>
+			<h1>Doctor ID: {{doctor.doctor_id}}</h1>
+			<h2>Address</h2>
+			<p>{{doctor.address}}</p>
+			{% if user.is_authenticated %}
+    		<form method="get" action="{% url 'addReview' %}">
+				<fieldset>
+					<legend>Leave a Review</legend>
+					<div class="formContent">
+						Review <input type="text" name="review" style="font-size: 15px; float: right" size="15px" placeholder="Enter Review">
+						<br/>
+						<br/>
+						Score <input type="text" name="score" style="font-size: 15px; float: right" size="15px" placeholder="10">
+						<br/>
+						<br/>
+					</div>
+					<input type="hidden" name="doctor_id" value="{{ doctor.doctor_id }}">
+					<input type="submit" value="Save" style="font-size: 15px"></button>
+				</fieldset>
+				<br/>
+			</form>
+			<form method="get" action="{% url 'ReviewPage' %}">
+				<input type="hidden" name="doctor_id" value="{{ doctor.doctor_id }}">
+				<input type="submit" value="View Reviews" style="font-size: 15px"></button>
+			</form>
+			{% endif %}
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>

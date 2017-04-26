@@ -125,6 +125,7 @@ class Remedy_Rating(models.Model):
 class Doctor_Rating(models.Model):
 	rating = models.ForeignKey(Rating, on_delete = models.CASCADE)
 	doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
+	client = models.ForeignKey(Clients, on_delete = models.CASCADE)
 
 class Specialist(models.Model):
 	illness = models.ForeignKey(Illness, on_delete = models.CASCADE)

@@ -109,7 +109,7 @@ class IllnessListView(generic.ListView):
 	def get_queryset(self):
 		"""Illness List."""
 		# Put 'more likely' illnesses at the top.
-		result = Illness.objects.order_by('-prevalence')
+		result = Illness.objects.order_by('illid')
 		query = self.request.GET.get('q')
 		if query:
 			result = result.filter(name__icontains=query)
@@ -201,31 +201,46 @@ def addDiagnosis(request):
 def addReview(request):
 	review = request.GET.get('review')
 	score = request.GET.get('score')
+	doctor_id = request.GET.get('doctor_id')
 	remedy_id = request.GET.get('remedy')
-	remedy = Remedy.objects.all()
-	remedy = remedy.get(remid=remedy_id)
-	try:
-		client = request.user.clients
-		rating = Rating(review = review, score = score)
-		rating.save()
+	print(score)
+	print(review)
+	client = request.user.clients
+	rating = Rating(review = review, score = score)
+	rating.save()
+	if(remedy_id):
+		remedy = Remedy.objects.all()
+		remedy = remedy.get(remid=remedy_id)
 		review = Remedy_Rating(remedy=remedy, rating=rating, client=client)
 		review.save()
-	except:
-		tb = traceback.format_exc()
-		return HttpResponse(tb)
-	return HttpResponseRedirect("remid"+remedy_id+"/detail/")
+		return HttpResponseRedirect("/remid"+remedy_id+"/detail/")
+	if(doctor_id):
+		doctor = Doctor.objects.all()
+		doctor = doctor.get(doctor_id=doctor_id)
+		review = Doctor_Rating(doctor=doctor, rating=rating, client=client)
+		review.save()
+		return HttpResponseRedirect("/doctor_id"+doctor_id+"/detail/")
 
 def ReviewPage(request):
 	remedy_id = request.GET.get('remid')
-	remedy_ratings = Remedy_Rating.objects.all()
-	remedy_ratings = remedy_ratings.filter(remedy_id=remedy_id)
-	context=Context({"review_list": remedy_ratings})
-	template = loader.get_template('root/ratings.html')
-	return HttpResponse(template.render(context, request))
+	doctor_id = request.GET.get('doctor_id')
+	if(remedy_id):
+		remedy_ratings = Remedy_Rating.objects.all()
+		remedy_ratings = remedy_ratings.filter(remedy_id=remedy_id)
+		context=Context({"review_list": remedy_ratings})
+		template = loader.get_template('root/ratings.html')
+		return HttpResponse(template.render(context, request))
+	if(doctor_id):
+		doctor_ratings = Doctor_Rating.objects.all()
+		doctor_ratings = doctor_ratings.filter(doctor_id=doctor_id)
+		context=Context({"doctor_review_list": doctor_ratings})
+		template = loader.get_template('root/ratings.html')
+		return HttpResponse(template.render(context, request))
+
 
 class DoctorListView(generic.ListView):
-    template_name = 'root/remedy_list.html'
-    context_object_name = 'remedy_list'
+    template_name = 'root/doctor_list.html'
+    context_object_name = 'doctor_list'
 
     def get_queryset(self):
         """Doctor List."""
@@ -235,3 +250,6 @@ class DoctorListView(generic.ListView):
             remedies = remedies.filter(specialist__illness__illid=query)
         return remedies
 
+class DoctorDetailView(generic.DetailView):
+    model = Doctor
+    template_name = 'root/doctor_detail.html'

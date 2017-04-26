@@ -30,30 +30,20 @@
 	</div>
 	<div class="border"></div>
 
-	{% if review_list %}
-   		<ul>
-   			{% for remedy_rating in review_list %}
-       		<div class="reviewContent">
-       			<h3>User: {{ remedy_rating.client.user.username }} </h3>
-       			<p>Rating: {{ remedy_rating.rating.score }}</p>
-       			<p>Review: {{ remedy_rating.rating.review }}</p>
-       		</div>
-    	{% endfor %}
-    	</ul>
-	{% elif doctor_review_list %}
-   		<ul>
-   			{% for doctor_rating in doctor_review_list %}
-       		<div class="reviewContent">
-       			<h3>User: {{ doctor_rating.client.user.username }} </h3>
-       			<p>Rating: {{ doctor_rating.rating.score }}</p>
-       			<p>Review: {{ doctor_rating.rating.review }}</p>
-       		</div>
-    	{% endfor %}
-    	</ul>
-	{% else %}
-    	<p>No reviews to display.</p>
-	{% endif %}
-
+	<div class="wrap">
+		<div class="content">
+			<h1>Doctor List</h1>
+			{% if doctor_list %}
+    		<ul>
+    			{% for doctor in doctor_list %}
+        			<li><a href="{% url 'doctor_detail' doctor.doctor_id %}">{{doctor.name}}</a></li>
+    			{% endfor %}
+    		</ul>
+			{% else %}
+    			<p>No specialists are on record.</p>
+			{% endif %}
+		</div>
+	</div>
 	<div class="footer">
 		<div class="wrap">
 			<ul class="footerMenu">
@@ -66,3 +56,4 @@
 	</div>
 </body>
 </html>
+
