@@ -76,6 +76,22 @@
       			<input type="hidden" name="severity_upper_bound" value="{{ '50' }}">
       			<input type="hidden" name="severity_lower_bound" value="{{ '0' }}">
     		</form>
+    		<br/>
+    		<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">
+      				<button class="searchbutton" type="submit">
+      					Browse Hereditary Diseases
+        			<i class="fa fa-search"></i>
+      				</button>
+      			<input type="hidden" name="cause" value="{{ 'hereditary' }}">
+    		</form>
+    		<br/>
+    		<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">
+      				<button class="searchbutton" type="submit">
+      					Browse Bacterial Diseases
+        			<i class="fa fa-search"></i>
+      				</button>
+      			<input type="hidden" name="cause" value="{{ 'bacterial' }}">
+    		</form>
 		</div>
 	</div>
 	

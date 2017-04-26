@@ -115,6 +115,7 @@ class IllnessListView(generic.ListView):
 		prevalence_lower_bound = self.request.GET.get('prevalence_lower_bound')
 		severity_upper_bound = self.request.GET.get('severity_upper_bound')
 		severity_lower_bound = self.request.GET.get('severity_lower_bound')
+		cause = self.request.GET.get('cause')
 		if query:
 			result = result.filter(name__icontains=query)
 		if prevalence_upper_bound:
@@ -123,6 +124,8 @@ class IllnessListView(generic.ListView):
 		if severity_upper_bound:
 			result = result.filter(severity__lte=severity_upper_bound)
 			result = result.filter(severity__gte=severity_lower_bound)
+		if cause:
+			result = result.filter(cause__icontains=cause)
 		return result
 
 class DiagnosisResultsView(generic.ListView):

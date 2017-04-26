@@ -45,6 +45,8 @@ class Illness(models.Model):
 	prevalence = models.IntegerField(default=0)
 	severity = models.IntegerField(default=0)
 	category = models.CharField(max_length=20, default='Common')
+	areaofbody = models.CharField(max_length=20, default='Torso')
+	cause = models.CharField(max_length=20, default='Bacterial')
 	def __str__(self):
 		return self.name
 

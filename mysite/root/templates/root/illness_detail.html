@@ -40,6 +40,10 @@
 			<p>{{illness.prevalence}} per 1,000 peoples.</p>
 			<h2>Severity</h2>
 			<p>{{illness.severity}}% mortality rate.</p>
+			<h2>Cause</h2>
+			<p>{{illness.cause}}</p>
+			<h2>Affected area of the Body</h2>
+			<p>{{illness.areaofbody}}</p>
 			<h2>Category</h2>
 			<p>This illness is considered '{{illness.category}}'</p>
       		<form id="searchform" action="{% url 'remedy_list' %}" method="get" accept-charset="utf-8">
