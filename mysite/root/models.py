@@ -59,6 +59,7 @@ class Clients(models.Model):
 	uid = models.AutoField(primary_key=True)
 	payment = models.OneToOneField(Payment_Information)
 	gender = models.BooleanField(default=False)
+	issmoker = models.BooleanField(default=False)
 	height = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	weight = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	symptoms = models.ManyToManyField(Symptom, through='SuffersFrom')

@@ -81,6 +81,7 @@ def createnewaccount(request):
 		email = request.POST["email"]
 		first_name = request.POST["firstname"]
 		last_name = request.POST["lastname"]
+		issmoker = request.POST["issmoker"]
 		print(username + " " + password)
 		user = User.objects.create_user(username, email, password)
 		user.first_name = first_name
@@ -89,7 +90,7 @@ def createnewaccount(request):
 		height = request.POST["height"]
 		payment = Payment_Information(card_number = 0, address="default")
 		payment.save()
-		client = Clients(user=user, payment = payment)
+		client = Clients(user=user, payment = payment, issmoker=issmoker)
 		client.height = height
 		client.save()
 	except:

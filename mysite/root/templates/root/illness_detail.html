@@ -33,13 +33,18 @@
 	<div class="wrap">
 		<div class="content">
 			<h1>{{ illness.name }}</h1>
-			<h1>Illness ID: {{illness.illid}}</h1>
+			<h2>Illness ID: {{illness.illid}}</h2>
 			<h2>Description</h2>
 			<p>{{illness.description}}</p>
 			<h2>Prevalence</h2>
 			<p>{{illness.prevalence}} per 1,000 peoples.</p>
 			<h2>Severity</h2>
-			<p>{{illness.severity}}% mortality rate.</p>
+			<!--Custom results based on demographic information-->
+			{%if user.clients.issmoker %}
+				<p>{{illness.severity|add:"20"}}% mortality rate among smokers.</p>
+			{%else%}
+				<p>{{illness.severity}}% mortality rate.</p>
+			{%endif%}
 			<h2>Cause</h2>
 			<p>{{illness.cause}}</p>
 			<h2>Affected area of the Body</h2>
