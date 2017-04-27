@@ -104,6 +104,11 @@ def createnewaccount(request):
 	return login_user(request)
 	# return index(request);
 
+def changePaymentInfo(request):
+	template = loader.get_template('root/changePaymentInfo.html')
+	context = { }
+	return HttpResponse(template.render(context, request))
+
 class IllnessListView(generic.ListView):
 	template_name = 'root/illness_list.html'
 	context_object_name = 'illness_list'
