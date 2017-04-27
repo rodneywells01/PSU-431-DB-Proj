@@ -265,10 +265,3 @@ button.searchbutton {
 	display: block;
 }
 
-a{
-	color: black;
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: underline;
-}
