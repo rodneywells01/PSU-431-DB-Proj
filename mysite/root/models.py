@@ -6,10 +6,10 @@ from datetime import date
 #Entities listed below -- Relations located at the bottom of the file.
 
 class Symptom(models.Model):
-	name = models.CharField(max_length=100)
+	description = models.CharField(max_length=500)
 	sid = models.AutoField(primary_key=True)
 	def __str__(self):
-		return self.name
+		return self.description
 
 class Payment_Information(models.Model):
 	paymentid = models.AutoField(primary_key=True)

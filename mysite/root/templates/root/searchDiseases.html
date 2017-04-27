@@ -46,8 +46,11 @@
       					Browse Common Diseases
         			<i class="fa fa-search"></i>
       				</button>
+            <!--
       			<input type="hidden" name="prevalence_upper_bound" value="{{ '1000' }}">
       			<input type="hidden" name="prevalence_lower_bound" value="{{ '500' }}">
+            -->
+            <input type="hidden" name="prevalence" value="common">
     		</form>
     		<br/>
     		<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">
@@ -55,8 +58,11 @@
       					Browse Rare Diseases
         			<i class="fa fa-search"></i>
       				</button>
+            <!--
       			<input type="hidden" name="prevalence_upper_bound" value="{{ '500' }}">
       			<input type="hidden" name="prevalence_lower_bound" value="{{ '0' }}">
+            -->
+            <input type="hidden" name="prevalence" value="uncommon">
     		</form>
     		<br/>
     		<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">
@@ -64,8 +70,11 @@
       					Browse High Severity Diseases
         			<i class="fa fa-search"></i>
       				</button>
+            <!--
       			<input type="hidden" name="severity_upper_bound" value="{{ '100' }}">
       			<input type="hidden" name="severity_lower_bound" value="{{ '50' }}">
+            -->
+            <input type="hidden" name="severity" value="fatal">
     		</form>
     		<br/>
     		<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">
@@ -73,8 +82,11 @@
       					Browse Low Severity Diseases
         			<i class="fa fa-search"></i>
       				</button>
+            <!--
       			<input type="hidden" name="severity_upper_bound" value="{{ '50' }}">
       			<input type="hidden" name="severity_lower_bound" value="{{ '0' }}">
+            -->
+            <input type="hidden" name="severity" value="harmless">
     		</form>
     		<br/>
     		<form id="searchform" action="{% url 'illness_list' %}" method="get" accept-charset="utf-8">

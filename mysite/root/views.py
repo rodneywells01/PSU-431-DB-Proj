@@ -122,19 +122,23 @@ class IllnessListView(generic.ListView):
 		# Put 'more likely' illnesses at the top.
 		result = Illness.objects.order_by('illid')
 		query = self.request.GET.get('q')
-		prevalence_upper_bound = self.request.GET.get('prevalence_upper_bound')
-		prevalence_lower_bound = self.request.GET.get('prevalence_lower_bound')
-		severity_upper_bound = self.request.GET.get('severity_upper_bound')
-		severity_lower_bound = self.request.GET.get('severity_lower_bound')
+		#prevalence_upper_bound = self.request.GET.get('prevalence_upper_bound')
+		#prevalence_lower_bound = self.request.GET.get('prevalence_lower_bound')
+		prevalence = self.request.GET.get('prevalence')
+		#severity_upper_bound = self.request.GET.get('severity_upper_bound')
+		#severity_lower_bound = self.request.GET.get('severity_lower_bound')
+		severity = self.request.GET.get('severity')
 		cause = self.request.GET.get('cause')
 		if query:
 			result = result.filter(name__icontains=query)
-		if prevalence_upper_bound:
-			result = result.filter(prevalence__lte=prevalence_upper_bound)
-			result = result.filter(prevalence__gte=prevalence_lower_bound)
-		if severity_upper_bound:
-			result = result.filter(severity__lte=severity_upper_bound)
-			result = result.filter(severity__gte=severity_lower_bound)
+		if prevalence:
+			#result = result.filter(prevalence__lte=prevalence_upper_bound)
+			#result = result.filter(prevalence__gte=prevalence_lower_bound)
+			result = result.filter(prevalence__iexact=prevalence)
+		if severity:
+			#result = result.filter(severity__lte=severity_upper_bound)
+			#result = result.filter(severity__gte=severity_lower_bound)
+			result = result.filter(severity__iexact=severity)
 		if cause:
 			result = result.filter(cause__icontains=cause)
 		return result
@@ -147,7 +151,7 @@ class DiagnosisResultsView(generic.ListView):
 		result = Illness.objects.order_by('-prevalence')
 		query = self.request.GET.get('q')
 		if query:
-			result = result.filter(exhibits__symptom__name__icontains=query)
+			result = result.filter(exhibits__symptom__description__icontains=query)
 		return result
 
 class RemedyListView(generic.ListView):
