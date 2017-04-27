@@ -81,7 +81,7 @@ def createnewaccount(request):
 		email = request.POST["email"]
 		first_name = request.POST["firstname"]
 		last_name = request.POST["lastname"]
-		issmoker = request.POST["issmoker"]
+		issmoker = request.POST.get("issmoker", False)
 		print(username + " " + password)
 		user = User.objects.create_user(username, email, password)
 		user.first_name = first_name
