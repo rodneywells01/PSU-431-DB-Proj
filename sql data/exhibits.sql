@@ -1,10 +1,10 @@
-INSERT INTO root_exhibitss(symptom_id, illness_id) VALUES (1, 1);
-INSERT INTO root_exhibitss(symptom_id, illness_id) VALUES (2, 1);
-INSERT INTO root_exhibitss(symptom_id, illness_id) VALUES (3, 1);
-INSERT INTO root_exhibitss(symptom_id, illness_id) VALUES (4, 1);
-INSERT INTO root_exhibitss(symptom_id, illness_id) VALUES (5, 1);
+INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (1, 1);
+INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (2, 1);
+INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (3, 1);
+INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (4, 1);
+INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (5, 1);
 
-INSERT INTO root_exhibitss(symptom_id, illness_id) VALUES (6, 210);
+INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (6, 210);
 INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (7, 310);
 INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (8, 310);
 INSERT INTO root_exhibits(symptom_id, illness_id) VALUES (9, 1574);
