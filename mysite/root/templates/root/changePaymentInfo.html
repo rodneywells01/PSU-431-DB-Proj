@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diagnose.Me</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			{% if user.is_authenticated %}
+				<p style="float:right; margin-right: 20px">Signed in as <b><a href="profile">{{user.username}}</a></b>, <a href="/logout_user" style="color: #00a2e8; font-size: 17px">Sign Out?</a></p>
+			{% else %}
+				<p style="float:right; margin-right: 20px">Welcome! <a href="/" style="color: #00a2e8; font-size: 17px">Sign In</a></p>
+			{%endif%}
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
+
+	<div class="wrap">
+		<div class="content">
+			<form method="post" action="{% url 'changePayment' %}">
+				{% csrf_token %}
+				<fieldset>
+					<legend>Alter Payment Information</legend>
+					<div class="formContent">
+						Credit Card Number <input type="text" name="cardnumber" style="font-size: 15px; float: right" size="15px" placeholder="0000" required>
+					</div>
+					<br/>
+					<br/>
+					<div class="formContent">
+						Address <input type="text" name="address" style="font-size: 15px; float: right" size="15px" placeholder="125 Alphabet Lane" required>
+					</div>
+					<br/>
+					<br/>
+					<p>Note that as this is a class project, don't actually add any personal information</p>
+				</fieldset>
+				<br/>
+				<button class="searchbutton" type="submit" style="float: left">Save</button>
+			</form>
+			<form action="{% url 'profile' %}">
+				<button class="searchbutton" type="submit" style="margin-left: 10px" >Cancel</button>
+			</form>
+		</div>
+	</div>
+
+<div class="clr"></div>
+
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>

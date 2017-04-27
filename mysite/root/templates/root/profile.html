@@ -48,25 +48,10 @@
 					<p>Payment information: {{user.clients.payment.card_number}}</p>
 					<p>Address: {{user.clients.payment.address}}</p>
 					<p>Smoker: {{user.clients.issmoker}}</p>
-					<form method="post" action="{% url 'changePayment' %}">
-						{% csrf_token %}
-						<fieldset>
-							<legend>Alter Payment Information</legend>
-							<div class="formContent">
-								Credit Card Number <input type="text" name="cardnumber" style="font-size: 15px; float: right" size="15px" placeholder="0000">
-							</div>
-							<br/>
-							<br/>
-							<div class="formContent">
-								Address <input type="text" name="address" style="font-size: 15px; float: right" size="15px" placeholder="default">
-							</div>
-							<br/>
-							<br/>
-							<p>Note that as this is a class project, don't actually add any personal information</p>
-						</fieldset>
-						<br/>
-						<input type="submit" value="Apply" style="font-size: 15px"></button>
+					<form action="{% url 'changePaymentInfo' %}">
+						<button class="searchbutton" type="submit">Update Payment Information</button>
 					</form>
+					<br>
 				</div>
 			{%else%}
 				<p>Not logged in</p>
