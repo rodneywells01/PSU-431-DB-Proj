@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'root/main.css' %}"/>
+	<link rel="icon" href="{% static 'root/icon.png' %}">
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			{% if user.is_authenticated %}
+				<p style="float:right; margin-right: 20px">Signed in as <b><a href="profile">{{user.username}}</a></b>, <a href="/logout_user" style="color: #00a2e8; font-size: 17px">Sign Out?</a></p>
+			{% else %}
+				<p style="float:right; margin-right: 20px">Welcome! <a href="/" style="color: #00a2e8; font-size: 17px">Sign In</a></p>
+			{%endif%}
+			<div class="logo"></div>
+			<div class="clr"></div>
+			<br />
+			<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/startDiagnosis">Start Diagnosis</a></li>
+				<li><a href="/searchDiseases">Search Diseases</a></li>
+				<li><a href="/aboutUs">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div class="border"></div>
+
+	<div class="wrap">
+		<div class="content">
+			{% if user.is_authenticated %}
+				<div class="welcome">
+					<h1>You are checking out the following:</h1>
+					<h2>Shopping Cart</h2>
+                    {% if shopping_cart %}
+                        <ul>
+                        {% for remedy in shopping_cart %}
+                            <li>{{remedy.name}} - {{remedy.directcost}}</li>
+                        {% endfor %}
+                            <li><strong>Total Cost - {{total}}</strong></li>
+                        </ul>
+                    {% endif %}
+					<br>
+                    <form id="searchform" action="{% url 'confirmpurchase' %}" method="get">
+                        <button class="searchbutton" type="submit">Confirm Purchase</button>
+                    </form>
+				</div>
+			{%else%}
+				<p>Not logged in</p>
+			{%endif%}
+		</div>
+	</div>
+
+	<div class="clr"></div>
+
+	<div class="footer">
+		<div class="wrap">
+			<ul class="footerMenu">
+				<li><a href="/privacyPolicy">Privacy Policy</a></li>
+				<li><a href="/termsConditions">Terms and Conditions</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p class="copyright">&copy; 2017 Diagnose.Me - A Service by Debonair Database Designers</p>
+		</div>
+	</div>
+</body>
+</html>

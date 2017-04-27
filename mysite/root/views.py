@@ -113,6 +113,50 @@ def createnewaccount(request):
 	return login_user(request)
 	# return index(request);
 
+def checkout(request):
+	# Get User Orders
+	orders = Order.objects.all()
+	print(orders)
+	remedies = Remedy.objects.all()
+	remedies = remedies.filter(cart__user__user__username=request.user.username)
+	totalcost = 0
+	for remedy in remedies:
+		print(remedy.name + " "  + str(remedy.directcost))
+		totalcost += remedy.directcost
+
+
+	template = loader.get_template('root/checkout.html')
+	remedies = Remedy.objects.all()
+	username = request.user.username
+	remedies = remedies.filter(cart__user__user__username=username)
+	print("Total: " + str(totalcost))
+	context = Context({"shopping_cart": remedies, "total": totalcost})
+	return HttpResponse(template.render(context, request))
+
+def confirmpurchase(request):
+	# User has made a purchase
+	"""
+	date = models.DateTimeField(auto_now_add = True)
+	order_id = models.AutoField(primary_key = True)
+	user_id = models.IntegerField() #user that purchased the order
+	repurchase_date = models.DateTimeField(auto_now_add = True)
+	client = models.ForeignKey(Clients, on_delete=models.CASCADE)
+	"""
+
+	# Create the order
+	try:
+		client = request.user.clients
+		order=Order(client=client, user_id=client.uid)
+		print("Diagnosis saved")
+		order.save()
+	except:
+		tb = traceback.format_exc()
+		return HttpResponse(tb)
+
+	# Clear the users cart.
+	return HttpResponseRedirect("/profile")
+
+
 def changePaymentInfo(request):
 	template = loader.get_template('root/changePaymentInfo.html')
 	context = { }

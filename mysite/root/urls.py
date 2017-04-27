@@ -26,5 +26,7 @@ urlpatterns = [
 	url(r'ReviewPage/', views.ReviewPage, name='ReviewPage'),
 	url(r'doctor_list/', views.DoctorListView.as_view(), name='doctor_list'),
 	url(r'doctor_id(?P<pk>[0-9]*)/detail/$', views.DoctorDetailView.as_view(), name='doctor_detail'),
-	url(r'changePaymentInfo/', views.changePaymentInfo, name='changePaymentInfo')
+	url(r'changePaymentInfo/', views.changePaymentInfo, name='changePaymentInfo'),
+	url(r'checkout/', views.checkout, name='checkout'),
+	url(r'confirmpurchase/', views.confirmpurchase, name='confirmpurchase')
 ]

@@ -72,7 +72,7 @@
        				<li>{{remedy.name}}</li>
     			{% endfor %}
     			</ul>
-    			<form id="searchform" action="{% url 'index' %}" method="get" accept-charset="utf-8">
+    			<form id="searchform" action="{% url 'checkout' %}" method="get" accept-charset="utf-8">
       			<button class="checkoutbutton" type="submit">
       				Checkout
         		<i class="fa fa-search"></i>
@@ -95,8 +95,8 @@
 			<h2>Orders</h2>
 			{% if orders %}
    				<ul>
-   			 	{% for remedy in shopping_cart %}
-       				<li>{{remedy.name}}</li>
+   			 	{% for order in orders%}
+       				<li>{{order.order_id}}</li>
     			{% endfor %}
     			</ul>
 			{% else %}
