@@ -39,17 +39,23 @@
 		<div class="content">
 			<h1>Search Results</h1>
 			{% if illness_list %}
-   				<ul>
    			 	{% for illness in illness_list %}
+   			 	<div class="spaceblock">
+   			 		<a href="{% url 'illness_detail' illness.illid %}">
+   			 			<div class="sumblock">
+   			 				<h3> {{illness.name}} - illid:  {{illness.illid}} </h3>
+   			 			</div>
+   			 		</a>
+   			 	</div>
    			 		<!--TODO: Show summary blocks for each item, rather than just a hyperlink-->
-       				<li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>
+       				
     			{% endfor %}
-    			</ul>
 			{% else %}
     			<p>Search did not yield any results</p>
 			{% endif %}
 		</div>
 	</div>
+	<div class="clr"></div>
 	<div class="footer">
 		<div class="wrap">
 			<ul class="footerMenu">
