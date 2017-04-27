@@ -40,9 +40,17 @@
 					<p>Last Name: {{user.last_name}}</p>
 					<p>Email: {{user.email}}</p>
 					<p>Height: {{user.clients.height}}</p>
+					<p>Weight: {{user.clients.weight}}</p>
+					<p>Smoker: {{user.clients.issmoker}}</p>
+					{%if user.clients.gender%}
+						<p>Gender: Female</p>
+					{%else%}
+						<p>Gender: Male</p>
+					{%endif%}
+					<p>Date of Birth: {{user.clients.dob}}</p>
+					<p>Race: {{user.clients.race}}</p>
 					<p>Payment information: {{user.clients.payment.card_number}}</p>
 					<p>Address: {{user.clients.payment.address}}</p>
-					<p>Smoker: {{user.clients.issmoker}}</p>
 					<form method="post" action="{% url 'changePayment' %}">
 						{% csrf_token %}
 						<fieldset>

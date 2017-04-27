@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from datetime import date
 
 # Create your models here.
 #Entities listed below -- Relations located at the bottom of the file.
@@ -60,6 +60,8 @@ class Clients(models.Model):
 	payment = models.OneToOneField(Payment_Information)
 	gender = models.BooleanField(default=False)
 	issmoker = models.BooleanField(default=False)
+	dob = models.DateField(default=date.today)
+	race = models.CharField(max_length=50, default='Other')
 	height = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	weight = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 	symptoms = models.ManyToManyField(Symptom, through='SuffersFrom')
