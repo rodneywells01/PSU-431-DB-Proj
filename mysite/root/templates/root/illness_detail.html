@@ -42,13 +42,13 @@
 			<h2>Description</h2>
 			<p>{{illness.description}}</p>
 			<h2>Prevalence</h2>
-			<p>{{illness.prevalence}} per 1,000 peoples.</p>
+			<p>{{illness.prevalence}}</p> <!-- per 1,000 peoples.</p>-->
 			<h2>Severity</h2>
 			<!--Custom results based on demographic information-->
 			{%if user.clients.issmoker %}
 				<p>{{illness.severity|add:"20"}}% mortality rate among smokers.</p>
 			{%else%}
-				<p>{{illness.severity}}% mortality rate.</p>
+				<p>{{illness.severity}} </p> <!--% mortality rate.</p>-->
 			{%endif%}
 			<h2>Cause</h2>
 			<p>{{illness.cause}}</p>
