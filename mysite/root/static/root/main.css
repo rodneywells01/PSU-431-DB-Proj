@@ -75,6 +75,8 @@ body {
 	height: 100px;
 	background-color: #00a2e8;
 	color: #FFF;
+	position: all;
+	bottom: 0px;
 }
 
 .footer .wrap {
@@ -241,22 +243,24 @@ button.searchbutton {
 }
 
 .sumblock {
-	width: 200px;
-	height: 100px;
 	background: lightblue;
 	border-radius: 10px;
-	margin: 5px;
-	padding: 1%;
 	text-align: center;
+	margin: 5px;
+	width: 230px;
+	height: 130px;
+
+}
+
+.spaceblock {
 	display: table-cell;
+	width: 235px;
+	height: 135px;
+	float: left
 }
 
 .sumblock:hover{
 	border-color: black;
-}
-
-.sumblock h3{
-	margin-top: 0px;
 }
 
 .sumblock p{
