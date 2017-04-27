@@ -34,6 +34,7 @@
 		</div>
 	</div>
 	<div class="border"></div>
+	<dic class="clr"></dic>
 
 	<div class="wrap">
 		<div class="content">
@@ -42,12 +43,14 @@
    				<!--<ul>-->
    			 	{% for illness in symptom_search %}
    			 		<!--TODO: Show summary blocks for each item, rather than just a hyperlink-->
+   			 		<div class="spaceblock">
    			 		<a href="{% url 'illness_detail' illness.illid %}">
    			 			<div class="sumblock">
    			 				<h3> {{illness.name}} </h3>
    			 				<!--<p> {{illness.description}} </p>-->
    			 			</div>
    			 		</a>
+   			 		</div>
        				<!--<li><a href="{% url 'illness_detail' illness.illid %}">{{illness.name}} - illid:  {{illness.illid}}</a></li>-->
     			{% endfor %}
     			<!--</ul>-->
@@ -56,6 +59,8 @@
 			{% endif %}
 		</div>
 	</div>
+	<div class="clr"></div>
+	<br>
 	<div class="footer">
 		<div class="wrap">
 			<ul class="footerMenu">
