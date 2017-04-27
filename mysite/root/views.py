@@ -154,6 +154,9 @@ def confirmpurchase(request):
 		return HttpResponse(tb)
 
 	# Clear the users cart.
+	Cart.objects.filter(user_id=client.uid).delete()
+
+
 	return HttpResponseRedirect("/profile")
 
 
