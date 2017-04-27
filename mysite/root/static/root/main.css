@@ -228,7 +228,7 @@ body {
 }
 
 button.searchbutton {
-    background-color: #00a2e8; /* Green */
+    background-color: #00a2e8;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -237,6 +237,7 @@ button.searchbutton {
     display: inline-block;
     font-size: 16px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .sumblock {
@@ -264,11 +265,3 @@ button.searchbutton {
 	text-overflow: ellipsis;
 	display: block;
 }
-
-/*a{
-	color: black;
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: underline;
-}*/
