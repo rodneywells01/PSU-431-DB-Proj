@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 import operator, traceback
 from functools import reduce
 
+
 # Create your views here.
 def index(request):
 	template = loader.get_template('root/index.html')
@@ -109,7 +110,7 @@ def createnewaccount(request):
 	print("We hit create new account! Awesome!!")
 	template = loader.get_template('root/index.html')
 	context = { }
-	return HttpResponseRedirect("/")
+	return login_user(request)
 	# return index(request);
 
 class IllnessListView(generic.ListView):
@@ -150,24 +151,25 @@ class DiagnosisResultsView(generic.ListView):
 		return result
 
 class RemedyListView(generic.ListView):
-    template_name = 'root/remedy_list.html'
-    context_object_name = 'remedy_list'
+	template_name = 'root/remedy_list.html'
+	context_object_name = 'remedy_list'
 
-    def get_queryset(self):
-        """Remedy List."""
-        remedies = Remedy.objects.all()
-        query = self.request.GET.get('q')
-        if query:
-            remedies = remedies.filter(treatedby__illness__illid=query)
-        return remedies
+	def get_queryset(self):
+		"""Remedy List."""
+		remedies = Remedy.objects.all()
+		query = self.request.GET.get('q')
+		if query:
+			remedies = remedies.filter(treatedby__illness__illid=query)
+		return remedies
 
 class RemedyDetailView(generic.DetailView):
-    model = Remedy
-    template_name = 'root/remedy_detail.html'
+	model = Remedy
+	template_name = 'root/remedy_detail.html'
 
 class IllnessDetailView(generic.DetailView):
-    model = Illness
-    template_name = 'root/illness_detail.html'
+	model = Illness
+	template_name = 'root/illness_detail.html'
+
 
 def profile(request):
 	template = loader.get_template('root/profile.html')
